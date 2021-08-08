@@ -1,0 +1,77 @@
+.navigation{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
+  overflow: hidden;
+  border-bottom: 1px solid #000;
+  background-color: #000;
+  /* background-image: linear-gradient(rgba(255, 255, 255, 0.897), #000); */
+  box-shadow: 0px 0px 10px #fff;
+  font-family: "Dosis", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+li{ 
+  list-style-type: none;
+  padding: 14px 25px;
+}
+.navLink{
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  
+  padding: 5px 5px;
+  transition: background-color 0.5s, 
+    transform 0.5s, 
+    font-weight 0.5s,
+    /* color 0.5s, */
+    border-radius 0.8s;
+}
+.navLink:link{ color: #fff;
+}
+.navLink:visited{ color: #fff;
+}
+.navLink:hover, .active, .active-blue, .active-green, .active-red{
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.315);
+  cursor: pointer;
+  box-shadow: 0 0 5px #fff;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+.blue:hover, .active-blue{ 
+  background-color: rgba(0, 0, 255, 0.315);
+  box-shadow: 0 0 5px #00f;
+}
+.red:hover, .active-red{ 
+  background-color: rgba(255, 0, 0, 0.315);
+  box-shadow: 0 0 5px #f00;
+}
+.green:hover, .active-green{ 
+  background-color: rgba(0, 255, 0, 0.315);
+  box-shadow: 0 0 5px #0f0;
+}
+.active{ transform: scale(1);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+@media all and (max-width: 400px){
+  .navigation{
+    flex-direction: column;
+  }
+  li{ 
+    padding: 1px 0;
+  }
+  .navLink{
+    display: block;
+  }
+}

@@ -1,0 +1,19 @@
+.graphicContainer {
+  padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(auto, 50%);
+  gap: 2.5%;
+  overflow-y: hidden;
+  padding-bottom: 20%;
+}
+@media all and (max-width: 400px){
+  .graphicContainer {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+  }
+  .graphicContainer img{
+    margin-top: 10px;
+  }
+}
