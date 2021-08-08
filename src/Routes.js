@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import HomePage from './pages/home';
 import WebPage from './pages/web';
 import GraphicPage from './pages/graphic';
-// import MediaPage from './pages/media';
+import MediaPage from './pages/media';
 
 const Routes = () => {
   return (
@@ -12,7 +12,7 @@ const Routes = () => {
       <Route exact path="/" component={HomePage}/>
       <Route exact path="/web" component={WebPage}/>
       <Route exact path="/graphic" component={GraphicPage}/>
-      {/* <Route exact path="/media" component={MediaPage}/> */}
+      <Route exact path="/media" component={MediaPage}/>
     </Switch>
   )
 }

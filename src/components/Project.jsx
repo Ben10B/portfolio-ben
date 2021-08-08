@@ -1,8 +1,6 @@
 import React from 'react';
-import { Player, 
-  // ControlBar 
-} from 'video-react';
 import '../css/project.css';
+import VideoPlayer from './VideoPlayer';
 
 export const Project = ({title, src, text, className}) => {
   let project;
@@ -12,9 +10,7 @@ export const Project = ({title, src, text, className}) => {
   else if(className === 'g'){
     project = (
       //<div className={`vid ${className}`}>
-        <Player fluid={false} style={{width: 100}}>
-          <source src={src}/>
-        </Player>
+      <VideoPlayer url={src}/>
       //</div>
     );
   }

@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import '../css/slideshow.scss';
 import '../css/slideshow.css';
-import "../../node_modules/video-react/dist/video-react.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleDown, faFileDownload, faCode } from '@fortawesome/free-solid-svg-icons'
-import { Player, 
-  // ControlBar 
-} from 'video-react';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleDoubleDown, faFileDownload, faCode } from '@fortawesome/free-solid-svg-icons';
+import VideoPlayer from './VideoPlayer';
 
 class SlideShow extends Component {
   constructor(props){
@@ -83,7 +80,7 @@ const Card = ({project, select, currentIndex}) => {
       {image !== undefined ? (
         <img src={image} alt={title}/>
       ) : (
-        <Player src={video}/>
+        <VideoPlayer url={video}/>
       )}
       <h6 className="title">{title}</h6>
       <div className="details" style={{ display: currentIndex !== index ? 'none' : null}}>
