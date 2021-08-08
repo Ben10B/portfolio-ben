@@ -15,39 +15,39 @@ import troots from '../assets/Asset 2.png';
 // import balabe from '../assets/Asset 1.png';
 import rightguard from '../assets/Right Guard Parody.jpg';
 //media
-import seven from '../assets/vid/7into28.mp4';
-import fight from '../assets/vid/Interlude to a Fight.mp4';
-import food from '../assets/vid/Cooking.mp4';
-import blr from '../assets/vid/Bad Lip Reading_Full.mp4';
-import news from '../assets/vid/XYZ Breaking News.mp4';
-import badminton from '../assets/vid/Badminton Movie Trailer (Shortened).mp4';
-import test from '../assets/vid/Final2.mp4';
-import her from '../assets/vid/Forgive Her (KT).mp4';
-import millions from '../assets/vid/AyeKee - Millions (KT).mp4';
-import keyIntro from '../assets/vid/Intro.mp4';
-import keyOutro from '../assets/vid/Outro.mp4';
-import tjIntro from '../assets/vid/TJ - Intro.mp4';
+// import seven from '../assets/vid/7into28.mp4';
+// import fight from '../assets/vid/Interlude to a Fight.mp4';
+// import food from '../assets/vid/Cooking.mp4';
+// import blr from '../assets/vid/Bad Lip Reading_Full.mp4';
+// import news from '../assets/vid/XYZ Breaking News.mp4';
+// import badminton from '../assets/vid/Badminton Movie Trailer (Shortened).mp4';
+// import test from '../assets/vid/Final2.mp4';
+// import her from '../assets/vid/Forgive Her (KT).mp4';
+// import millions from '../assets/vid/AyeKee - Millions (KT).mp4';
+// import keyIntro from '../assets/vid/Intro.mp4';
+// import keyOutro from '../assets/vid/Outro.mp4';
+// import tjIntro from '../assets/vid/TJ - Intro.mp4';
 
 export const mainData = [
   {
     index: 0, image: grindinProject, title: "Grindin' Goals!", 
     description: 'A 10-wk individual project, for people to stay motivated as they complete their goals'
-    + ' with an Role Playing Game element.',
+    + ' with a Role Playing Game element.',
     tech: ['MongoDB', 'Express', 'React', 'Node']
   },
-  { index: 1, video: news, title: `XYZ Breaking News`, 
-    description: '', tech: ['Premiere Pro'] 
-  },
-  { index: 2, video: seven, title: `7 into 28`, 
-    description: 'Short Typography', tech: ['After Effects'] 
-  },
+  // { index: 1, video: news, title: `XYZ Breaking News`, 
+  //   description: '', tech: ['Premiere Pro'] 
+  // },
+  // { index: 2, video: seven, title: `7 into 28`, 
+  //   description: 'Short Typography', tech: ['After Effects'] 
+  // },
 ];
 
 export const webData = [
   {
     index: 0, image: grindinProject, title: "Grindin' Goals!", 
     description: 'A 10-wk individual project, for people to stay motivated as they complete their goals'
-    + ' with an Role Playing Game element.',
+    + ' with a Role Playing Game element.',
     tech: ['MongoDB', 'Express', 'React', 'Node']
   },
   {
@@ -84,41 +84,41 @@ export const graphicData = [
   { index: 7, img: track, proj: `Track Olympics`, text: 'yup' },
 ];
 
-export const mediaData = [
-  { index: 0, video: food, title: `How to: Cook Gourmet Looking Food`, 
-    description: `This is an instructional video for my Collaborative and Interpersonal Communication's class.`, tech: ['Windows Movie Maker'] 
-  },
-  { index: 1, video: fight, title: `Interlude to a Fight`, 
-    description: 'Short Video', tech: ['Premiere Pro'] 
-  },
-  { index: 2, video: blr, title: `Bad Lip Reading`, 
-    description: 'Random clips where I insert random voiceovers.', tech: ['Premiere Pro'] 
-  },
-  { index: 3, video: news, title: `XYZ Breaking News`, 
-    description: '', tech: ['Premiere Pro'] 
-  },
-  { index: 4, video: badminton, title: `Badminton Movie Trailer`, 
-    description: '', tech: ['Premiere Pro', 'After Effects'] 
-  },
-  { index: 5, video: test, title: `Effects Test`, 
-    description: '', tech: ['After Effects'] 
-  },
-  { index: 6, video: her, title: `Forgive Her`, 
-    description: 'Kinetic Typogrophy', tech: ['After Effects'] 
-  },
-  { index: 7, video: seven, title: `7 into 28`, 
-    description: 'Short Typography', tech: ['After Effects'] 
-  },
-  { index: 8, video: millions, title: `AyeKee - Millions`, 
-    description: '', tech: ['AFter Effects'] 
-  },
-  { index: 9, video: keyIntro, title: `AyeKee Youtube Intro`, 
-    description: '', tech: ['AFter Effects'] 
-  },
-  { index: 10, video: keyOutro, title: `AyeKee Youtube Outro`, 
-    description: '', tech: ['AFter Effects'] 
-  },
-  { index: 11, video: tjIntro, title: `Taniya Janae Youtube Intro`, 
-    description: '', tech: ['AFter Effects'] 
-  },
-];
+// export const mediaData = [
+//   { index: 0, video: food, title: `How to: Cook Gourmet Looking Food`, 
+//     description: `This is an instructional video for my Collaborative and Interpersonal Communication's class.`, tech: ['Windows Movie Maker'] 
+//   },
+//   { index: 1, video: fight, title: `Interlude to a Fight`, 
+//     description: 'Short Video', tech: ['Premiere Pro'] 
+//   },
+//   { index: 2, video: blr, title: `Bad Lip Reading`, 
+//     description: 'Random clips where I insert random voiceovers.', tech: ['Premiere Pro'] 
+//   },
+//   { index: 3, video: news, title: `XYZ Breaking News`, 
+//     description: '', tech: ['Premiere Pro'] 
+//   },
+//   { index: 4, video: badminton, title: `Badminton Movie Trailer`, 
+//     description: '', tech: ['Premiere Pro', 'After Effects'] 
+//   },
+//   { index: 5, video: test, title: `Effects Test`, 
+//     description: '', tech: ['After Effects'] 
+//   },
+//   { index: 6, video: her, title: `Forgive Her`, 
+//     description: 'Kinetic Typogrophy', tech: ['After Effects'] 
+//   },
+//   { index: 7, video: seven, title: `7 into 28`, 
+//     description: 'Short Typography', tech: ['After Effects'] 
+//   },
+//   { index: 8, video: millions, title: `AyeKee - Millions`, 
+//     description: '', tech: ['AFter Effects'] 
+//   },
+//   { index: 9, video: keyIntro, title: `AyeKee Youtube Intro`, 
+//     description: '', tech: ['AFter Effects'] 
+//   },
+//   { index: 10, video: keyOutro, title: `AyeKee Youtube Outro`, 
+//     description: '', tech: ['AFter Effects'] 
+//   },
+//   { index: 11, video: tjIntro, title: `Taniya Janae Youtube Intro`, 
+//     description: '', tech: ['AFter Effects'] 
+//   },
+// ];

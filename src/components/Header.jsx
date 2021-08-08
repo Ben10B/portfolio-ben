@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import '../css/App.css';
 import '../css/header.css';
 
 class Header extends Component {
@@ -44,14 +43,14 @@ class Header extends Component {
           <Link className={`${(page === '') ? "active" : null} navLink`} to="/">Home</Link>
         </li>
         <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('web')}>
-          <Link className={`${(page === 'web') ? "active-blue" : null} navLink blue`} to="/web-design">Web</Link>
+          <Link className={`${(page === 'web') ? "active-blue" : null} navLink blue`} to="/web">Web</Link>
         </li>
         <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('graphic')}>
-          <Link className={`${(page === 'graphic') ? "active-red" : null} navLink red`} to="/graphic-design">Graphic</Link>
+          <Link className={`${(page === 'graphic') ? "active-red" : null} navLink red`} to="/graphic">Graphic</Link>
         </li>
-        <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('media')}>
-          <Link className={`${(page === 'media') ? "active-green" : null} navLink green`} to="/media-design">Media</Link>
-        </li>
+        {/* <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('media')}>
+          <Link className={`${(page === 'media') ? "active-green" : null} navLink green`} to="/media">Media</Link>
+        </li> */}
       </ul>
     );
   }

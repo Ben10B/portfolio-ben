@@ -2,7 +2,6 @@ import React from 'react';
 import { Player, 
   // ControlBar 
 } from 'video-react';
-import '../css/App.css';
 import '../css/project.css';
 
 export const Project = ({title, src, text, className}) => {

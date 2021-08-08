@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../css/App.css';
 import '../css/media.css';
 import Header from './Header.jsx';
 import SlideShow from './SlideShow.jsx';

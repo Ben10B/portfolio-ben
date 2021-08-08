@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import '../css/App.css';
 import '../css/slideshow.scss';
 import '../css/slideshow.css';
 import "../../node_modules/video-react/dist/video-react.css";

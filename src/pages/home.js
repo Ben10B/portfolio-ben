@@ -1,25 +1,22 @@
 import React, { Component } from 'react';
 import AOS from 'aos';
 import MoveTo from 'moveto';
+import 'aos/dist/aos.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faAngleDoubleDown, faFileDownload, faCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { Route } from 'react-router-dom';
 // import logo from './logo.svg';
-// import './css/BENstrap-in/css/my.css';
-import '../css/App.css';
-import 'aos/dist/aos.css';
 import Header from '../components/Header.jsx';
-// import SlideShow from './components/SlideShow.jsx';
+import SlideShow from '../components/SlideShow.jsx';
 
-// import linkedIn from './assets/LinkedIn-icon-3-fff.png';
-// import ytube from './assets/YouTube-icon-3-fff.png';
-// import insta from './assets/InstaGram-icon-3-fff.png';
-// import resume from "./assets/Sir Beckwith's Resume (2019).docx";
-// import me from './assets/me1.jpg';
-// import { mainData } from './data/data';
+import linkedIn from '../assets/LinkedIn-icon-3-fff.png';
+import ytube from '../assets/YouTube-icon-3-fff.png';
+import insta from '../assets/InstaGram-icon-3-fff.png';
+import resume from "../assets/Resume (2021).pdf";
+import me from '../assets/me3.jpg';
+import { mainData } from '../data/data';
 
-library.add([faAngleDoubleDown, faFileDownload, faCode]);
 class Home extends Component {
   moveTo = (id, duration) => {
     const moveTo = new MoveTo();
@@ -31,6 +28,7 @@ class Home extends Component {
     });
   }
   render() {
+    library.add([faAngleDoubleDown, faFileDownload, faCode]);
     AOS.init();
     return (
       <div className="App">
@@ -41,7 +39,7 @@ class Home extends Component {
         </div>
         <Header page=""/>
 
-        {/* <div data-aos="zoom-in" data-aos-duration="1500"
+        <div data-aos="zoom-in" data-aos-duration="1500"
           className="column fight-parallaxx hght-90-vh vert-center">
           <div className="row fnt-white">
             <div className="column flex-3">
@@ -65,7 +63,7 @@ class Home extends Component {
               <FontAwesomeIcon onClick={()=>this.moveTo('me', 1000)} className="moveToBtn fnt-white" icon="angle-double-down" />
             </div>
           </div>
-        </div> */}
+        </div>
         <div data-aos="fade-right" data-aos-duration="1500" className="fnt-white row hght-90-vh vert-center">
             <ul className="skills blue">
               <li><h3>Web</h3></li>
@@ -89,13 +87,13 @@ class Home extends Component {
               <li><p>Adobe After Effects CC</p></li>
             </ul>
         </div>
-        {/* <div className="hght-90-vh" style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
+        <div className="hght-90-vh" style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
           <SlideShow data={mainData}/>
-        </div> */}
-        {/* <section id="me" data-aos="flip-right" data-aos-duration="1500" className="hght-90-vh row">
+        </div>
+        <section id="me" data-aos="flip-right" data-aos-duration="1500" className="hght-90-vh row">
           <p>BIO</p>
           <div style={{backgroundImage: `url(${me})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'}}/>
-        </section> */}
+        </section>
       </div>
     );
   }
