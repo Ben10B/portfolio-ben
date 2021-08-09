@@ -25,25 +25,23 @@
   display: inline-block;
 }
 .indicator.active {
-  border: 0.5px dashed #555;
+  border: 0.5px dashed #fff;
+  background-color: #008fc5;
 }
 .indicator:hover {
-  border: 0.5px dashed #555;
+  border: 0.5px dashed #fff;
 }
-/* .next:hover{
+.next, .prev {
+  transition: transform 0.1s;
+}
+.next:hover, .prev:hover {
+  transform: scale(1.1);
+}
+.next:hover{
   box-shadow: 5px 0 15px 15px rgba(255, 255, 255, 0.226),
               0 0 10px 1px #000;
 }
 .prev:hover{
   box-shadow: -5px 0 15px 15px rgba(255, 255, 255, 0.226),
               0 0 10px 1px #000;
-} */
-
-.react-player {
-  height: 100%;
-}
-.react-player iframe {
-  border: none;
-  width: 100%;
-  margin: 0;
 }

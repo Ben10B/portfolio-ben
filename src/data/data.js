@@ -89,19 +89,19 @@ export const mediaData = [
     description: `This is an instructional video for my Collaborative and Interpersonal Communication's class.`, tech: ['Windows Movie Maker'] 
   },
   { index: 1, video: fight, title: `Interlude to a Fight`, 
-    description: 'Short Video', tech: ['Premiere Pro'] 
+    description: 'Short Video; Directed & Scripted by me.', tech: ['Premiere Pro'] 
   },
   { index: 2, video: blr, title: `Bad Lip Reading`, 
     description: 'Random clips where I insert random voiceovers.', tech: ['Premiere Pro'] 
   },
   { index: 3, video: news, title: `XYZ Breaking News`, 
-    description: '', tech: ['Premiere Pro'] 
+    description: 'Assignment for class.', tech: ['Premiere Pro'] 
   },
   { index: 4, video: badminton, title: `Badminton Movie Trailer`, 
-    description: '', tech: ['Premiere Pro', 'After Effects'] 
+    description: 'Assignment for class.', tech: ['Premiere Pro', 'After Effects'] 
   },
   { index: 5, video: test, title: `Effects Test`, 
-    description: '', tech: ['After Effects'] 
+    description: 'Assignment for class.', tech: ['After Effects'] 
   },
   { index: 6, video: her, title: `Forgive Her`, 
     description: 'Kinetic Typogrophy', tech: ['After Effects'] 
@@ -110,15 +110,15 @@ export const mediaData = [
     description: 'Short Typography', tech: ['After Effects'] 
   },
   { index: 8, video: millions, title: `AyeKee - Millions`, 
-    description: '', tech: ['AFter Effects'] 
+    description: 'Lyric Music Video for a friend.', tech: ['AFter Effects'] 
   },
   { index: 9, video: keyIntro, title: `AyeKee Youtube Intro`, 
-    description: '', tech: ['AFter Effects'] 
+    description: 'YouTube Intro', tech: ['AFter Effects'] 
   },
   { index: 10, video: keyOutro, title: `AyeKee Youtube Outro`, 
-    description: '', tech: ['AFter Effects'] 
+    description: 'YouTube Intro', tech: ['AFter Effects'] 
   },
   { index: 11, video: tjIntro, title: `Taniya Janae Youtube Intro`, 
-    description: '', tech: ['AFter Effects'] 
+    description: 'YouTube Outro', tech: ['AFter Effects'] 
   },
 ];

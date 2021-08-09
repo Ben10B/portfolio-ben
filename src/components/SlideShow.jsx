@@ -67,7 +67,7 @@ class SlideShow extends Component {
 }
 const Indicators = ({project, select, currentIndex}) => {
   const { index } = project;
-  const active = (currentIndex === index) ? 'active' : null;
+  const active = (currentIndex === index) ? 'active' : '';
   return (
     <div className={`indicator ${active}`} onClick={()=>select(index)}/>
   )
@@ -83,7 +83,7 @@ const Card = ({project, select, currentIndex}) => {
         <VideoPlayer url={video}/>
       )}
       <h6 className="title">{title}</h6>
-      <div className="details" style={{ display: currentIndex !== index ? 'none' : null}}>
+      <div className="details" style={{ display: currentIndex !== index ? 'none' : ''}}>
         <p className="desc">{description}</p>
         <p id='code'><FontAwesomeIcon icon="code"/></p>
         <ul className="features">
