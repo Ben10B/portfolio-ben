@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import AOS from 'aos';
 import MoveTo from 'moveto';
 import 'aos/dist/aos.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -27,7 +26,6 @@ class Home extends Component {
   }
   render() {
     library.add([faAngleDoubleDown, faFileDownload, faCode]);
-    AOS.init();
     return (
       <div className="App">
         <div className="parallaxx">
@@ -37,8 +35,7 @@ class Home extends Component {
         </div>
         <Header page=""/>
 
-        <div data-aos="zoom-in" data-aos-duration="1500"
-          className="column fight-parallaxx hght-90-vh vert-center">
+        <div data-aos="zoom-in" data-aos-duration="1500" className="fight-parallaxx column hght-90-vh vert-center">
           <div className="row fnt-white">
             <div className="column flex-3">
               <h4>Full Stack Web Developer</h4>
@@ -62,7 +59,12 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <div data-aos="fade-right" data-aos-duration="1500" className="fnt-white row hght-90-vh vert-center">
+        
+        <div className="parallaxx-10 hght-90-vh" style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
+          <SlideShow data={mainData}/>
+        </div>
+        
+        <div data-aos="fade-right" data-aos-duration="1500" className="fight-parallaxx fnt-white row hght-90-vh vert-center">
             <ul className="skills blue">
               <li><h3>Web</h3></li>
               <li><p>HTML5</p></li>
@@ -84,14 +86,12 @@ class Home extends Component {
               <li><p>Adobe After Effects CC</p></li>
             </ul>
         </div>
-        <div className="hght-90-vh" style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
-          <SlideShow data={mainData}/>
-        </div>
+
         <section id="me" data-aos="flip-right" data-aos-duration="1500" className="hght-90-vh row fight-parallaxx">
           <div className="column fnt-white">
             <h3>BIO</h3>
             <p>
-            I don't know about you, but I love to design; more specifically, web, graphic and media design. My strengths weigh heavier in web design and development since I can create an application with my art.
+            I don't know about you, but I love to implement design into code; more specifically, web, graphic and media design. My strengths weigh heavier in web design and development since I can create an application with my art.
             In 2009, I was inspired to make sprite animations using Macromedia Flash and Microsoft Paint. Now I'm developing websites and games, and exploring more art and animation that entranced me back then. I just wanna create cool looking stuff!
             </p>
           </div>

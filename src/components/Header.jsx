@@ -37,19 +37,19 @@ class Header extends Component {
 
     return (
       <ul data-aos="fade-down" data-aos-offset="0" id="nav"
-        className={`navigation ${ this.state.scrollingLock ? 'sticky' : null}`}
+        className={`navigation ${ this.state.scrollingLock ? 'sticky' : ''}`}
        >
         <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('')}>
-          <Link className={`${(page === '') ? "active" : null} navLink`} to="/">Home</Link>
+          <Link className={`${(page === '') ? "active" : ''} navLink`} to="/">Home</Link>
         </li>
         <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('web')}>
-          <Link className={`${(page === 'web') ? "active-blue" : null} navLink blue`} to="/web">Web</Link>
+          <Link className={`${(page === 'web') ? "active-blue" : ''} navLink blue`} to="/web">Web</Link>
         </li>
         <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('graphic')}>
-          <Link className={`${(page === 'graphic') ? "active-red" : null} navLink red`} to="/graphic">Graphic</Link>
+          <Link className={`${(page === 'graphic') ? "active-red" : ''} navLink red`} to="/graphic">Graphic</Link>
         </li>
         <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('media')}>
-          <Link className={`${(page === 'media') ? "active-green" : null} navLink green`} to="/media">Media</Link>
+          <Link className={`${(page === 'media') ? "active-green" : ''} navLink green`} to="/media">Media</Link>
         </li>
       </ul>
     );
