@@ -42,13 +42,13 @@ class SlideShow extends Component {
     return (
       <div id="slideShowContainer" data-aos="flip-down" data-aos-duration="3000" className="column">
         <div className="row">
-          <div className="prev" onClick={() => this.prev()}>Prev</div>
+          <div className="prev" onClick={() => this.prev()}><p>Prev</p></div>
           <section>
             {
               projects.map(p => (<Indicators key={p.index} project={p} select={this.select}  currentIndex={this.state.project.index}/>))
             }
           </section>
-          <div className="next" onClick={() => this.next()}>Next</div>
+          <div className="next" onClick={() => this.next()}><p>Next</p></div>
         </div>
         <div className={`cards-slider active-slide-${project.index}`}>
           <div className="cards-slider-wrapper"

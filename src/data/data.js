@@ -1,9 +1,10 @@
 //web
-import pizzaProject from '../assets/Slice Pizzeria.png'
-import innovationProject from '../assets/InnovationLab.png'
-import mazeProject from '../assets/AmazING.png'
-import statsProject from '../assets/Neu Stats.png'
-import grindinProject from "../assets/Grindin'.png"
+import hub from '../assets/HUB2.gif';
+import pizzaProject from '../assets/Slice Pizzeria.png';
+import innovationProject from '../assets/InnovationLab.png';
+import mazeProject from '../assets/AmazING.png';
+import statsProject from '../assets/Neu Stats.png';
+import grindinProject from "../assets/Grindin'.png";
 //graphic
 import smith from '../assets/Demon Smith 2.jpg';
 import surreal2 from '../assets/Surreal Two.jpg';
@@ -30,9 +31,9 @@ const tjIntro = 'https://youtu.be/7g-U5sHU4h0';
 
 export const mainData = [
   {
-    index: 0, image: grindinProject, title: "Grindin' Goals!", 
-    description: 'A 10-wk individual project, for people to stay motivated as they complete their goals'
-    + ' with a Role Playing Game element.',
+    index: 0, image: hub, title: 'Kolvanta Order Management System', 
+    description: 'Created an order management system to keep track of purchased orders from processed to delivered;'
+    + ' moving away from Google Sheets. (This system also kept track of orders for Do Good Be Kind for one of their promotions.)', 
     tech: ['MongoDB', 'Express', 'React', 'Node']
   },
   { index: 1, video: news, title: `XYZ Breaking News`, 
@@ -45,29 +46,35 @@ export const mainData = [
 
 export const webData = [
   {
-    index: 0, image: grindinProject, title: "Grindin' Goals!", 
+    index: 0, image: hub, title: 'Kolvanta Order Management System', 
+    description: 'Created an order management system to keep track of purchased orders from processed to delivered;'
+    + ' moving away from Google Sheets. (This system also kept track of orders for Do Good Be Kind for one of their promotions.)', 
+    tech: ['MongoDB', 'Express', 'React', 'Node']
+  },
+  {
+    index: 1, image: grindinProject, title: "Grindin' Goals!", 
     description: 'A 10-wk individual project, for people to stay motivated as they complete their goals'
     + ' with a Role Playing Game element.',
     tech: ['MongoDB', 'Express', 'React', 'Node']
   },
   {
-    index: 1, image: pizzaProject, title: 'Slice Pizzeria', 
+    index: 2, image: pizzaProject, title: 'Slice Pizzeria', 
     description: 'A team project to make a responsize pizza site following web and mobile wireframes.',
     tech: ['JavaScript']
   },
   {
-    index: 2, image: innovationProject, title: 'Neumont Innovation Center', 
+    index: 3, image: innovationProject, title: 'Neumont Innovation Center', 
     description: 'A team project for a Neumont Staff member. This site is to provide info and events for students'
     +' who want their ideas marketed. We only worked on the front end.',
     tech: ['JavaScript']
   },
   {
-    index: 3, image: mazeProject, title: 'AmazING', 
+    index: 4, image: mazeProject, title: 'AmazING', 
     description: 'A randomized maze that can be played by a bot or player. It looks AmazING upon completion!',
     tech: ['JavaScript']
   },
   {
-    index: 4, image: statsProject, title: 'Neumont Prospective Statistics', 
+    index: 5, image: statsProject, title: 'Neumont Prospective Statistics', 
     description: 'A team project learning how to use a local mongoose database.',
     tech: ['JavaScript', 'Express', 'Pug', 'Mongoose']
   },

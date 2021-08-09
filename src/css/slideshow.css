@@ -31,17 +31,14 @@
 .indicator:hover {
   border: 0.5px dashed #fff;
 }
-.next, .prev {
-  transition: transform 0.1s;
+.next p:hover, .prev p:hover {
+  transform: scale(1.2);
 }
-.next:hover, .prev:hover {
-  transform: scale(1.1);
-}
-.next:hover{
+/* .next:hover{
   box-shadow: 5px 0 15px 15px rgba(255, 255, 255, 0.226),
               0 0 10px 1px #000;
 }
 .prev:hover{
   box-shadow: -5px 0 15px 15px rgba(255, 255, 255, 0.226),
               0 0 10px 1px #000;
-}
+} */
