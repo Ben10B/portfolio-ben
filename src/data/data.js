@@ -21,12 +21,12 @@ const food = 'https://youtube.com/watch?v=E-TzXNQhYTo';
 const blr = 'https://youtu.be/BDDy2psv6bE';
 const news = 'https://youtu.be/2IxUQdEdzLA';
 const badminton = 'https://youtu.be/7jCtQ6Il1cU';
-// const test = '../assets/vid/Final2.mp4';
-// const her = '../assets/vid/Forgive Her (KT).mp4';
-// const millions = '../assets/vid/AyeKee - Millions (KT).mp4';
-// const keyIntro = '../assets/vid/Intro.mp4';
-// const keyOutro = '../assets/vid/Outro.mp4';
-// const tjIntro = '../assets/vid/TJ - Intro.mp4';
+const test = 'https://youtu.be/UITJSTuqtjs';
+const her = 'https://youtu.be/wcHMVOzNykI';
+const millions = 'https://youtu.be/xuCCWhpzvig';
+const keyIntro = 'https://youtu.be/JGlHa-aFxgc';
+const keyOutro = 'https://youtu.be/H6LWh-zcc30';
+const tjIntro = 'https://youtu.be/7g-U5sHU4h0';
 
 export const mainData = [
   {
@@ -35,12 +35,12 @@ export const mainData = [
     + ' with a Role Playing Game element.',
     tech: ['MongoDB', 'Express', 'React', 'Node']
   },
-  // { index: 1, video: news, title: `XYZ Breaking News`, 
-  //   description: '', tech: ['Premiere Pro'] 
-  // },
-  // { index: 2, video: seven, title: `7 into 28`, 
-  //   description: 'Short Typography', tech: ['After Effects'] 
-  // },
+  { index: 1, video: news, title: `XYZ Breaking News`, 
+    description: '', tech: ['Premiere Pro'] 
+  },
+  { index: 2, video: seven, title: `7 into 28`, 
+    description: 'Short Typography', tech: ['After Effects'] 
+  },
 ];
 
 export const webData = [
@@ -100,25 +100,25 @@ export const mediaData = [
   { index: 4, video: badminton, title: `Badminton Movie Trailer`, 
     description: '', tech: ['Premiere Pro', 'After Effects'] 
   },
-  // { index: 5, video: test, title: `Effects Test`, 
-  //   description: '', tech: ['After Effects'] 
-  // },
-  // { index: 6, video: her, title: `Forgive Her`, 
-  //   description: 'Kinetic Typogrophy', tech: ['After Effects'] 
-  // },
-  { index: 5, video: seven, title: `7 into 28`, 
+  { index: 5, video: test, title: `Effects Test`, 
+    description: '', tech: ['After Effects'] 
+  },
+  { index: 6, video: her, title: `Forgive Her`, 
+    description: 'Kinetic Typogrophy', tech: ['After Effects'] 
+  },
+  { index: 7, video: seven, title: `7 into 28`, 
     description: 'Short Typography', tech: ['After Effects'] 
   },
-  // { index: 8, video: millions, title: `AyeKee - Millions`, 
-  //   description: '', tech: ['AFter Effects'] 
-  // },
-  // { index: 9, video: keyIntro, title: `AyeKee Youtube Intro`, 
-  //   description: '', tech: ['AFter Effects'] 
-  // },
-  // { index: 10, video: keyOutro, title: `AyeKee Youtube Outro`, 
-  //   description: '', tech: ['AFter Effects'] 
-  // },
-  // { index: 11, video: tjIntro, title: `Taniya Janae Youtube Intro`, 
-  //   description: '', tech: ['AFter Effects'] 
-  // },
+  { index: 8, video: millions, title: `AyeKee - Millions`, 
+    description: '', tech: ['AFter Effects'] 
+  },
+  { index: 9, video: keyIntro, title: `AyeKee Youtube Intro`, 
+    description: '', tech: ['AFter Effects'] 
+  },
+  { index: 10, video: keyOutro, title: `AyeKee Youtube Outro`, 
+    description: '', tech: ['AFter Effects'] 
+  },
+  { index: 11, video: tjIntro, title: `Taniya Janae Youtube Intro`, 
+    description: '', tech: ['AFter Effects'] 
+  },
 ];

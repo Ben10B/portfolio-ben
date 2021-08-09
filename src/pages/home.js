@@ -5,8 +5,6 @@ import 'aos/dist/aos.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faAngleDoubleDown, faFileDownload, faCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { Route } from 'react-router-dom';
-// import logo from './logo.svg';
 import Header from '../components/Header.jsx';
 import SlideShow from '../components/SlideShow.jsx';
 
@@ -73,7 +71,6 @@ class Home extends Component {
               <li><p>React/React Native</p></li>
               <li><p>Express.js</p></li>
               <li><p>Node.js</p></li>
-              <li><p>ASP.NET MVC</p></li>
             </ul>
             <ul className="skills red">
               <li><h3>Graphic</h3></li>

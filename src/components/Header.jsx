@@ -36,8 +36,8 @@ class Header extends Component {
     let page = this.props.page;
 
     return (
-      <ul data-aos="fade-down" data-aos-offset="0"
-       id="nav" className={`navigation ${ this.state.scrollingLock ? 'sticky' : null}`}
+      <ul data-aos="fade-down" data-aos-offset="0" id="nav"
+        className={`navigation ${ this.state.scrollingLock ? 'sticky' : null}`}
        >
         <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('')}>
           <Link className={`${(page === '') ? "active" : null} navLink`} to="/">Home</Link>
