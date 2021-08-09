@@ -87,7 +87,7 @@ class Home extends Component {
         <div className="hght-90-vh" style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
           <SlideShow data={mainData}/>
         </div>
-        <section id="me" data-aos="flip-right" data-aos-duration="1500" className="hght-90-vh row">
+        <section id="me" data-aos="flip-right" data-aos-duration="1500" className="hght-90-vh row fight-parallaxx">
           <div className="column fnt-white">
             <h3>BIO</h3>
             <p>

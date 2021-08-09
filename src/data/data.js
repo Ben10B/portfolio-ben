@@ -16,18 +16,18 @@ import troots from '../assets/Asset 2.png';
 // import balabe from '../assets/Asset 1.png';
 import rightguard from '../assets/Right Guard Parody.jpg';
 //media
-const seven = 'https://youtu.be/966jrmteU14';
+const seven = 'https://youtube.com/watch?v=966jrmteU14';
 const fight = 'https://youtube.com/watch?v=3MNLfBfmoak';
 const food = 'https://youtube.com/watch?v=E-TzXNQhYTo';
-const blr = 'https://youtu.be/BDDy2psv6bE';
-const news = 'https://youtu.be/2IxUQdEdzLA';
-const badminton = 'https://youtu.be/7jCtQ6Il1cU';
-const test = 'https://youtu.be/UITJSTuqtjs';
-const her = 'https://youtu.be/wcHMVOzNykI';
-const millions = 'https://youtu.be/xuCCWhpzvig';
-const keyIntro = 'https://youtu.be/JGlHa-aFxgc';
-const keyOutro = 'https://youtu.be/H6LWh-zcc30';
-const tjIntro = 'https://youtu.be/7g-U5sHU4h0';
+const blr = 'https://youtube.com/watch?v=BDDy2psv6bE';
+const news = 'https://youtube.com/watch?v=2IxUQdEdzLA';
+const badminton = 'https://youtube.com/watch?v=7jCtQ6Il1cU';
+const test = 'https://youtube.com/watch?v=UITJSTuqtjs';
+const her = 'https://youtube.com/watch?v=wcHMVOzNykI';
+const millions = 'https://youtube.com/watch?v=xuCCWhpzvig';
+const keyIntro = 'https://youtube.com/watch?v=JGlHa-aFxgc';
+const keyOutro = 'https://youtube.com/watch?v=H6LWh-zcc30';
+const tjIntro = 'https://youtube.com/watch?v=7g-U5sHU4h0';
 
 export const mainData = [
   {
