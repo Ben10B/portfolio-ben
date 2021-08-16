@@ -2,7 +2,7 @@
   text-align: center;
   min-width: 100%;
   /* font-family: "Dosis", sans-serif; */
-  /* font-family: "Nunito", sans-serif; */
+  font-family: "Nunito", sans-serif;
 }
 
 .App-logo {
@@ -52,7 +52,11 @@
   min-height: 50px;
   /* max-width: 50px; */
 }
-
+.paragraph {
+  text-indent: 2em;
+  text-align: justify;
+  line-height: 1.3em;
+}
 .bg-gray{ background-color: #bbb;
 }
 .bg-black{ background-color: #000;

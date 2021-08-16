@@ -90,7 +90,7 @@ class Home extends Component {
         <section id="me" data-aos="flip-right" data-aos-duration="1500" className="hght-90-vh row fight-parallaxx">
           <div className="column fnt-white">
             <h3>BIO</h3>
-            <p>
+            <p class="paragraph">
             I don't know about you, but I love to implement design into code; more specifically, web, graphic and media design. My strengths weigh heavier in web design and development since I can create an application with my art.
             In 2009, I was inspired to make sprite animations using Macromedia Flash and Microsoft Paint. Now I'm developing websites and games, and exploring more art and animation that entranced me back then. I just wanna create cool looking stuff!
             </p>
