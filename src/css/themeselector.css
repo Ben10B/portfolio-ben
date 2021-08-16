@@ -1,0 +1,12 @@
+.theme-selector {
+  position: fixed;
+  z-index: 99;
+  padding: 8px;
+  border-radius: 16px;
+  /* top: 5px; */
+  right: 5px;
+  background-color: #008fc5;
+}
+.theme-selector:hover {
+  cursor: pointer;
+}

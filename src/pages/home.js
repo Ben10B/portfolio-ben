@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import MoveTo from 'moveto';
-import 'aos/dist/aos.css';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAngleDoubleDown, faFileDownload, faCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../components/Header.jsx';
 import SlideShow from '../components/SlideShow.jsx';
@@ -25,7 +22,6 @@ class Home extends Component {
     });
   }
   render() {
-    library.add([faAngleDoubleDown, faFileDownload, faCode]);
     return (
       <div className="App">
         <div className="parallaxx">
