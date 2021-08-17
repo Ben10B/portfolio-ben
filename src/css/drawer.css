@@ -1,0 +1,58 @@
+.drawer-btn {
+  position: fixed;
+  z-index: 99;
+  padding: 8px;
+  border-radius: 16px;
+  right: 5px;
+  cursor: pointer;
+  border: 0.5px solid #fff;
+  background-color: rgba(255, 255, 255, 0.315);
+  transition: right 0.2s;
+}
+.drawer-btn.open {
+  right: calc(10% + 5px);
+}
+.drawer-btn.open .bars {
+  -moz-animation: tilt 4s infinite linear;
+  -webkit-animation: tilt 4s infinite linear;
+  -o-animation: tilt 4s infinite linear;
+  animation: tilt 4s infinite linear;
+}
+@-moz-keyframes tilt {
+  0%, 50%, 100% { -moz-transform: rotate(0); }
+  25% { -moz-transform: rotate(10deg); }
+  75% { -moz-transform: rotate(-10deg); }
+}
+@-webkit-keyframes tilt {
+  0%, 50%, 100% { -webkit-transform: rotate(0); }
+  25% { -webkit-transform: rotate(10deg); }
+  75% { -webkit-transform: rotate(-10deg); }
+}
+@-o-keyframes tilt {
+  0%, 50%, 100% { -o-transform: rotate(0); }
+  25% { -o-transform: rotate(10deg); }
+  75% { -o-transform: rotate(-10deg); }
+}
+@keyframes tilt {
+  0%, 50%, 100% { transform: rotate(0); }
+  25% { transform: rotate(10deg); }
+  75% { transform: rotate(-10deg); }
+}
+.drawer {
+  position: fixed;
+  z-index: 98;
+  display: flex;
+  top: 0;
+  right: -10%;
+  width: 10%;
+  height: 100%;
+  /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
+              url('../assets/footer_lodyas.png'); */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: right 0.2s;
+}
+.drawer.open {
+  right: 0;
+}

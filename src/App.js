@@ -1,22 +1,28 @@
-import React, { useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './css/BENstrap-in/css/my.css';
 import './css/App.css';
 import './css/index.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faAlignJustify, faAngleDoubleDown, faFileDownload, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faAngleDoubleDown, faFileDownload, faCode } from '@fortawesome/free-solid-svg-icons';
 import Routes from './Routes';
-import ThemeSelector from './components/ThemeSelector';
+import DrawerButton from './components/DrawerButton';
+import Drawer from './components/Drawer';
 
 AOS.init();
-library.add([faAlignJustify, faAngleDoubleDown, faFileDownload, faCode]);
+library.add([faBars, faAngleDoubleDown, faFileDownload, faCode]);
 
 function App() {
+  const [showDrawer, setDrawer] = useState(false);
   let bodyRef = useRef(null);
+  const open = () => {
+    setDrawer(prevShowDrawer => !prevShowDrawer)
+  }
   return (
     <div style={{ position: 'relative' }} ref={bodyRef}>
-      <ThemeSelector bodyRef={bodyRef}/>
+      <DrawerButton bodyRef={bodyRef} open={showDrawer} onClick={open}/>
+      <Drawer open={showDrawer}/>
       <Routes/>
     </div>
   );
