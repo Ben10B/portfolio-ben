@@ -1,4 +1,4 @@
-.navigation{
+.navigation {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -16,11 +16,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-li{ 
+.navigation li { 
   list-style-type: none;
   padding: 14px 25px;
 }
-.navLink{
+.navigation .navLink {
   text-align: center; 
   text-decoration: none;
   display: inline-block;
@@ -33,11 +33,11 @@ li{
     /* color 0.5s, */
     border-radius 0.8s;
 }
-.navLink:link{ color: #fff;
+.navigation .navLink:link { color: #fff;
 }
-.navLink:visited{ color: #fff;
+.navigation .navLink:visited { color: #fff;
 }
-.navLink:hover, .active, .active-blue, .active-green, .active-red{
+.navigation .navLink:hover, .navigation .active, .navigation .active-blue, .navigation .active-green, .active-red {
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.315);
   cursor: pointer;
@@ -45,21 +45,21 @@ li{
   transform: scale(1.1);
   border-radius: 5px;
 }
-.blue:hover, .active-blue{ 
+.navigation .blue:hover, .navigation .active-blue { 
   background-color: rgba(0, 0, 255, 0.315);
   box-shadow: 0 0 5px #00f;
 }
-.red:hover, .active-red{ 
+.navigation .red:hover, .navigation .active-red { 
   background-color: rgba(255, 0, 0, 0.315);
   box-shadow: 0 0 5px #f00;
 }
-.green:hover, .active-green{ 
+.navigation .green:hover, .navigation .active-green { 
   background-color: rgba(0, 255, 0, 0.315);
   box-shadow: 0 0 5px #0f0;
 }
-.active{ transform: scale(1);
+.navigation .active { transform: scale(1);
 }
-.sticky {
+.navigation .sticky {
   position: fixed;
   top: 0;
   width: 100%;
@@ -68,10 +68,10 @@ li{
   .navigation{
     flex-direction: column;
   }
-  li{ 
+  .navigation li{ 
     padding: 1px 0;
   }
-  .navLink{
+  .navigation .navLink{
     display: block;
   }
 }
