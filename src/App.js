@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import { connect } from 'react-redux';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './css/BENstrap-in/css/my.css';
@@ -14,19 +15,22 @@ import { DRAWER_LINKS } from './data/links';
 AOS.init();
 library.add([faBars, faAngleDoubleDown, faFileDownload, faCode, faUser, faBrush, faPalette]);
 
-function App() {
+function App({ settings }) {
   let bodyRef = useRef(null);
   const [showDrawer, setDrawer] = useState(false);
   const open = () => setDrawer(prevShowDrawer => !prevShowDrawer);
-  const [BG, setBG] = useState('BG-1');
-  const changeBackground = (bg) => setBG(bg);
   return (
-    <div className={`body ${BG}`} style={{ position: 'relative' }} ref={bodyRef}>
+    <div className={`body ${settings.background}`} style={{ position: 'relative' }} ref={bodyRef}>
       <DrawerButton bodyRef={bodyRef} open={showDrawer} onClick={open}/>
-      <Drawer open={showDrawer} links={DRAWER_LINKS} changeBG={changeBackground}/>
+      <Drawer open={showDrawer} links={DRAWER_LINKS}/>
       <Routes/>
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    settings: state.settings
+  }
+}
+export default connect(mapStateToProps, {})(App);

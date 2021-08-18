@@ -1,18 +1,4 @@
 export const DRAWER_LINKS = [
-  // {
-  //   id: 'profile',
-  //   name: 'Profile',
-  //   icon: 'user',
-  //   href: '/#profile',
-  //   lvl2links: [
-  //     {
-  //       name: 'Post'
-  //     },
-  //     {
-  //       name: 'Picture'
-  //     }
-  //   ]
-  // },
   {
     id: 'bg',
     name: 'Backgrounds',
@@ -21,15 +7,18 @@ export const DRAWER_LINKS = [
     lvl2links: [
       {
         id: 'bg',
-        name: 'BG-1'
+        name: 'BG-1',
+        click: true
       },
       {
         id: 'bg',
-        name: 'BG-2'
+        name: 'BG-2',
+        click: true
       },
       {
         id: 'bg',
-        name: 'BG-3'
+        name: 'BG-3',
+        click: true
       }
     ]
   },

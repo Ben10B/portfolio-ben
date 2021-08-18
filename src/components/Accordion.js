@@ -1,12 +1,14 @@
 import React from 'react';
 import '../css/accordion.css';
+import { connect } from 'react-redux';
+import { updateBackground } from '../actions/settingsActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Accordion = ({ links, changeBG }) => {
+const Accordion = ({ links, updateBackground }) => {
   const handleClick = (target) => {
     switch(target.id) {
       case 'bg':
-        changeBG(target.name); 
+        updateBackground(target.name); 
       break;
       default: break;
     }
@@ -22,7 +24,7 @@ const Accordion = ({ links, changeBG }) => {
               </a>
               <div className="smenu">
                 {x.lvl2links && x.lvl2links.map(y => (
-                  <div key={y.name} onClick={() => handleClick(y)}>{y.name}</div>
+                  <div key={y.name} onClick={y.click ? () => handleClick(y) : null}>{y.name}</div>
                 ))}
               </div>
             </li>
@@ -33,4 +35,12 @@ const Accordion = ({ links, changeBG }) => {
   )
 }
 
-export default Accordion;
+const mapStateToProps = (state) => {
+  return { }
+}
+const mapDispatchToProps = (dispatch, ownProps) => {
+  return {
+    updateBackground: (ownProps) => dispatch(updateBackground(ownProps))
+  }
+}
+export default connect(mapStateToProps, mapDispatchToProps)(Accordion);
