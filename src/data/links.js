@@ -1,75 +1,56 @@
 export const DRAWER_LINKS = [
+  // {
+  //   id: 'profile',
+  //   name: 'Profile',
+  //   icon: 'user',
+  //   href: '/#profile',
+  //   lvl2links: [
+  //     {
+  //       name: 'Post'
+  //     },
+  //     {
+  //       name: 'Picture'
+  //     }
+  //   ]
+  // },
   {
-    id: 'profile',
-    name: 'Profile',
-    icon: 'user',
-    href: '/#profile',
+    id: 'bg',
+    name: 'Backgrounds',
+    icon: 'palette',
+    href: '/#bg',
     lvl2links: [
       {
-        name: 'Post'
+        id: 'bg',
+        name: 'BG-1'
       },
       {
-        name: 'Picture'
+        id: 'bg',
+        name: 'BG-2'
+      },
+      {
+        id: 'bg',
+        name: 'BG-3'
       }
-    ]
-  },
-  {
-    id: 'messages',
-    name: 'Messages',
-    icon: 'envelope',
-    href: '/#messages',
-    lvl2links: [
-      {
-        name: 'New'
-      },
-      {
-        name: 'Sent'
-      },
-      {
-        name: 'Spam'
-      }
-    ]
-  },
-  {
-    id: 'settings',
-    name: 'Settings',
-    icon: 'cog',
-    href: '/#settings',
-    lvl2links: [
-      {
-        name: 'Password'
-      },
-      {
-        name: 'Language'
-      },
     ]
   },
   {
     id: 'themes',
     name: 'Select Theme',
-    icon: '',
+    icon: 'brush',
     href: '/#themes',
     lvl2links: [
       {
         name: 'Default'
       },
       {
-        name: 'Theme 1'
+        name: 'Different'
       }
     ]
   },
   {
     id: 'close',
-    name: 'Close',
+    name: 'Collapse',
     icon: 'times',
-    href: '/#',
-    lvl2links: [
-      {
-        name: 'Password'
-      },
-      {
-        name: 'Language'
-      },
-    ]
+    href: '/#close'
   },
 ];

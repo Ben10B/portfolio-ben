@@ -2,8 +2,15 @@ import React from 'react';
 import '../css/accordion.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Accordion = ({ links }) => {
-
+const Accordion = ({ links, changeBG }) => {
+  const handleClick = (target) => {
+    switch(target.id) {
+      case 'bg':
+        changeBG(target.name); 
+      break;
+      default: break;
+    }
+  }
   return (
     <div className={`accordion`}>
       <div className="menu">
@@ -14,8 +21,8 @@ const Accordion = ({ links }) => {
                 <FontAwesomeIcon icon={x.icon}/> {x.name}
               </a>
               <div className="smenu">
-                {x.lvl2links.map(y => (
-                  <div key={y.name}>{y.name}</div>
+                {x.lvl2links && x.lvl2links.map(y => (
+                  <div key={y.name} onClick={() => handleClick(y)}>{y.name}</div>
                 ))}
               </div>
             </li>

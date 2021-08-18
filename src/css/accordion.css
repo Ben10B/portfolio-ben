@@ -47,6 +47,7 @@
   color: white;
   margin: 4px 0;
   position: relative;
+  cursor: pointer;
 }
 
 .accordion .smenu div::before {
