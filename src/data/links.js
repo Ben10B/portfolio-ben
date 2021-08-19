@@ -80,11 +80,6 @@ export const DRAWER_LINKS = [
         id: 'theme',
         label: 'Default',
         value: '1'
-      },
-      {
-        id: 'theme',
-        label: 'Different',
-        value: '2'
       }
     ]
   },
