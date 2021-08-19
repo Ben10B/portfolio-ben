@@ -1,44 +1,96 @@
 export const DRAWER_LINKS = [
   {
-    id: 'bg',
-    name: 'Backgrounds',
-    icon: 'palette',
-    href: '/#bg',
-    lvl2links: [
+    id: 'parallaxes',
+    label: 'Parallax',
+    icon: 'film',
+    href: '/#parallaxes',
+    lvl3: true,
+    lvl2: [
+      {
+        id: 'landings',
+        label: 'Landing Section',
+        value: 'landings',
+        lvl3: [
+          {
+            id: 'landing',
+            value: 'PX-1',
+            label: 'Mountaintop (Day)'
+          },
+          {
+            id: 'landing',
+            value: 'PX-1B',
+            label: 'Mountaintop (Night)'
+          }
+        ]
+      },
+      {
+        id: 'slideshows',
+        label: 'Slideshow Section',
+        value: 'slideshows',
+        lvl3: [
+          {
+            id: 'slideshow',
+            value: 'PX-2',
+            label: 'Tree Base'
+          },
+          {
+            id: 'slideshow',
+            value: 'PX-3',
+            label: 'Waterfall'
+          },
+          {
+            id: 'slideshow',
+            value: 'PX-10',
+            label: 'Dragon Stage'
+          },
+        ]
+      }
+    ]
+  },
+  {
+    id: 'bgs',
+    label: 'Backgrounds',
+    icon: 'images',
+    href: '/#bgs',
+    lvl2: [
       {
         id: 'bg',
-        name: 'BG-1',
-        click: true
+        value: 'BG-1',
+        label: '1'
       },
       {
         id: 'bg',
-        name: 'BG-2',
-        click: true
+        value: 'BG-2',
+        label: '2'
       },
       {
         id: 'bg',
-        name: 'BG-3',
-        click: true
+        value: 'BG-3',
+        label: '3'
       }
     ]
   },
   {
     id: 'themes',
-    name: 'Select Theme',
+    label: 'Select Theme',
     icon: 'brush',
     href: '/#themes',
-    lvl2links: [
+    lvl2: [
       {
-        name: 'Default'
+        id: 'theme',
+        label: 'Default',
+        value: '1'
       },
       {
-        name: 'Different'
+        id: 'theme',
+        label: 'Different',
+        value: '2'
       }
     ]
   },
   {
     id: 'close',
-    name: 'Collapse',
+    label: 'Collapse',
     icon: 'times',
     href: '/#close'
   },

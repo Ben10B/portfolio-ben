@@ -14,7 +14,7 @@
   background-color: #fff;
 }
 .drawer-btn.open {
-  right: calc(20% + 5px);
+  right: calc(200px + 5px);
   box-shadow: 0 0 5px #f00;
   /* border: .5px solid #f00; */
   background-color: rgba(255, 0, 0, 0.315);
@@ -57,8 +57,8 @@
   z-index: 98;
   display: flex;
   top: 0;
-  right: -20%;
-  width: 20%;
+  right: -200px;
+  width: 200px;
   height: 100%;
   /* background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), 
               url('../assets/footer_lodyas.png'); */

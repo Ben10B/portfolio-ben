@@ -1,0 +1,77 @@
+.landing-parallaxx {
+  background-attachment: fixed, fixed;
+  background-position: left, top;
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  animation: fight-movement 5s infinite;
+}
+.parallaxx {
+  background-attachment: fixed, fixed;
+  background-position: left, top;
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  animation: fight-movement 5s infinite;
+}
+.fight-parallaxx {
+  background-image: url('../assets/Fight.gif');
+  background-attachment: fixed;
+  background-position: left;
+  background-size: auto;
+  background-repeat: no-repeat;
+  animation: fight-movement 5s infinite;
+  margin-bottom: 0;
+}
+@keyframes fight-movement {
+  50% { background-position: right, top; }
+  25% { background-position-y: 50px, top; }
+  /* 25% { background-position-y: bottom, top; } */
+}
+.landing-parallaxx > div {
+  background-image: url('../assets/clouds.png');
+  background-attachment: scroll;
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: repeat-x;
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 100vh;
+  display: flex;
+  padding-top: 40px;
+  flex-direction: column;
+  justify-content: center;
+}
+.landing-parallaxx h1 {
+  box-shadow: 0 0 50px #fff;
+}
+.PX-1 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG1.gif');
+}
+.PX-1B { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG1b.gif');
+}
+.PX-2 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG2.gif');
+}
+.PX-3 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG3.gif');
+}
+.PX-4 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG4.gif');
+}
+.PX-5 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG5.gif');
+}
+.PX-6 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG6.gif');
+}
+.PX-7 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG7.gif');
+}
+.PX-8 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG8.gif');
+}
+.PX-9 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG9.gif');
+}
+.PX-10 { background-image: url('../assets/Fight.gif'), 
+  url('../assets/BG10.gif');
+}

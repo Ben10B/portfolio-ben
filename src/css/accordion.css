@@ -4,23 +4,36 @@
 .accordion .menu {
   overflow: hidden;
 }
-
-.accordion .item {
+.accordion .item, .accordion .item-2 {
   overflow: hidden;
   padding: 0;
 }
-
-.accordion .btn {
+.accordion .item-2 {
+  position: relative;
+}
+.accordion .item-2 input {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: 2;
+  max-height: 45px;
+  cursor: pointer;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+}
+.accordion .btn, 
+.accordion .btn-2 {
   display: block;
   padding: 16px 20px;
   background: #000;
   color: white;
   position: relative;
   border: none;
+  text-align: center;
   border-radius: 0;
 }
-
-.accordion .btn::before {
+.accordion .btn::before, 
+.accordion .btn-2::before {
   content: "";
   position: absolute;
   width: 14px;
@@ -30,27 +43,41 @@
   bottom: -7px;
   transform: rotate(45deg);
 }
-
-.accordion .btn i {
+.accordion .btn-2, .accordion .btn-2::before {
+  color: #000;
+  background: #fff;
+}
+.accordion .btn i, 
+.accordion .btn-2 i {
   margin-right: 10px;
 }
-
-.accordion .smenu {
+.accordion .smenu, 
+.accordion .ssmenu {
   overflow: hidden;
-  transition: max-height 0.3s;
   max-height: 0;
+  transition: max-height 0.3s;
 }
-
-.accordion .smenu div {
+.accordion .smenu .lvl2,
+.accordion .ssmenu .lvl3 {
   display: block;
   padding: 16px 26px;
   color: white;
   margin: 4px 0;
   position: relative;
   cursor: pointer;
+  transition: padding-left 0.3s;
 }
-
-.accordion .smenu div::before {
+.accordion .smenu .lvl2:hover,
+.accordion .ssmenu .lvl3:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.accordion .smenu .lvl2.active,
+.accordion .ssmenu .lvl3.active {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-left: 40px;
+}
+.accordion .smenu .lvl2::before,
+.accordion .ssmenu .lvl3::before {
   content: "";
   position: absolute;
   width: 6px;
@@ -61,11 +88,13 @@
   transition: .3s;
   opacity: 0;
 }
-
-.accordion .smenu div:hover::before {
+.accordion .smenu .lvl2:hover::before, 
+.accordion .ssmenu .lvl3:hover::before {
   opacity: 1;
 }
-
 .accordion .item:target .smenu {
-  max-height: 10em;
+  max-height: 100em;
+}
+.accordion .item:target .item-2 input:checked ~ .ssmenu {
+  max-height: 100em;
 }

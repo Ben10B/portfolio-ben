@@ -64,52 +64,6 @@
 .bg-black-2-white{ 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5) 1%, rgba(255, 255, 255, 0.5));
 }
-.parallaxx {
-  background-image: url('../assets/Fight.gif'), url('../assets/BG1.gif');
-  background-attachment: fixed, fixed;
-  background-position: left, top;
-  background-size: auto, cover;
-  background-repeat: no-repeat, no-repeat;
-  animation: fight-movement 5s infinite;
-}
-.parallaxx-10 {
-  background-image: url('../assets/Fight.gif'), url('../assets/BG10.gif');
-  background-attachment: fixed, fixed;
-  background-position: left, top;
-  background-size: auto, cover;
-  background-repeat: no-repeat, no-repeat;
-  animation: fight-movement 5s infinite;
-}
-.fight-parallaxx {
-  background-image: url('../assets/Fight.gif');
-  background-attachment: fixed;
-  background-position: left;
-  background-size: auto;
-  background-repeat: no-repeat;
-  animation: fight-movement 5s infinite;
-  margin-bottom: 0;
-}
-@keyframes fight-movement {
-  50% { background-position: right, top; }
-  25% { background-position-y: 50px, top; }
-  /* 25% { background-position-y: bottom, top; } */
-}
-.parallaxx > div{
-  background-image: url('../assets/clouds.png');
-  background-attachment: scroll;
-  background-position: bottom;
-  background-size: auto;
-  background-repeat: repeat-x;
-  background-color: rgba(255, 255, 255, 0.4);
-  height: 100vh;
-  display: flex;
-  padding-top: 40px;
-  flex-direction: column;
-  justify-content: center;
-}
-.parallaxx h1{
-  box-shadow: 0 0 50px #fff;
-}
 .highlight{
   display: flex;
   flex-direction: column;

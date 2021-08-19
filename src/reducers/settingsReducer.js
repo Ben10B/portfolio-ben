@@ -1,6 +1,10 @@
 const initialState = {
   theme: {},
   header: {},
+  parallaxes: {
+    landing: 'PX-1',
+    slideshow: 'PX-10'
+  },
   background: 'BG-1',
   loading: false
 };
@@ -21,6 +25,11 @@ const settingsReducer = (state = initialState, action) => {
       return {
         ...state,
         background: action.payload
+      };
+    case 'UPDATE_PARALLAX':
+      return {
+        ...state,
+        parallaxes: { ...state.parallaxes, ...action.payload }
       };
     case 'UPDATE_HEADER':
       return {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MoveTo from 'moveto';
+import { connect } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../components/Header.jsx';
 import SlideShow from '../components/SlideShow.jsx';
@@ -22,9 +23,10 @@ class Home extends Component {
     });
   }
   render() {
+    const { landing, slideshow } = this.props.parallaxes;
     return (
       <div className="App">
-        <div className="parallaxx">
+        <div className={`landing-parallaxx ${landing}`}>
           <div className="txt-center fnt-white">
             <h1 className="res-fnt-size-6">BEN-JAM-IN BECKWITH</h1>
           </div>
@@ -56,7 +58,7 @@ class Home extends Component {
           </div>
         </div>
         
-        <div className="parallaxx-10 hght-90-vh" style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
+        <div className={`parallaxx ${slideshow} hght-90-vh`} style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
           <SlideShow data={mainData}/>
         </div>
         
@@ -86,7 +88,7 @@ class Home extends Component {
         <section id="me" data-aos="flip-right" data-aos-duration="1500" className="hght-90-vh row fight-parallaxx">
           <div className="column fnt-white">
             <h3>BIO</h3>
-            <p class="paragraph">
+            <p className="paragraph">
             I don't know about you, but I love to implement design into code; more specifically, web, graphic and media design. My strengths weigh heavier in web design and development since I can create an application with my art.
             In 2009, I was inspired to make sprite animations using Macromedia Flash and Microsoft Paint. Now I'm developing websites and games, and exploring more art and animation that entranced me back then. I just wanna create cool looking stuff!
             </p>
@@ -98,4 +100,10 @@ class Home extends Component {
   }
 }
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    settings: state.settings,
+    parallaxes: state.settings.parallaxes
+  }
+}
+export default connect(mapStateToProps, {})(Home);
