@@ -24,7 +24,7 @@ const DrawerButton = ({ bodyRef, onClick, open }) => {
 
   return (
     <div className={`drawer-btn ${open ? 'open' : ''}`} ref={btn} style={{ top: scrollY+'%' }} onClick={onClick}>
-      <FontAwesomeIcon className="bars" icon="bars" />
+      <FontAwesomeIcon className="edit" icon="edit" />
     </div>
   )
 }

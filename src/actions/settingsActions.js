@@ -6,6 +6,8 @@ export const updateTheme = (theme) => dispatch => {
 }
 
 export const updateBackground = (bg) => dispatch => {
+  var body = document.querySelector('body');
+  body.className = bg;
   dispatch({
     type: 'UPDATE_BACKGROUND',
     payload: bg

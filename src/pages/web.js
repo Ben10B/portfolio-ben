@@ -2,9 +2,9 @@ import React from 'react';
 import WebComponent from '../components/Web';
 const Web = () => {
   return (
-    <div className="fight-parallaxx">
+    // <div className="fight-parallaxx">
       <WebComponent/>
-    </div>
+    // </div>
   );
 }
 export default Web;

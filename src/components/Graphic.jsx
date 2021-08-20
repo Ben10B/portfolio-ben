@@ -18,7 +18,7 @@ class Graphic extends Component {
     }
     return (
       <div className="App">
-        <Header page="graphic"/>
+        <Header/>
 
         <div className="graphicContainer">
           {projectList}

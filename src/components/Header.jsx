@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 import '../css/header.css';
 
 class Header extends Component {
@@ -10,50 +11,51 @@ class Header extends Component {
     };
   }
   componentDidMount = () => {
-    let nav = document.getElementsByClassName('navigation')[0];
-    if(this.props.page === '') nav.style.boxShadow = '0 0 10px #fff';
-    else if(this.props.page === 'web') nav.style.boxShadow = '0 0 10px #00f';
-    else if(this.props.page === 'graphic') nav.style.boxShadow = '0 0 10px #f00';
-    else if(this.props.page === 'media') nav.style.boxShadow = '0 0 10px #0f0';
+    const { pathname } = this.props.location;
+    let nav = document.querySelector('#nav');
+    if(pathname.includes('web')) nav.style.boxShadow = '0 0 10px #00f';
+    else if(pathname.includes('graphic')) nav.style.boxShadow = '0 0 10px #f00';
+    else if(pathname.includes('media')) nav.style.boxShadow = '0 0 10px #0f0';
+    else nav.style.boxShadow = '0 0 10px #fff';
   }
 
-  hover = (page) => {
-    let nav = document.getElementsByClassName('navigation')[0];
-    if(page === '') nav.style.boxShadow = '0 0 10px #fff';
-    else if(page === 'web') nav.style.boxShadow = '0 0 10px #00f';
-    else if(page === 'graphic') nav.style.boxShadow = '0 0 10px #f00';
-    else if(page === 'media') nav.style.boxShadow = '0 0 10px #0f0';
+  hover = (link) => {
+    let nav = document.querySelector('#nav');
+    if(link === 'web') nav.style.boxShadow = '0 0 10px #00f';
+    else if(link === 'graphic') nav.style.boxShadow = '0 0 10px #f00';
+    else if(link === 'media') nav.style.boxShadow = '0 0 10px #0f0';
+    else nav.style.boxShadow = '0 0 10px #fff';
   }
-  exit = (page) => {
-    let nav = document.getElementsByClassName('navigation')[0];
-    if(page === '') nav.style.boxShadow = '0 0 10px #fff';
-    else if(page === 'web') nav.style.boxShadow = '0 0 10px #00f';
-    else if(page === 'graphic') nav.style.boxShadow = '0 0 10px #f00';
-    else if(page === 'media') nav.style.boxShadow = '0 0 10px #0f0';
+  exit = (link) => {
+    let nav = document.querySelector('#nav');
+    if(link.includes('web')) nav.style.boxShadow = '0 0 10px #00f';
+    else if(link.includes('graphic')) nav.style.boxShadow = '0 0 10px #f00';
+    else if(link.includes('media')) nav.style.boxShadow = '0 0 10px #0f0';
+    else nav.style.boxShadow = '0 0 10px #fff';
   }
   
   render() {
-    let page = this.props.page;
+    const { location: { pathname } } = this.props;
 
     return (
       <ul data-aos="fade-down" data-aos-offset="0" id="nav"
         className={`navigation ${ this.state.scrollingLock ? 'sticky' : ''}`}
        >
-        <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('')}>
-          <Link className={`${(page === '') ? "active" : ''} navLink`} to="/">Home</Link>
+        <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('/')}>
+          <Link className={`${(pathname === '/') ? "active" : ''} navLink`} to="/">Home</Link>
         </li>
-        <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('web')}>
-          <Link className={`${(page === 'web') ? "active-blue" : ''} navLink blue`} to="/web">Web</Link>
+        <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('web')}>
+          <Link className={`${(pathname.includes('web')) ? "active-blue" : ''} navLink blue`} to="/web">Web</Link>
         </li>
-        <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('graphic')}>
-          <Link className={`${(page === 'graphic') ? "active-red" : ''} navLink red`} to="/graphic">Graphic</Link>
+        <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('graphic')}>
+          <Link className={`${(pathname.includes('graphic')) ? "active-red" : ''} navLink red`} to="/graphic">Graphic</Link>
         </li>
-        <li onMouseLeave={()=>this.exit(page)} onMouseEnter={()=>this.hover('media')}>
-          <Link className={`${(page === 'media') ? "active-green" : ''} navLink green`} to="/media">Media</Link>
+        <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('media')}>
+          <Link className={`${(pathname.includes('media')) ? "active-green" : ''} navLink green`} to="/media">Media</Link>
         </li>
       </ul>
     );
   }
 }
 
-export default Header;
+export default withRouter(Header);

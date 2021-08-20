@@ -7,7 +7,7 @@ class Web extends Component {
   render() {
     return (
       <div className="App">
-        <Header page="web"/>
+        <Header/>
         <div className="hght-90-vh" style={{overflow: 'hidden'}}>
           <SlideShow data={webData}/>
         </div>

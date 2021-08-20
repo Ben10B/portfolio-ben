@@ -26,36 +26,33 @@
   display: inline-block;
   color: #fff;
   
-  padding: 5px 5px;
+  padding: 5px 26px;
   transition: background-color 0.5s, 
     transform 0.5s, 
-    font-weight 0.5s,
-    /* color 0.5s, */
-    border-radius 0.8s;
+    font-weight 0.5s;
 }
 .navigation .navLink:link { color: #fff;
 }
 .navigation .navLink:visited { color: #fff;
 }
-.navigation .navLink:hover, .navigation .active, .navigation .active-blue, .navigation .active-green, .active-red {
+.navLink:hover, .active, .active-blue, .active-green, .active-red {
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.315);
   cursor: pointer;
   box-shadow: 0 0 5px #fff;
   transform: scale(1.1);
-  border-radius: 5px;
 }
-.navigation .blue:hover, .navigation .active-blue { 
+.blue:hover, .active-blue { 
   background-color: rgba(0, 0, 255, 0.315);
-  box-shadow: 0 0 5px #00f;
+  box-shadow: 0 0 3px #00f;
 }
-.navigation .red:hover, .navigation .active-red { 
+.red:hover, .active-red { 
   background-color: rgba(255, 0, 0, 0.315);
-  box-shadow: 0 0 5px #f00;
+  box-shadow: 0 0 3px #f00;
 }
-.navigation .green:hover, .navigation .active-green { 
+.green:hover, .active-green { 
   background-color: rgba(0, 255, 0, 0.315);
-  box-shadow: 0 0 5px #0f0;
+  box-shadow: 0 0 3px #0f0;
 }
 .navigation .active { transform: scale(1);
 }

@@ -9,7 +9,7 @@ class Media extends Component {
   render() {
     return (
       <div className="App">
-        <Header page="media"/>
+        <Header/>
         <div className="hght-90-vh" style={{overflow: 'hidden'}}>
           <SlideShow data={mediaData}/>
         </div>

@@ -31,6 +31,7 @@
   border: none;
   text-align: center;
   border-radius: 0;
+  cursor: pointer;
 }
 .accordion .btn::before, 
 .accordion .btn-2::before {
@@ -47,18 +48,22 @@
   color: #000;
   background: #fff;
 }
+.accordion .btn label {
+  margin-left: 8px;
+  cursor: pointer;
+}
 .accordion .btn i, 
 .accordion .btn-2 i {
   margin-right: 10px;
 }
-.accordion .smenu, 
-.accordion .ssmenu {
+.smenu, 
+.ssmenu {
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.3s;
 }
-.accordion .smenu .lvl2,
-.accordion .ssmenu .lvl3 {
+.smenu .lvl2,
+.ssmenu .lvl3 {
   display: block;
   padding: 16px 26px;
   color: white;
@@ -67,17 +72,17 @@
   cursor: pointer;
   transition: padding-left 0.3s;
 }
-.accordion .smenu .lvl2:hover,
-.accordion .ssmenu .lvl3:hover {
+.smenu .lvl2:hover,
+.ssmenu .lvl3:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
-.accordion .smenu .lvl2.active,
-.accordion .ssmenu .lvl3.active {
+.smenu .lvl2.active,
+.ssmenu .lvl3.active {
   background-color: rgba(0, 0, 0, 0.4);
   padding-left: 40px;
 }
-.accordion .smenu .lvl2::before,
-.accordion .ssmenu .lvl3::before {
+.smenu .lvl2::before,
+.ssmenu .lvl3::before {
   content: "";
   position: absolute;
   width: 6px;
@@ -88,8 +93,8 @@
   transition: .3s;
   opacity: 0;
 }
-.accordion .smenu .lvl2:hover::before, 
-.accordion .ssmenu .lvl3:hover::before {
+.smenu .lvl2:hover::before, 
+.ssmenu .lvl3:hover::before {
   opacity: 1;
 }
 .accordion .item:target .smenu {
@@ -97,4 +102,17 @@
 }
 .accordion .item:target .item-2 input:checked ~ .ssmenu {
   max-height: 100em;
+}
+@media (max-width: 400px) {
+  .accordion .btn label {
+    display: none;
+  }
+  .smenu .lvl2,
+  .ssmenu .lvl3 {
+    padding-left: 10px;
+  }
+  .smenu .lvl2.active,
+  .ssmenu .lvl3.active {
+    padding-left: 15px;
+  }
 }

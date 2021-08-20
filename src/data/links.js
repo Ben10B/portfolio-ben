@@ -1,9 +1,35 @@
 export const DRAWER_LINKS = [
   {
+    id: 'themes',
+    label: 'Select Theme',
+    icon: 'brush',
+    href: '#themes',
+    lvl2: [
+      {
+        id: 'theme',
+        label: 'Default',
+        value: '1'
+      }
+    ]
+  },
+  {
+    id: 'menu',
+    label: 'Menu',
+    icon: 'bars',
+    href: '#menu',
+    lvl2: [
+      {
+        id: 'menu',
+        value: '1m',
+        label: 'Default'
+      }
+    ]
+  },
+  {
     id: 'parallaxes',
     label: 'Parallax',
     icon: 'film',
-    href: '/#parallaxes',
+    href: '#parallaxes',
     lvl3: true,
     lvl2: [
       {
@@ -40,6 +66,26 @@ export const DRAWER_LINKS = [
           },
           {
             id: 'slideshow',
+            value: 'PX-4',
+            label: 'Destroyed Bridge'
+          },
+          {
+            id: 'slideshow',
+            value: 'PX-5',
+            label: 'Gas Station'
+          },
+          {
+            id: 'slideshow',
+            value: 'PX-7',
+            label: 'Water Fountain'
+          },
+          {
+            id: 'slideshow',
+            value: 'PX-8',
+            label: 'River'
+          },
+          {
+            id: 'slideshow',
             value: 'PX-10',
             label: 'Dragon Stage'
           },
@@ -51,35 +97,22 @@ export const DRAWER_LINKS = [
     id: 'bgs',
     label: 'Backgrounds',
     icon: 'images',
-    href: '/#bgs',
+    href: '#bgs',
     lvl2: [
       {
         id: 'bg',
         value: 'BG-1',
-        label: '1'
+        label: 'Default'
       },
       {
         id: 'bg',
         value: 'BG-2',
-        label: '2'
+        label: 'Leaves'
       },
       {
         id: 'bg',
         value: 'BG-3',
-        label: '3'
-      }
-    ]
-  },
-  {
-    id: 'themes',
-    label: 'Select Theme',
-    icon: 'brush',
-    href: '/#themes',
-    lvl2: [
-      {
-        id: 'theme',
-        label: 'Default',
-        value: '1'
+        label: 'Wood'
       }
     ]
   },
@@ -87,6 +120,6 @@ export const DRAWER_LINKS = [
     id: 'close',
     label: 'Collapse',
     icon: 'times',
-    href: '/#close'
+    href: '#close'
   },
 ];

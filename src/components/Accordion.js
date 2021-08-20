@@ -30,8 +30,9 @@ const Accordion = ({ links, updateBackground, updateTheme, updateParallax, setti
         <ul>
           {links.map(x => (
             <li key={x.id} className="item" id={x.id}>
-              <a href={x.href} className="btn">
-                <FontAwesomeIcon icon={x.icon}/> {x.label}
+              <a href={`${x.href}`} className="btn">
+                <FontAwesomeIcon icon={x.icon}/>
+                <label>{x.label}</label>
               </a>
               {x.lvl2 && (
                 <div className="smenu">

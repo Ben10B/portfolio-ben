@@ -22,14 +22,14 @@
 .drawer-btn.open:hover {
   background-color: #f00;
 }
-.drawer-btn.open .bars {
+.drawer-btn.open .edit {
   color: #fff;
   -moz-animation: tilt 2s infinite linear;
   -webkit-animation: tilt 2s infinite linear;
   -o-animation: tilt 2s infinite linear;
   animation: tilt 2s infinite linear;
 }
-.drawer-btn.open:hover .bars {
+.drawer-btn.open:hover .edit {
   animation-duration: .5s;
 }
 @-moz-keyframes tilt {
@@ -69,4 +69,12 @@
 }
 .drawer.open {
   right: 0;
+}
+@media (max-width: 400px) {
+  .drawer-btn.open {
+    right: calc(125px + 5px);
+  }
+  .drawer {
+    right: -125px; width: 125px;
+  }
 }
