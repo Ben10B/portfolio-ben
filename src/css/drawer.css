@@ -7,7 +7,7 @@
   cursor: pointer;
   box-shadow: 0 0 5px #fff;
   background-color: rgba(255, 255, 255, 0.315);
-  transition: right 0.2s, background .2s;
+  transition: right 0.2s, background-color .2s;
 }
 .drawer-btn:hover {
   background-color: #fff;

@@ -13,10 +13,43 @@ export const DRAWER_LINKS = [
     ]
   },
   {
-    id: 'menu',
-    label: 'Menu',
+    id: 'bgs',
+    label: 'Backgrounds',
+    icon: 'image',
+    href: '#bgs',
+    lvl2: [
+      {
+        id: 'bg',
+        value: 'BG-1',
+        label: 'Default'
+      },
+      {
+        id: 'bg',
+        value: 'BG-2',
+        label: 'Leaves'
+      },
+      {
+        id: 'bg',
+        value: 'BG-3',
+        label: 'Wood'
+      },
+      {
+        id: 'bg',
+        value: 'BG-4',
+        label: 'SSJ/SSB Goku'
+      },
+      {
+        id: 'bg',
+        value: 'BG-5',
+        label: 'UI Goku'
+      }
+    ]
+  },
+  {
+    id: 'header',
+    label: 'Header',
     icon: 'bars',
-    href: '#menu',
+    href: '#header',
     lvl2: [
       {
         id: 'menu',
@@ -90,29 +123,6 @@ export const DRAWER_LINKS = [
             label: 'Dragon Stage'
           },
         ]
-      }
-    ]
-  },
-  {
-    id: 'bgs',
-    label: 'Backgrounds',
-    icon: 'images',
-    href: '#bgs',
-    lvl2: [
-      {
-        id: 'bg',
-        value: 'BG-1',
-        label: 'Default'
-      },
-      {
-        id: 'bg',
-        value: 'BG-2',
-        label: 'Leaves'
-      },
-      {
-        id: 'bg',
-        value: 'BG-3',
-        label: 'Wood'
       }
     ]
   },
