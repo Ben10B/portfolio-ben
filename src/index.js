@@ -5,6 +5,13 @@ import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import store from './config/store';
 import App from './App';
+import { presetSettings, loadSettings, setSettingsLoading } from './actions/settingsActions';
+
+store.dispatch(setSettingsLoading());
+if(!localStorage.getItem('portfolioSettings')) store.dispatch(presetSettings());
+else store.dispatch(loadSettings());
+
+
 const app = (
   <Provider store={store}>
     <BrowserRouter>

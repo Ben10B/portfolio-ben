@@ -21,6 +21,18 @@ export const updateParallax = (parallax) => dispatch => {
   })
 }
 
+export const presetSettings = () => dispatch => {
+  dispatch({
+    type: 'PRESET_SETTINGS_STATE'
+  })
+}
+
+export const loadSettings = () => dispatch => {
+  dispatch({
+    type: 'LOAD_SETTINGS_STATE'
+  })
+}
+
 export const setSettingsLoading = () => {
   return {
     type: 'SETTINGS_LOADING'

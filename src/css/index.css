@@ -33,3 +33,21 @@ code {
 .BG-5 {
   background-image: url('../assets/ui-goku.jpg');
 }
+.BG-6 {
+  background-image: url('../assets/orihime-kon.png');
+}
+.BG-7 {
+  background-image: url('../assets/yoruichi.jpg');
+}
+.BG-8 {
+  background-image: url('../assets/ichigo-fullbring-arc.jpg');
+}
+.BG-8 .landing-parallaxx h1, 
+.BG-8 .fight-parallaxx, .BG-8 .fight-parallaxx div,
+.BG-8 .parallaxx,
+.BG-8 #me div,
+.BG-8 #resume, .BG-8 .moveToBtn,
+.BG-8 #slideShowContainer .prev, .BG-8 #slideShowContainer .next,
+.BG-8 .cards-slider-wrapper .card .title {
+  color: #000 !important;
+}

@@ -42,6 +42,21 @@ export const DRAWER_LINKS = [
         id: 'bg',
         value: 'BG-5',
         label: 'UI Goku'
+      },
+      {
+        id: 'bg',
+        value: 'BG-6',
+        label: 'Orihime'
+      },
+      {
+        id: 'bg',
+        value: 'BG-7',
+        label: 'Yoruichi'
+      },
+      {
+        id: 'bg',
+        value: 'BG-8',
+        label: 'Fullbring Ichigo'
       }
     ]
   },
@@ -79,6 +94,11 @@ export const DRAWER_LINKS = [
             id: 'landing',
             value: 'PX-1B',
             label: 'Mountaintop (Night)'
+          },
+          {
+            id: 'landing',
+            value: 'NONE-L',
+            label: 'None'
           }
         ]
       },
@@ -122,6 +142,11 @@ export const DRAWER_LINKS = [
             value: 'PX-10',
             label: 'Dragon Stage'
           },
+          {
+            id: 'slideshow',
+            value: 'NONE-S',
+            label: 'None'
+          }
         ]
       }
     ]

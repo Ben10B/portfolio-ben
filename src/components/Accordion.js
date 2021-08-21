@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Accordion = ({ links, updateBackground, updateTheme, updateParallax, settings }) => {
   const handleClick = (item) => {
-    console.log(item.value)
     switch(item.id) {
       case 'bg': updateBackground(item.value); break;
       case 'theme': updateTheme(item.value); break;

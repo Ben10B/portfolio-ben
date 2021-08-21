@@ -42,6 +42,8 @@
 .landing-parallaxx h1 {
   box-shadow: 0 0 50px #fff;
 }
+.NONE-L, .NONE-S, .NONE-B { background-image: url('../assets/Fight.gif');
+}
 .PX-1 { background-image: url('../assets/Fight.gif'), 
   url('../assets/BG1.gif');
 }

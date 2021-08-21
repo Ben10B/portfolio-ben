@@ -11,6 +11,9 @@
 .next:hover, .prev:hover{
   background-color: rgba(255, 255, 255, 0.226);
 }
+.BG-8 .next:hover, .BG-8 .prev:hover{
+  background-color: rgba(0, 0, 0, 0.226);
+}
 #code{
   margin-top: 5%;
   text-align: center;
@@ -23,6 +26,9 @@
   background-color: #fff;
   border-radius: 50%;
   display: inline-block;
+}
+.BG-8 .indicator {
+  background-color: #000;
 }
 .indicator.active {
   border: 0.5px dashed #fff;
@@ -42,3 +48,6 @@
   box-shadow: -5px 0 15px 15px rgba(255, 255, 255, 0.226),
               0 0 10px 1px #000;
 } */
+.BG-8 #slideShowContainer .card {
+  border-color: rgba(0, 0, 0, 0.226);
+}
