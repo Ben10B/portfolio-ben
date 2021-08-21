@@ -117,7 +117,7 @@
 .vert-center{
   justify-content: center;
 }
-.skill-container {
+.skill-section {
   display: flex;
   flex-direction: row;
 }

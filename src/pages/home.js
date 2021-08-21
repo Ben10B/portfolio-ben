@@ -62,7 +62,7 @@ class Home extends Component {
           <SlideShow data={mainData}/>
         </div>
         
-        <div data-aos="fade-right" data-aos-duration="1500" className="fight-parallaxx fnt-white row hght-90-vh skill-container">
+        <div data-aos="fade-right" data-aos-duration="1500" className="fight-parallaxx fnt-white row hght-90-vh skill-section">
           <ul className="skills blue">
             <li><h3>Web</h3></li>
             <li><p>HTML5</p></li>
