@@ -17,7 +17,7 @@ AOS.init();
 library.add([faBars, faAngleDoubleDown, faFileDownload, faCode, faUser, faBrush, faPalette, faFilm, faImage, faImages, faTimes, faEdit]);
 
 function App({ settings }) {
-  let bodyRef = useRef(null);
+  const bodyRef = useRef(null);
   const [showDrawer, setDrawer] = useState(false);
   const open = () => setDrawer(prevShowDrawer => !prevShowDrawer);
   return (
