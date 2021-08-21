@@ -3,34 +3,27 @@ import { Link, withRouter } from 'react-router-dom';
 import '../css/header.css';
 
 class Header extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      scrollingLock: false
-    };
-  }
+  state = { scrollingLock: false };
   componentDidMount = () => {
     const { pathname } = this.props.location;
     let nav = document.querySelector('#nav');
     if(pathname.includes('web')) nav.style.boxShadow = '0 0 10px #00f';
     else if(pathname.includes('graphic')) nav.style.boxShadow = '0 0 10px #f00';
     else if(pathname.includes('media')) nav.style.boxShadow = '0 0 10px #0f0';
-    else nav.style.boxShadow = '0 0 10px #fff';
   }
-
   hover = (link) => {
     let nav = document.querySelector('#nav');
     if(link === 'web') nav.style.boxShadow = '0 0 10px #00f';
     else if(link === 'graphic') nav.style.boxShadow = '0 0 10px #f00';
     else if(link === 'media') nav.style.boxShadow = '0 0 10px #0f0';
-    else nav.style.boxShadow = '0 0 10px #fff';
+    else nav.style = "";
   }
   exit = (link) => {
     let nav = document.querySelector('#nav');
     if(link.includes('web')) nav.style.boxShadow = '0 0 10px #00f';
     else if(link.includes('graphic')) nav.style.boxShadow = '0 0 10px #f00';
     else if(link.includes('media')) nav.style.boxShadow = '0 0 10px #0f0';
-    else nav.style.boxShadow = '0 0 10px #fff';
+    else nav.style = "";
   }
   
   render() {

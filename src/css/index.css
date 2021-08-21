@@ -15,39 +15,3 @@ body {
 .body {
   position: relative;
 }
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-.BG-1 {
-  background-image: url('../assets/footer_lodyas.png');
-}
-.BG-2 {
-  background-image: url('../assets/50-Beautiful-and-Minimalist-Presentation-Backgrounds-04.jpg');
-}
-.BG-3 {
-  background-image: url('../assets/wood.jpg');
-}
-.BG-4 {
-  background-image: url('../assets/ssj-ssb-goku.png');
-}
-.BG-5 {
-  background-image: url('../assets/ui-goku.jpg');
-}
-.BG-6 {
-  background-image: url('../assets/orihime-kon.png');
-}
-.BG-7 {
-  background-image: url('../assets/yoruichi.jpg');
-}
-.BG-8 {
-  background-image: url('../assets/ichigo-fullbring-arc.jpg');
-}
-.BG-8 .landing-parallaxx h1, 
-.BG-8 .fight-parallaxx, .BG-8 .fight-parallaxx div,
-.BG-8 .parallaxx,
-.BG-8 #me div,
-.BG-8 #resume, .BG-8 .moveToBtn,
-.BG-8 #slideShowContainer .prev, .BG-8 #slideShowContainer .next,
-.BG-8 .cards-slider-wrapper .card .title {
-  color: #000 !important;
-}

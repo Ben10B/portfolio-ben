@@ -1,10 +1,9 @@
 const initialState = {
-  theme: {},
+  theme: 'dark',
   header: {},
   parallaxes: {
     landing: 'PX-1',
-    slideshow: 'PX-10', 
-    both: ''
+    slideshow: 'PX-10'
   },
   background: 'BG-1',
   loading: false
@@ -31,10 +30,12 @@ const settingsReducer = (state = initialState, action) => {
         loading: true
       };
     case 'UPDATE_THEME':
-      return {
+      const THEME = {
         ...state,
         theme: action.payload
       };
+      localStorage.setItem('portfolioSettings', JSON.stringify(THEME));
+      return THEME;
     case 'UPDATE_BACKGROUND':
       const BG = {
         ...state,
@@ -50,10 +51,12 @@ const settingsReducer = (state = initialState, action) => {
       localStorage.setItem('portfolioSettings', JSON.stringify(PARALLAX));
       return PARALLAX;
     case 'UPDATE_HEADER':
-      return {
+      const HEADER = {
         ...state,
         header: action.payload
       };
+      localStorage.setItem('portfolioSettings', JSON.stringify(HEADER));
+      return HEADER;
     default: 
       return state;
   }

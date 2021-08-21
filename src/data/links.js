@@ -2,13 +2,18 @@ export const DRAWER_LINKS = [
   {
     id: 'themes',
     label: 'Select Theme',
-    icon: 'brush',
+    icon: 'adjust',
     href: '#themes',
     lvl2: [
       {
         id: 'theme',
-        label: 'Default',
-        value: '1'
+        label: 'Dark',
+        value: 'DARK'
+      },
+      {
+        id: 'theme',
+        label: 'Light',
+        value: 'LIGHT'
       }
     ]
   },
@@ -57,19 +62,6 @@ export const DRAWER_LINKS = [
         id: 'bg',
         value: 'BG-8',
         label: 'Fullbring Ichigo'
-      }
-    ]
-  },
-  {
-    id: 'header',
-    label: 'Header',
-    icon: 'bars',
-    href: '#header',
-    lvl2: [
-      {
-        id: 'menu',
-        value: '1m',
-        label: 'Default'
       }
     ]
   },
@@ -148,6 +140,19 @@ export const DRAWER_LINKS = [
             label: 'None'
           }
         ]
+      }
+    ]
+  },
+  {
+    id: 'header',
+    label: 'Header',
+    icon: 'bars',
+    href: '#header',
+    lvl2: [
+      {
+        id: 'menu',
+        value: '1m',
+        label: 'Default'
       }
     ]
   },

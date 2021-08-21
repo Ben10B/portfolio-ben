@@ -15,8 +15,9 @@ const Accordion = ({ links, updateBackground, updateTheme, updateParallax, setti
     }
   }
   const handleActive = (item) => {
-    const { background, parallaxes } = settings;
+    const { background, parallaxes, theme } = settings;
     switch(item.value) {
+      case theme: return 'active';
       case background: return 'active';
       case parallaxes.landing: return 'active';
       case parallaxes.slideshow: return 'active';

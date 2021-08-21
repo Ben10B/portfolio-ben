@@ -13,6 +13,7 @@
   background-color: #fff;
 }
 .drawer-btn.open {
+  border-left: .5px solid #fff;
   right: calc(200px + 5px);
   box-shadow: 0 0 5px #f00;
   background-color: rgba(255, 0, 0, 0.315);
@@ -58,6 +59,7 @@
   right: -200px;
   width: 200px;
   height: 100%;
+  border-left: .5px solid #fff;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);

@@ -1,0 +1,50 @@
+.LIGHT {
+  .navigation {
+    border-bottom: 1px solid #fff;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #000;
+    .navLink, .navLink:link, .navLink:visited { color: #000;
+    }
+    .navLink:not(.red):not(.green):not(.blue):hover, .active { background-color: rgba(0, 0, 0, 0.315); box-shadow: 0 0 5px #000;
+    }
+  }
+  .landing-parallaxx h1, 
+  .fight-parallaxx, .fight-parallaxx div,
+  .parallaxx,
+  #me div,
+  #resume, .moveToBtn,
+  #slideShowContainer .prev, #slideShowContainer .next,
+  .cards-slider-wrapper .card .title { color: #000 !important;
+  }
+  .indicator { background-color: #000;
+  }
+  #slideShowContainer .card { border-color: rgba(0, 0, 0, 0.226);
+  }
+  .drawer-btn {
+    box-shadow: 0 0 5px #000;
+    background-color: rgba(0, 0, 0, 0.315);
+    &:hover { background-color: #000;
+    }
+    & .edit { color: #fff; 
+    }
+  }
+  .drawer {
+    &.open { 
+      border-left: .5px solid #000;
+      .accordion {
+        .btn, .btn::before { background: #fff;
+        }
+        .btn-2, .btn-2::before { color: #fff;
+        }
+        .lvl2, .lvl3, .btn, .btn::before { color: #000; 
+        }
+        .lvl2::before, .lvl3::before, .btn-2, .btn-2::before { background: #000; 
+        }
+        .lvl2:hover, .lvl3:hover { background-color: rgba(255, 255, 255, 0.2);
+        }
+        .lvl2.active, .lvl3.active { background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+  }
+}
