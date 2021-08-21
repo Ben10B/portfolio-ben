@@ -117,7 +117,11 @@
 .vert-center{
   justify-content: center;
 }
-.skills{
+.skill-container {
+  display: flex;
+  flex-direction: row;
+}
+.skills {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,14 +130,21 @@
   transition: background-color 1s, box-shadow 1s;
 }
 @media all and (max-width: 575px){
-  .skills{
-    flex-direction: row;
-    flex-wrap: wrap;
+  .skill-container {
+    flex-direction: column;
   }
+  .skills { flex-wrap: wrap;
+  }
+  .skills li { width: 100%;
+  }
+}
+.skills li {
+  display: flex;
+  align-items: center;
 }
 .skills li p{
   border: 2px ridge #fff;
-  padding: 5px;
+  padding: 2%;
   border-radius: 10px;
   border-left: 5px ridge rgba(255, 255, 255, 0.329);
   transition: border 0.4s, color 0.4s;

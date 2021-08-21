@@ -62,27 +62,27 @@ class Home extends Component {
           <SlideShow data={mainData}/>
         </div>
         
-        <div data-aos="fade-right" data-aos-duration="1500" className="fight-parallaxx fnt-white row hght-90-vh vert-center">
-            <ul className="skills blue">
-              <li><h3>Web</h3></li>
-              <li><p>HTML5</p></li>
-              <li><p>JavaScript</p></li>
-              <li><p>Shopify Liquid</p></li>
-              <li><p>React/React Native</p></li>
-              <li><p>Express.js</p></li>
-              <li><p>Node.js</p></li>
-            </ul>
-            <ul className="skills red">
-              <li><h3>Graphic</h3></li>
-              <li><p>Adobe Illustrator CC</p></li>
-              <li><p>Adobe Photoshop CC</p></li>
-              <li><p>Adobe InDesign CC</p></li>
-            </ul>
-            <ul className="skills green">
-              <li><h3>Media</h3></li>
-              <li><p>Adobe Premiere Pro CC</p></li>
-              <li><p>Adobe After Effects CC</p></li>
-            </ul>
+        <div data-aos="fade-right" data-aos-duration="1500" className="fight-parallaxx fnt-white row hght-90-vh skill-container">
+          <ul className="skills blue">
+            <li><h3>Web</h3></li>
+            <li><p>HTML5</p></li>
+            <li><p>JavaScript</p></li>
+            <li><p>Shopify Liquid</p></li>
+            <li><p>React/React Native</p></li>
+            <li><p>Express.js</p></li>
+            <li><p>Node.js</p></li>
+          </ul>
+          <ul className="skills red">
+            <li><h3>Graphic</h3></li>
+            <li><p>Adobe Illustrator CC</p></li>
+            <li><p>Adobe Photoshop CC</p></li>
+            <li><p>Adobe InDesign CC</p></li>
+          </ul>
+          <ul className="skills green">
+            <li><h3>Media</h3></li>
+            <li><p>Adobe Premiere Pro CC</p></li>
+            <li><p>Adobe After Effects CC</p></li>
+          </ul>
         </div>
 
         <section id="me" data-aos="flip-right" data-aos-duration="1500" className="hght-90-vh row fight-parallaxx">
