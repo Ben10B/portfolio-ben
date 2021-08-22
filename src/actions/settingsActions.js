@@ -21,6 +21,20 @@ export const updateParallax = (parallax) => dispatch => {
   })
 }
 
+export const updateAudio = (audio) => dispatch => {
+  dispatch({
+    type: 'UPDATE_AUDIO',
+    payload: audio
+  })
+}
+
+export const updateHeader = (header) => dispatch => {
+  dispatch({
+    type: 'UPDATE_HEADER',
+    payload: header
+  })
+}
+
 export const presetSettings = () => dispatch => {
   dispatch({
     type: 'PRESET_SETTINGS_STATE'

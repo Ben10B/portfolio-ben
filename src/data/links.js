@@ -144,6 +144,44 @@ export const DRAWER_LINKS = [
     ]
   },
   {
+    id: 'audio',
+    label: 'Music',
+    icon: 'music',
+    href: '#audio',
+    lvl3: true,
+    lvl2: [
+      {
+        id: 'songs',
+        label: 'Songs',
+        value: 'songs',
+        lvl3: [
+          {
+            id: 'song',
+            label: 'Default',
+            value: 'default'
+          }
+        ]
+      },
+      {
+        id: 'controls',
+        label: 'Controls',
+        value: 'controls',
+        lvl3: [
+          {
+            id: 'control',
+            label: 'Play',
+            value: 'play'
+          },
+          {
+            id: 'control',
+            label: 'Pause',
+            value: 'pause'
+          }
+        ]
+      }
+    ]
+  },
+  {
     id: 'header',
     label: 'Header',
     icon: 'bars',

@@ -1,11 +1,15 @@
 const initialState = {
   theme: 'dark',
-  header: {},
+  background: 'BG-1',
   parallaxes: {
     landing: 'PX-1',
     slideshow: 'PX-10'
   },
-  background: 'BG-1',
+  audio: {
+    song: 'default',
+    control: 'pause'
+  },
+  header: {},
   loading: false
 };
 
@@ -50,6 +54,13 @@ const settingsReducer = (state = initialState, action) => {
       };
       localStorage.setItem('portfolioSettings', JSON.stringify(PARALLAX));
       return PARALLAX;
+    case 'UPDATE_AUDIO':
+      const AUDIO = {
+        ...state,
+        audio: { ...state.audio, ...action.payload }
+      };
+      localStorage.setItem('portfolioSettings', JSON.stringify(AUDIO));
+      return AUDIO;
     case 'UPDATE_HEADER':
       const HEADER = {
         ...state,

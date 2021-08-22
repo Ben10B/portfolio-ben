@@ -1,24 +1,28 @@
 import React from 'react';
 import '../css/accordion.css';
 import { connect } from 'react-redux';
-import { updateBackground, updateTheme, updateParallax } from '../actions/settingsActions';
+import { updateBackground, updateTheme, updateParallax, updateAudio, updateHeader } from '../actions/settingsActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Accordion = ({ links, updateBackground, updateTheme, updateParallax, settings }) => {
+const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updateAudio, updateHeader, settings }) => {
   const handleClick = (item) => {
     switch(item.id) {
-      case 'bg': updateBackground(item.value); break;
       case 'theme': updateTheme(item.value); break;
+      case 'bg': updateBackground(item.value); break;
+      case 'song': updateAudio({ song: item.value }); break;
+      case 'control': updateAudio({ control: item.value }); break;
       case 'landing': updateParallax({ landing: item.value }); break;
       case 'slideshow': updateParallax({ slideshow: item.value }); break;
       default: break;
     }
   }
   const handleActive = (item) => {
-    const { background, parallaxes, theme } = settings;
+    const { audio, background, parallaxes, theme } = settings;
     switch(item.value) {
       case theme: return 'active';
       case background: return 'active';
+      case audio.song: return 'active';
+      case audio.control: return 'active';
       case parallaxes.landing: return 'active';
       case parallaxes.slideshow: return 'active';
       default: break;
@@ -73,9 +77,11 @@ const mapStateToProps = (state) => {
 }
 const mapDispatchToProps = (dispatch, ownProps) => {
   return {
-    updateBackground: (ownProps) => dispatch(updateBackground(ownProps)),
     updateTheme: (ownProps) => dispatch(updateTheme(ownProps)),
+    updateAudio: (ownProps) => dispatch(updateAudio(ownProps)),
+    updateHeader: (ownProps) => dispatch(updateHeader(ownProps)),
     updateParallax: (ownProps) => dispatch(updateParallax(ownProps)),
+    updateBackground: (ownProps) => dispatch(updateBackground(ownProps)),
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Accordion);

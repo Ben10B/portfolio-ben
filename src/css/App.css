@@ -182,22 +182,3 @@
 }
 ::-webkit-scrollbar-thumb:hover { background-color: #d8d8d8;
 }
-
-/* ::-webkit-scrollbar-button:single-button {
-  background-color: rgba(255, 255, 255, 0.137);
-  display: block;
-  border-style: solid;
-  height: 8px;
-}
-::-webkit-scrollbar-button:single-button:vertical:increment {
-  border-width: 5px 5px 0 5px;
-  border-color: #fff transparent transparent transparent;
-}
-::-webkit-scrollbar-button:single-button:vertical:decrement {
-  border-width: 0 5px 5px 5px;
-  border-color: transparent transparent #fff transparent;
-}
-::-webkit-scrollbar-button:single-button:vertical:increment:hover,
-::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-  background-color: rgba(255, 255, 255, 0.288);
-} */

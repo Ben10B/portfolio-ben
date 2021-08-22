@@ -10,7 +10,7 @@ import './css/backgrounds.css';
 import './css/themes.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faAngleDoubleDown, faFileDownload, faCode, faUser, faBrush, 
-  faPalette, faFilm, faImage, faImages, faTimes, faEdit, faAdjust } from '@fortawesome/free-solid-svg-icons';
+  faPalette, faFilm, faImage, faImages, faTimes, faEdit, faAdjust, faMusic } from '@fortawesome/free-solid-svg-icons';
 import Routes from './Routes';
 import DrawerButton from './components/DrawerButton';
 import Drawer from './components/Drawer';
@@ -18,7 +18,7 @@ import { DRAWER_LINKS } from './data/links';
 
 AOS.init();
 library.add([faBars, faAngleDoubleDown, faFileDownload, faCode, faUser, faBrush, 
-  faPalette, faFilm, faImage, faImages, faTimes, faEdit, faAdjust]);
+  faPalette, faFilm, faImage, faImages, faTimes, faEdit, faAdjust, faMusic]);
 
 function App({ settings }) {
   const bodyRef = useRef(null);
