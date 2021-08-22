@@ -8,7 +8,7 @@ import App from './App';
 import './css/buttons.css';
 import Loader from './components/Loader';
 import SplashBtn from './components/SplashBtn';
-import { presetSettings, loadSettings, setSettingsLoading } from './actions/settingsActions';
+import { presetSettings, loadSettings, setSettingsLoading, updateSplash } from './actions/settingsActions';
 
 const app = (
   <Provider store={store}>
@@ -21,6 +21,8 @@ const app = (
 const Splash = () => {
   const [renderSplashScreen, setSplashScreen] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+  const [alwaysEnter, setAlwaysEnter] = useState(false);
+
   useEffect(() => {
     store.dispatch(setSettingsLoading());
     if(!localStorage.getItem('portfolioSettings')) store.dispatch(presetSettings());
@@ -29,13 +31,20 @@ const Splash = () => {
   useEffect(() => {
     if(store.getState()) setIsLoading(false);
   }, []);
+  useEffect(() => {
+    if(store.getState() && !store.getState().splash) setAlwaysEnter(true)
+  }, []);
   const enter = () => setSplashScreen(false);
+  const enterAlways = () => {
+    setSplashScreen(false);
+    store.dispatch(updateSplash());
+  }
   const splash = (
     <div className="hght-100-vh" style={{ position: 'relative' }}>
-      {isLoading ? <Loader/> : <SplashBtn click={enter}/>}
+      {isLoading ? <Loader/> : <SplashBtn click={enter} click2={enterAlways}/>}
     </div>
   );
-  return renderSplashScreen ? splash : app;
+  return renderSplashScreen && !alwaysEnter ? splash : app;
 }
 
 ReactDOM.render(<Splash/>, document.getElementById('root'));

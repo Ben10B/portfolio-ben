@@ -35,6 +35,12 @@ export const updateHeader = (header) => dispatch => {
   })
 }
 
+export const updateSplash = () => dispatch => {
+  dispatch({
+    type: 'UPDATE_SPLASH'
+  })
+}
+
 export const presetSettings = () => dispatch => {
   dispatch({
     type: 'PRESET_SETTINGS_STATE'

@@ -10,6 +10,7 @@ const initialState = {
     song: 'Wolfs Milk',
     control: 'hide'
   },
+  splash: true,
   header: {},
   loading: false
 };
@@ -90,6 +91,13 @@ const settingsReducer = (state = initialState, action) => {
       };
       localStorage.setItem('portfolioSettings', JSON.stringify(AUDIO));
       return AUDIO;
+    case 'UPDATE_SPLASH':
+      const SPLASH = {
+        ...state,
+        splash: false
+      };
+      localStorage.setItem('portfolioSettings', JSON.stringify(SPLASH));
+      return SPLASH;
     case 'UPDATE_HEADER':
       const HEADER = {
         ...state,
