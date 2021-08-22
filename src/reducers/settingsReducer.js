@@ -6,8 +6,8 @@ const initialState = {
     slideshow: 'PX-10'
   },
   audio: {
-    song: 'default',
-    control: 'pause'
+    song: 'Wolfs Milk',
+    control: 'hide'
   },
   header: {},
   loading: false

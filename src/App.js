@@ -14,6 +14,7 @@ import { faBars, faAngleDoubleDown, faFileDownload, faCode, faUser, faBrush,
 import Routes from './Routes';
 import DrawerButton from './components/DrawerButton';
 import Drawer from './components/Drawer';
+import AudioPlayer from './components/AudioPlayer2';
 import { DRAWER_LINKS } from './data/links';
 
 AOS.init();
@@ -28,6 +29,7 @@ function App({ settings }) {
     <div className={`body ${settings.theme}`} ref={bodyRef}>
       <DrawerButton bodyRef={bodyRef} open={showDrawer} onClick={open}/>
       <Drawer open={showDrawer} links={DRAWER_LINKS}/>
+      <AudioPlayer/>
       <Routes/>
     </div>
   );

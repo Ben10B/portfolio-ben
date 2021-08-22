@@ -1,4 +1,16 @@
+.DARK {
+  .audio-player {
+    color: #fff;
+    background-color: #000 !important;
+    svg, div { color: #fff; }
+  }
+}
 .LIGHT {
+  .audio-player {
+    svg, div { color: #000; }
+    .rhap_progress-filled, .rhap_progress-indicator, .rhap_volume-indicator { background-color: #000;
+    }
+  }
   .navigation {
     border-bottom: 1px solid #fff;
     background-color: #fff;
@@ -9,8 +21,7 @@
     }
   }
   .landing-parallaxx h1, 
-  .fight-parallaxx, .fight-parallaxx div,
-  .parallaxx,
+  .fight-parallaxx, .fight-parallaxx div, .parallaxx,
   #me div,
   #resume, .moveToBtn,
   #slideShowContainer .prev, #slideShowContainer .next,

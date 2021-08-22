@@ -157,8 +157,13 @@ export const DRAWER_LINKS = [
         lvl3: [
           {
             id: 'song',
-            label: 'Default',
-            value: 'default'
+            label: "Forgive Her",
+            value: "Forgive Her"
+          },
+          {
+            id: 'song',
+            label: "Wolf's Milk",
+            value: "Wolfs Milk"
           }
         ]
       },
@@ -169,13 +174,13 @@ export const DRAWER_LINKS = [
         lvl3: [
           {
             id: 'control',
-            label: 'Play',
-            value: 'play'
+            label: 'Show',
+            value: 'show'
           },
           {
             id: 'control',
-            label: 'Pause',
-            value: 'pause'
+            label: 'Hide',
+            value: 'hide'
           }
         ]
       }

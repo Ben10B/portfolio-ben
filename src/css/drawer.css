@@ -1,6 +1,6 @@
 .drawer-btn {
   position: fixed;
-  z-index: 99;
+  z-index: 100;
   padding: 8px;
   border-radius: 16px;
   right: 5px;
@@ -53,7 +53,7 @@
 }
 .drawer {
   position: fixed;
-  z-index: 98;
+  z-index: 100;
   display: flex;
   top: 0;
   right: -200px;
