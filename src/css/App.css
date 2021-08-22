@@ -18,7 +18,7 @@
   color: white;
 }
 
-.loader {
+.loader, .splash-btn {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,15 +31,24 @@
   color: #fff;
   font-size: 5em;
 }
-.loader .fan, .loader .door-open {
-  margin-right: 8px;
+.loader, .loader * {
+  cursor: wait;
 }
 .loader .fan {
-  animation: spin infinite 2s linear;
+  margin-right: 8px;
+  animation: spin infinite 1s linear;
 }
-.loader .door-open {
+.splash-btn .door-open {
   cursor: pointer;
-  animation: scaleandshrink infinite 1s linear;
+  animation: scaleandshrink infinite 2s linear;
+}
+.splash-btn #action-btn {
+  font-size: initial;
+  margin-top: 1em;
+  cursor: pointer;
+  text-align: center;
+  width: 250px;
+  line-height: 50px;
 }
 @keyframes spin {
   from { transform: rotate(0deg);

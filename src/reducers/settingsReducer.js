@@ -1,3 +1,4 @@
+import { DRAWER_LINKS } from "../data/links";
 const initialState = {
   theme: 'DARK',
   background: 'BG-1',
@@ -16,9 +17,26 @@ const initialState = {
 const checkProperties = (initial, storage) => {
   let a = Object.entries(initial), b = Object.entries(storage), result = {};
   for(let index = 0; index < a.length; index++) {
-    if(index < b.length && a[index][0] === b[index][0]) 
-      result[a[index][0]] = b[index][1];
-    else result[a[index][0]] = a[index][1];
+    const A_KEY = a[index][0];
+    if(index < b.length && A_KEY === b[index][0]) {
+      const B_VALUE = b[index][1],
+      B_VALUE_STRING = (typeof B_VALUE === "string") ? B_VALUE : null, 
+      B_VALUE_OBJ = (typeof B_VALUE === "object") ? B_VALUE : null;
+      let LVL2 = null, LVL3 = null;
+      if(B_VALUE_STRING) {
+        LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY && x.lvl2.find(y => y.value === B_VALUE_STRING)) ? true : null;
+      } 
+      else if(B_VALUE_OBJ) {
+        let counter = 0;
+        Object.values(B_VALUE_OBJ).forEach(b_value => {
+          if(DRAWER_LINKS.filter(x => x.id === A_KEY).filter(x => x.lvl3 && x.lvl2.filter(y => y.lvl3.find(z => z.value === b_value)))) 
+            counter++;
+        })
+        if(counter === Object.values(B_VALUE_OBJ).length) LVL3 = true;
+      }
+      result[A_KEY] = (LVL2 || LVL3) ? B_VALUE : a[index][1];
+    }
+    else result[A_KEY] = a[index][1];
   }
   return result;
 }

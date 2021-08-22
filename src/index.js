@@ -5,6 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import store from './config/store';
 import App from './App';
+import './css/buttons.css';
 import Loader from './components/Loader';
 import SplashBtn from './components/SplashBtn';
 import { presetSettings, loadSettings, setSettingsLoading } from './actions/settingsActions';
@@ -19,15 +20,19 @@ const app = (
 
 const Splash = () => {
   const [renderSplashScreen, setSplashScreen] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     store.dispatch(setSettingsLoading());
     if(!localStorage.getItem('portfolioSettings')) store.dispatch(presetSettings());
     else store.dispatch(loadSettings());
   });
+  useEffect(() => {
+    if(store.getState()) setIsLoading(false);
+  }, []);
   const enter = () => setSplashScreen(false);
   const splash = (
     <div className="hght-100-vh" style={{ position: 'relative' }}>
-      {!store.getState() ? <Loader/> : <SplashBtn click={enter}/>}
+      {isLoading ? <Loader/> : <SplashBtn click={enter}/>}
     </div>
   );
   return renderSplashScreen ? splash : app;

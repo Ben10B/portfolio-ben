@@ -6,8 +6,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add([faDoorOpen]);
 
 const Loader = ({ click }) => {
-  return <div className="loader">
-    <label onClick={click}><FontAwesomeIcon icon="door-open" className="door-open"/></label>
+  return <div data-aos="zoom-in" data-aos-duration="1000" className="splash-btn">
+    <label onClick={click}>
+      <FontAwesomeIcon icon="door-open" className="door-open"/>
+    </label>
+    <div id="action-btn">
+      <div className="cool-btn cool-btn-1">
+        <span>Always ENTER Upon Load</span>
+      </div>
+    </div>
   </div>
 }
 
