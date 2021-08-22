@@ -3,12 +3,10 @@
   min-width: 100%;
   /* font-family: "Dosis", sans-serif; */
 }
-
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -18,6 +16,36 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 5em;
+}
+.loader .fan, .loader .door-open {
+  margin-right: 8px;
+}
+.loader .fan {
+  animation: spin infinite 2s linear;
+}
+.loader .door-open {
+  cursor: pointer;
+  animation: scaleandshrink infinite 1s linear;
+}
+@keyframes spin {
+  from { transform: rotate(0deg);
+  }
+  to { transform: rotate(360deg);
+  }
 }
 .socialContainer{
   display: flex;

@@ -1,5 +1,5 @@
 const initialState = {
-  theme: 'dark',
+  theme: 'DARK',
   background: 'BG-1',
   parallaxes: {
     landing: 'PX-1',
@@ -13,6 +13,16 @@ const initialState = {
   loading: false
 };
 
+const checkProperties = (initial, storage) => {
+  let a = Object.entries(initial), b = Object.entries(storage), result = {};
+  for(let index = 0; index < a.length; index++) {
+    if(index < b.length && a[index][0] === b[index][0]) 
+      result[a[index][0]] = b[index][1];
+    else result[a[index][0]] = a[index][1];
+  }
+  return result;
+}
+
 const settingsReducer = (state = initialState, action) => {
   switch(action.type) {
     case 'PRESET_SETTINGS_STATE': 
@@ -22,7 +32,8 @@ const settingsReducer = (state = initialState, action) => {
         loading: false
       };
     case 'LOAD_SETTINGS_STATE': 
-      const item = JSON.parse(localStorage.getItem('portfolioSettings'));
+      let item = JSON.parse(localStorage.getItem('portfolioSettings'));
+      item = checkProperties(initialState, item);
       var body = document.querySelector('body'); body.className = item.background;
       return {
         ...item,
