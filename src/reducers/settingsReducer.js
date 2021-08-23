@@ -23,7 +23,7 @@ const checkProperties = (initial, storage) => {
       const B_VALUE = b[index][1],
       B_VALUE_STRING = (typeof B_VALUE === "string") ? B_VALUE : null, 
       B_VALUE_BOOLEAN = (typeof B_VALUE === "boolean") ? true : null, 
-      B_VALUE_OBJ = (typeof B_VALUE === "object") ? B_VALUE : null;
+      B_VALUE_OBJ = (typeof B_VALUE === "object" && Object.keys(B_VALUE).length > 0) ? B_VALUE : null;
       let LVL2 = null, LVL3 = null;
       if(B_VALUE_STRING) {
         LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY && x.lvl2.find(y => y.value === B_VALUE_STRING)) ? true : null;
