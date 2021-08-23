@@ -212,8 +212,13 @@ export const DRAWER_LINKS = [
     lvl2: [
       {
         id: 'menu',
-        value: '1m',
+        value: 'default',
         label: 'Default'
+      },
+      {
+        id: 'menu',
+        value: 'HEADER-2',
+        label: '2'
       }
     ]
   },

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { Link, withRouter } from 'react-router-dom';
 import '../css/header.css';
 
@@ -27,11 +28,11 @@ class Header extends Component {
   }
   
   render() {
-    const { location: { pathname } } = this.props;
+    const { location: { pathname }, settings: { header } } = this.props;
 
     return (
       <ul data-aos="fade-down" data-aos-offset="0" id="nav"
-        className={`navigation ${ this.state.scrollingLock ? 'sticky' : ''}`}
+        className={`navigation ${ this.state.scrollingLock ? 'sticky' : ''} ${header}`}
        >
         <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('/')}>
           <Link className={`${(pathname === '/') ? "active" : ''} navLink`} to="/">Home</Link>
@@ -50,4 +51,9 @@ class Header extends Component {
   }
 }
 
-export default withRouter(Header);
+const mapStateToProps = (state) => {
+  return {
+    settings: state.settings
+  }
+}
+export default connect(mapStateToProps, {})(withRouter(Header));

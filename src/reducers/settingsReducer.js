@@ -11,7 +11,7 @@ const initialState = {
     control: 'hide'
   },
   showSplash: true,
-  header: {},
+  header: 'default',
   loading: false
 };
 

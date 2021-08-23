@@ -4,6 +4,14 @@
     background-color: #000 !important;
     svg, div { color: #fff; }
   }
+  .drawer {
+    .accordion {
+      .item:hover .btn, .item:hover .btn::before { background-color: rgb(32, 32, 32);
+      }
+      .item-2:hover .btn-2, .item-2:hover .btn-2::before { background-color: rgb(189, 189, 189);
+      }
+    }
+  }
 }
 .LIGHT {
   .audio-player {
@@ -54,6 +62,10 @@
         .lvl2:hover, .lvl3:hover { background-color: rgba(255, 255, 255, 0.2);
         }
         .lvl2.active, .lvl3.active { background-color: rgba(255, 255, 255, 0.4);
+        }
+        .item:hover .btn, .item:hover .btn::before { background-color: rgb(189, 189, 189);
+        }
+        .item-2:hover .btn-2, .item-2:hover .btn-2::before { background-color: rgb(32, 32, 32);
         }
       }
     }

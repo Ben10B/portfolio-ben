@@ -4,12 +4,13 @@ import { connect } from 'react-redux';
 import { updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, updateHeader } from '../actions/settingsActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, settings }) => {
+const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, updateHeader, settings }) => {
   const handleClick = (item) => {
     switch(item.id) {
       case 'theme': updateTheme(item.value); break;
-      case 'showSplash': updateSplash(item.value); break;
       case 'bg': updateBackground(item.value); break;
+      case 'menu': updateHeader(item.value); break;
+      case 'showSplash': updateSplash(item.value); break;
       case 'song': updateAudio({ song: item.value }); break;
       case 'control': updateAudio({ control: item.value }); break;
       case 'landing': updateParallax({ landing: item.value }); break;
@@ -18,9 +19,10 @@ const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updat
     }
   }
   const handleActive = (item) => {
-    const { audio, background, parallaxes, showSplash, theme } = settings;
+    const { audio, background, header, parallaxes, showSplash, theme } = settings;
     switch(item.value) {
       case theme: return 'active';
+      case header: return 'active';
       case showSplash: return 'active';
       case background: return 'active';
       case audio.song: return 'active';
