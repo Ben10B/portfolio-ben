@@ -10,6 +10,10 @@ import Loader from './components/Loader';
 import SplashBtn from './components/SplashBtn';
 import { presetSettings, loadSettings, setSettingsLoading, updateSplash } from './actions/settingsActions';
 
+store.dispatch(setSettingsLoading());
+if(!localStorage.getItem('portfolioSettings')) store.dispatch(presetSettings());
+else store.dispatch(loadSettings());
+
 const app = (
   <Provider store={store}>
     <BrowserRouter>
@@ -20,33 +24,24 @@ const app = (
 
 const Splash = () => {
   const [renderSplashScreen, setRenderSplashScreen] = useState(true);
-  useEffect(() => {
-    store.dispatch(setSettingsLoading());
-    if(!localStorage.getItem('portfolioSettings')) store.dispatch(presetSettings());
-    else store.dispatch(loadSettings());
-  });
 
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    if(store.getState()) setIsLoading(false);
-  }, []);
+    let loading = store.getState().settings.loading;
+    if(isLoading !== loading) setIsLoading(false);
+  }, [isLoading]);
 
   const [showSplash, setShowSplash] = useState(true);
+  
   useEffect(() => {
-    function handleChange() {
-      let splash = store.getState().settings.showSplash;
-      if(showSplash !== splash) setShowSplash(splash);
-    }
-    const unsubscribe = store.subscribe(handleChange);
-    return () => {
-      unsubscribe();
-    }
+    let splash = store.getState().settings.showSplash;
+    if (showSplash !== splash) setShowSplash(splash);
   }, [showSplash]);
-
+  
   const enter = () => setRenderSplashScreen(false);
   const enterAlways = () => {
-    setRenderSplashScreen(false);
     store.dispatch(updateSplash(false));
+    setRenderSplashScreen(false);
   }
   const splash = (
     <div className="hght-100-vh" style={{ position: 'relative' }}>

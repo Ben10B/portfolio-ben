@@ -22,11 +22,15 @@ const checkProperties = (initial, storage) => {
     if(index < b.length && A_KEY === b[index][0]) {
       const B_VALUE = b[index][1],
       B_VALUE_STRING = (typeof B_VALUE === "string") ? B_VALUE : null, 
+      B_VALUE_BOOLEAN = (typeof B_VALUE === "boolean") ? true : null, 
       B_VALUE_OBJ = (typeof B_VALUE === "object") ? B_VALUE : null;
       let LVL2 = null, LVL3 = null;
       if(B_VALUE_STRING) {
         LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY && x.lvl2.find(y => y.value === B_VALUE_STRING)) ? true : null;
-      } 
+      }
+      else if(B_VALUE_BOOLEAN) {
+        LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY) ? true : null;
+      }  
       else if(B_VALUE_OBJ) {
         let counter = 0;
         Object.values(B_VALUE_OBJ).forEach(b_value => {
@@ -106,8 +110,7 @@ const settingsReducer = (state = initialState, action) => {
       };
       localStorage.setItem('portfolioSettings', JSON.stringify(HEADER));
       return HEADER;
-    default: 
-      return state;
+    default: return state;
   }
 }
 
