@@ -35,9 +35,10 @@ export const updateHeader = (header) => dispatch => {
   })
 }
 
-export const updateSplash = () => dispatch => {
+export const updateSplash = (showSplash) => dispatch => {
   dispatch({
-    type: 'UPDATE_SPLASH'
+    type: 'UPDATE_SPLASH',
+    payload: showSplash
   })
 }
 

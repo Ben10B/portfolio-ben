@@ -19,32 +19,41 @@ const app = (
 );
 
 const Splash = () => {
-  const [renderSplashScreen, setSplashScreen] = useState(true);
-  const [isLoading, setIsLoading] = useState(true);
-  const [alwaysEnter, setAlwaysEnter] = useState(false);
-
+  const [renderSplashScreen, setRenderSplashScreen] = useState(true);
   useEffect(() => {
     store.dispatch(setSettingsLoading());
     if(!localStorage.getItem('portfolioSettings')) store.dispatch(presetSettings());
     else store.dispatch(loadSettings());
   });
+
+  const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     if(store.getState()) setIsLoading(false);
   }, []);
+
+  const [showSplash, setShowSplash] = useState(true);
   useEffect(() => {
-    if(store.getState() && !store.getState().splash) setAlwaysEnter(true)
-  }, []);
-  const enter = () => setSplashScreen(false);
+    function handleChange() {
+      let splash = store.getState().settings.showSplash;
+      if(showSplash !== splash) setShowSplash(splash);
+    }
+    const unsubscribe = store.subscribe(handleChange);
+    return () => {
+      unsubscribe();
+    }
+  }, [showSplash]);
+
+  const enter = () => setRenderSplashScreen(false);
   const enterAlways = () => {
-    setSplashScreen(false);
-    store.dispatch(updateSplash());
+    setRenderSplashScreen(false);
+    store.dispatch(updateSplash(false));
   }
   const splash = (
     <div className="hght-100-vh" style={{ position: 'relative' }}>
       {isLoading ? <Loader/> : <SplashBtn click={enter} click2={enterAlways}/>}
     </div>
   );
-  return renderSplashScreen && !alwaysEnter ? splash : app;
+  return renderSplashScreen && showSplash ? splash : app;
 }
 
 ReactDOM.render(<Splash/>, document.getElementById('root'));

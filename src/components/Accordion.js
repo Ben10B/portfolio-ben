@@ -1,13 +1,14 @@
 import React from 'react';
 import '../css/accordion.css';
 import { connect } from 'react-redux';
-import { updateBackground, updateTheme, updateParallax, updateAudio, updateHeader } from '../actions/settingsActions';
+import { updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, updateHeader } from '../actions/settingsActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updateAudio, updateHeader, settings }) => {
+const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, settings }) => {
   const handleClick = (item) => {
     switch(item.id) {
       case 'theme': updateTheme(item.value); break;
+      case 'showSplash': updateSplash(item.value); break;
       case 'bg': updateBackground(item.value); break;
       case 'song': updateAudio({ song: item.value }); break;
       case 'control': updateAudio({ control: item.value }); break;
@@ -17,9 +18,10 @@ const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updat
     }
   }
   const handleActive = (item) => {
-    const { audio, background, parallaxes, theme } = settings;
+    const { audio, background, parallaxes, showSplash, theme } = settings;
     switch(item.value) {
       case theme: return 'active';
+      case showSplash: return 'active';
       case background: return 'active';
       case audio.song: return 'active';
       case audio.control: return 'active';
@@ -80,6 +82,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     updateTheme: (ownProps) => dispatch(updateTheme(ownProps)),
     updateAudio: (ownProps) => dispatch(updateAudio(ownProps)),
     updateHeader: (ownProps) => dispatch(updateHeader(ownProps)),
+    updateSplash: (ownProps) => dispatch(updateSplash(ownProps)),
     updateParallax: (ownProps) => dispatch(updateParallax(ownProps)),
     updateBackground: (ownProps) => dispatch(updateBackground(ownProps)),
   }

@@ -18,6 +18,24 @@ export const DRAWER_LINKS = [
     ]
   },
   {
+    id: 'splashscreen',
+    label: 'Splash Screen',
+    icon: 'power-off',
+    href: '#splashscreen',
+    lvl2: [
+      {
+        id: 'showSplash',
+        label: 'Show On Load',
+        value: true
+      },
+      {
+        id: 'showSplash',
+        label: 'Enter On Load',
+        value: false
+      }
+    ]
+  },
+  {
     id: 'bgs',
     label: 'Backgrounds',
     icon: 'image',

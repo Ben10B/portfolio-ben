@@ -10,7 +10,7 @@ const initialState = {
     song: 'Wolfs Milk',
     control: 'hide'
   },
-  splash: true,
+  showSplash: true,
   header: {},
   loading: false
 };
@@ -53,6 +53,7 @@ const settingsReducer = (state = initialState, action) => {
     case 'LOAD_SETTINGS_STATE': 
       let item = JSON.parse(localStorage.getItem('portfolioSettings'));
       item = checkProperties(initialState, item);
+      localStorage.setItem('portfolioSettings', JSON.stringify(item));
       var body = document.querySelector('body'); body.className = item.background;
       return {
         ...item,
@@ -94,7 +95,7 @@ const settingsReducer = (state = initialState, action) => {
     case 'UPDATE_SPLASH':
       const SPLASH = {
         ...state,
-        splash: false
+        showSplash: action.payload
       };
       localStorage.setItem('portfolioSettings', JSON.stringify(SPLASH));
       return SPLASH;
