@@ -1,23 +1,5 @@
 export const DRAWER_LINKS = [
   {
-    id: 'themes',
-    label: 'Select Theme',
-    icon: 'adjust',
-    href: '#themes',
-    lvl2: [
-      {
-        id: 'theme',
-        label: 'Dark',
-        value: 'DARK'
-      },
-      {
-        id: 'theme',
-        label: 'Light',
-        value: 'LIGHT'
-      }
-    ]
-  },
-  {
     id: 'splashscreen',
     label: 'Splash Screen',
     icon: 'power-off',
@@ -32,6 +14,24 @@ export const DRAWER_LINKS = [
         id: 'showSplash',
         label: 'Enter On Load',
         value: false
+      }
+    ]
+  },
+  {
+    id: 'themes',
+    label: 'Select Theme',
+    icon: 'adjust',
+    href: '#themes',
+    lvl2: [
+      {
+        id: 'theme',
+        label: 'Dark',
+        value: 'DARK'
+      },
+      {
+        id: 'theme',
+        label: 'Light',
+        value: 'LIGHT'
       }
     ]
   },
