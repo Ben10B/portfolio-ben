@@ -4,7 +4,6 @@ import { Link, withRouter } from 'react-router-dom';
 import '../css/header.css';
 
 class Header extends Component {
-  state = { scrollingLock: false };
   componentDidMount = () => {
     const { pathname } = this.props.location;
     let nav = document.querySelector('#nav');
@@ -32,7 +31,7 @@ class Header extends Component {
 
     return (
       <ul data-aos="fade-down" data-aos-offset="0" id="nav"
-        className={`navigation ${ this.state.scrollingLock ? 'sticky' : ''} ${header}`}
+        className={`navigation sticky ${header.style} ${header.buttonsize} ${header.buttonstyle}`}
        >
         <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('/')}>
           <Link className={`${(pathname === '/') ? "active" : ''} navLink`} to="/">Home</Link>

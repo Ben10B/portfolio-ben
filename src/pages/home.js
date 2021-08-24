@@ -31,7 +31,7 @@ class Home extends Component {
             <h1 className="res-fnt-size-6">BEN-JAM-IN BECKWITH</h1>
           </div>
         </div>
-        <Header page=""/>
+        <Header/>
 
         <div data-aos="zoom-in" data-aos-duration="1500" className="fight-parallaxx column hght-90-vh vert-center">
           <div className="row fnt-white">

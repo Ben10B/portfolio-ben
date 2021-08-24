@@ -209,16 +209,93 @@ export const DRAWER_LINKS = [
     label: 'Header',
     icon: 'bars',
     href: '#header',
+    lvl3: true,
     lvl2: [
       {
-        id: 'menu',
-        value: 'default',
-        label: 'Default'
+        id: 'styles',
+        label: 'Styles',
+        value: 'styles',
+        lvl3: [
+          {
+            id: 'style',
+            value: 'HEADER-1',
+            label: 'Centered'
+          },
+          {
+            id: 'style',
+            value: 'HEADER-2',
+            label: 'Left Aligned'
+          },
+          {
+            id: 'style',
+            value: 'HEADER-3',
+            label: 'Right Aligned'
+          },
+          {
+            id: 'style',
+            value: 'HEADER-4',
+            label: 'Space Around'
+          },
+          {
+            id: 'style',
+            value: 'HEADER-5',
+            label: 'Space Between'
+          },
+          {
+            id: 'style',
+            value: 'HEADER-6',
+            label: 'Space Evenly'
+          }
+        ]
       },
       {
-        id: 'menu',
-        value: 'HEADER-2',
-        label: '2'
+        id: 'buttonsizes',
+        label: 'Button Sizes',
+        value: 'buttonsizes',
+        lvl3: [
+          {
+            id: 'buttonsize',
+            value: 'BUTTON-1',
+            label: 'Default'
+          },
+          {
+            id: 'buttonsize',
+            value: 'BUTTON-2',
+            label: 'Small'
+          },
+          {
+            id: 'buttonsize',
+            value: 'BUTTON-2W',
+            label: 'Small & Wide'
+          },
+          {
+            id: 'buttonsize',
+            value: 'BUTTON-3',
+            label: 'Big'
+          },
+          {
+            id: 'buttonsize',
+            value: 'BUTTON-3W',
+            label: 'Big & Wide'
+          }
+        ]
+      },
+      {
+        id: 'buttonstyles',
+        label: 'Button Styles',
+        value: 'buttonstyles',
+        lvl3: [
+          {
+            id: 'buttonstyle',
+            value: 'BTNSTYLE-1',
+            label: 'Default'
+          },
+          {
+            id: 'buttonstyle',
+            value: 'BTNSTYLE-2',
+            label: '2'
+          }
+        ]
       }
     ]
   },

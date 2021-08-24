@@ -10,11 +10,8 @@
   overflow: hidden;
   border-bottom: 1px solid #000;
   background-color: #000;
-  /* background-image: linear-gradient(rgba(255, 255, 255, 0.897), #000); */
   box-shadow: 0px 0px 10px #fff;
   font-family: "Dosis", sans-serif;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .navigation li { 
   list-style-type: none;
@@ -72,9 +69,62 @@
   }
 }
 
-.navigation.HEADER-2 li {
+/* HEADERS */
+.HEADER-2 { justify-content: flex-start; 
+}
+.HEADER-3 { justify-content: flex-end; 
+}
+.HEADER-4 { justify-content: space-around; 
+}
+.HEADER-5 { justify-content: space-between; 
+}
+.HEADER-6 { justify-content: space-evenly; 
+}
+
+/* BUTTON SIZES */
+.BUTTON-2 li { padding: 0;
+}
+
+
+.BUTTON-2W li { 
+  flex: 1;
   padding: 0;
 }
-.navigation.HEADER-2 .navLink {
-  padding: 14px 25px;
+.BUTTON-2W .navLink { 
+  width: 100%;
+  padding: 5px 0;
+}
+.BUTTON-2W .navLink:hover, 
+.BUTTON-2W .active, 
+.BUTTON-2W .active-blue, 
+.BUTTON-2W .active-green, 
+.BUTTON-2W .active-red { transform: scale(1);
+}
+
+
+.BUTTON-3 li { padding: 0;
+}
+.BUTTON-3 .navLink { padding: 14px 35px;
+}
+.BUTTON-3 .navLink:hover, 
+.BUTTON-3 .active, 
+.BUTTON-3 .active-blue, 
+.BUTTON-3 .active-green, 
+.BUTTON-3 .active-red { transform: scale(1);
+}
+
+
+.BUTTON-3W li { 
+  flex: 1;
+  padding: 0;
+}
+.BUTTON-3W .navLink { 
+  width: 100%;
+  padding: 14px 0;
+}
+.BUTTON-3W .navLink:hover, 
+.BUTTON-3W .active, 
+.BUTTON-3W .active-blue, 
+.BUTTON-3W .active-green, 
+.BUTTON-3W .active-red { transform: scale(1);
 }

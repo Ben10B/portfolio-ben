@@ -11,7 +11,11 @@ const initialState = {
     control: 'hide'
   },
   showSplash: true,
-  header: 'default',
+  header: {
+    style: 'HEADER-1',
+    buttonsize: 'BUTTON-1',
+    buttonstyle: 'BTNSTYLE-1'
+  },
   loading: false
 };
 
@@ -20,26 +24,27 @@ const checkProperties = (initial, storage) => {
   for(let index = 0; index < a.length; index++) {
     const A_KEY = a[index][0];
     if(index < b.length && A_KEY === b[index][0]) {
-      const B_VALUE = b[index][1],
-      B_VALUE_STRING = (typeof B_VALUE === "string") ? B_VALUE : null, 
-      B_VALUE_BOOLEAN = (typeof B_VALUE === "boolean") ? true : null, 
-      B_VALUE_OBJ = (typeof B_VALUE === "object" && Object.keys(B_VALUE).length > 0) ? B_VALUE : null;
-      let LVL2 = null, LVL3 = null;
+      const B_VALUE = b[index][1], B_VALUE_OBJ = (typeof B_VALUE === "object" && Object.keys(B_VALUE).length > 0) ? B_VALUE : null,
+      B_VALUE_STRING = (typeof B_VALUE === "string") ? B_VALUE : null, B_VALUE_BOOLEAN = (typeof B_VALUE === "boolean") ? true : null;
       if(B_VALUE_STRING) {
-        LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY && x.lvl2.find(y => y.value === B_VALUE_STRING)) ? true : null;
+        let LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY && x.lvl2.find(y => y.value === B_VALUE_STRING)) ? true : null;
+        result[A_KEY] = LVL2 ? B_VALUE : a[index][1];
       }
       else if(B_VALUE_BOOLEAN) {
-        LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY) ? true : null;
+        let LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY) ? true : null;
+        result[A_KEY] = LVL2 ? B_VALUE : a[index][1];
       }  
       else if(B_VALUE_OBJ) {
-        let counter = 0;
-        Object.values(B_VALUE_OBJ).forEach(b_value => {
-          if(DRAWER_LINKS.filter(x => x.id === A_KEY).filter(x => x.lvl3 && x.lvl2.filter(y => y.lvl3.find(z => z.value === b_value)))) 
-            counter++;
+        let temp = {};
+        Object.keys(a[index][1]).forEach((x, a_index) => {
+          if(Object.keys(B_VALUE_OBJ).find(b => b === x)) {
+            let b_index = Object.keys(B_VALUE_OBJ).findIndex(b => b === x);
+            temp[x] = Object.values(B_VALUE_OBJ)[b_index];
+          }
+          else temp[x] = Object.values(a[index][1])[a_index];
         })
-        if(counter === Object.values(B_VALUE_OBJ).length) LVL3 = true;
+        result[A_KEY] = temp;
       }
-      result[A_KEY] = (LVL2 || LVL3) ? B_VALUE : a[index][1];
     }
     else result[A_KEY] = a[index][1];
   }
@@ -106,7 +111,7 @@ const settingsReducer = (state = initialState, action) => {
     case 'UPDATE_HEADER':
       const HEADER = {
         ...state,
-        header: action.payload
+        header: { ...state.header, ...action.payload }
       };
       localStorage.setItem('portfolioSettings', JSON.stringify(HEADER));
       return HEADER;
