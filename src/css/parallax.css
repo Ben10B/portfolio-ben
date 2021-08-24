@@ -26,6 +26,43 @@
   25% { background-position-y: 50px, top; }
   /* 25% { background-position-y: bottom, top; } */
 }
+.IDLE-FIGHT {
+  animation-play-state: paused;
+}
+.CORNER-FIGHT {
+  animation: corner-movement 3s infinite;
+}
+.TELEPORT-FIGHT {
+  /* background-position: center;
+  animation: teleport-center 2s 1, 
+  teleport-left 2s 2s 1, 
+  teleport-right 2s 4s 1,
+  teleport-top 2s 6s 1,
+  teleport-bottom 2s 8s 1; */
+  animation: teleport-movement 4s infinite;
+}
+@keyframes teleport-left {
+  0%, 100% { background-position: left, top; }
+}
+@keyframes teleport-right {
+  0%, 100% { background-position: right, top; }
+}
+@keyframes teleport-top {
+  0%, 100% { background-position: top, top; }
+}
+@keyframes teleport-bottom {
+  0%, 100% { background-position: bottom, top; }
+}
+@keyframes teleport-center {
+  0%, 100% { background-position: center, top; }
+}
+@keyframes corner-movement {
+  0% { background-position: top left, top; }
+  25% { background-position: top right, top; }
+  50% { background-position: bottom left, top; }
+  75% { background-position: bottom right, top; }
+  100% { background-position: top left, top; }
+}
 .landing-parallaxx > div {
   background-image: url('../assets/clouds.png');
   background-attachment: scroll;
@@ -76,4 +113,96 @@
 }
 .PX-10 { background-image: url('../assets/Fight.gif'), 
   url('../assets/BG10.gif');
+}
+@keyframes teleport-movement {
+  0%, 90%, 91%, 92%, 93%, 94%, 95%, 96%, 97%, 97%, 98%, 99%, 100% { background-position: center, top; }
+  1% { background-position: 52% 50%, top; }
+  2% { background-position: 52% 50%, top; }
+  3% { background-position: 48% 50%, top; }
+  4% { background-position: 48% 50%, top; }
+  5% { background-position: 56% 50%, top; }
+  6% { background-position: 56% 50%, top; }
+  7% { background-position: 44% 50%, top; }
+  8% { background-position: 44% 50%, top; }
+  9% { background-position: 60% 50%, top; }
+  10% { background-position: 25%, top; }
+  11% { background-position: 25%, top; }
+  12% { background-position: 25%, top; }
+  13% { background-position: 25%, top; }
+  14% { background-position: 25%, top; }
+  15% { background-position: 25%, top; }
+  16% { background-position: 25%, top; }
+  17% { background-position: 25%, top; }
+  18% { background-position: 25%, top; }
+  19% { background-position: 25%, top; }
+  20% { background-position: 75%, top; }
+  21% { background-position: 75%, top; }
+  22% { background-position: 75%, top; }
+  23% { background-position: 75%, top; }
+  24% { background-position: 75%, top; }
+  25% { background-position: 75%, top; }
+  26% { background-position: 75%, top; }
+  27% { background-position: 75%, top; }
+  28% { background-position: 75%, top; }
+  29% { background-position: 75%, top; }
+  30% { background-position: 50% 5%, top; }
+  31% { background-position: 50% 5%, top; }
+  32% { background-position: 50% 5%, top; }
+  33% { background-position: 50% 5%, top; }
+  34% { background-position: 50% 5%, top; }
+  35% { background-position: 50% 5%, top; }
+  36% { background-position: 50% 5%, top; }
+  37% { background-position: 50% 5%, top; }
+  38% { background-position: 50% 5%, top; }
+  39% { background-position: 50% 5%, top; }
+  40% { background-position: 50% 80%, top; }
+  41% { background-position: 50% 80%, top; }
+  42% { background-position: 50% 80%, top; }
+  43% { background-position: 50% 80%, top; }
+  44% { background-position: 50% 80%, top; }
+  45% { background-position: 50% 80%, top; }
+  46% { background-position: 50% 80%, top; }
+  47% { background-position: 50% 80%, top; }
+  48% { background-position: 50% 80%, top; }
+  49% { background-position: 50% 80%, top; }
+  50% { background-position: 0 5%, top; }
+  51% { background-position: 0 5%, top; }
+  52% { background-position: 0 5%, top; }
+  53% { background-position: 0 5%, top; }
+  54% { background-position: 0 5%, top; }
+  55% { background-position: 0 5%, top; }
+  56% { background-position: 0 5%, top; }
+  57% { background-position: 0 5%, top; }
+  58% { background-position: 0 5%, top; }
+  59% { background-position: 0 5%, top; }
+  60% { background-position: 95% 95%, top; }
+  61% { background-position: 95% 95%, top; }
+  62% { background-position: 95% 95%, top; }
+  63% { background-position: 95% 95%, top; }
+  64% { background-position: 95% 95%, top; }
+  65% { background-position: 95% 95%, top; }
+  66% { background-position: 95% 95%, top; }
+  67% { background-position: 95% 95%, top; }
+  68% { background-position: 95% 95%, top; }
+  69% { background-position: 95% 95%, top; }
+  70% { background-position: 5% 90%, top; }
+  71% { background-position: 5% 90%, top; }
+  72% { background-position: 5% 90%, top; }
+  73% { background-position: 5% 90%, top; }
+  74% { background-position: 5% 90%, top; }
+  75% { background-position: 5% 90%, top; }
+  76% { background-position: 5% 90%, top; }
+  77% { background-position: 5% 90%, top; }
+  78% { background-position: 5% 90%, top; }
+  79% { background-position: 5% 90%, top; }
+  80% { background-position: 93% 8%, top; }
+  81% { background-position: 93% 8%, top; }
+  82% { background-position: 93% 8%, top; }
+  83% { background-position: 93% 8%, top; }
+  84% { background-position: 93% 8%, top; }
+  85% { background-position: 93% 8%, top; }
+  86% { background-position: 93% 8%, top; }
+  87% { background-position: 93% 8%, top; }
+  88% { background-position: 93% 8%, top; }
+  89% { background-position: 93% 8%, top; }
 }

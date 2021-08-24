@@ -1,13 +1,14 @@
 import React from 'react';
 import '../css/accordion.css';
 import { connect } from 'react-redux';
-import { updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, updateHeader } from '../actions/settingsActions';
+import { updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, updateHeader, updateFight } from '../actions/settingsActions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, updateHeader, settings }) => {
+const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, updateHeader, settings, updateFight }) => {
   const handleClick = (item) => {
     switch(item.id) {
       case 'theme': updateTheme(item.value); break;
+      case 'fight': updateFight(item.value); break;
       case 'bg': updateBackground(item.value); break;
       case 'style': updateHeader({ style: item.value }); break;
       case 'buttonsize': updateHeader({ buttonsize: item.value }); break;
@@ -21,9 +22,10 @@ const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updat
     }
   }
   const handleActive = (item) => {
-    const { audio, background, header, parallaxes, showSplash, theme } = settings;
+    const { audio, background, fight, header, parallaxes, showSplash, theme } = settings;
     switch(item.value) {
       case theme: return 'active';
+      case fight: return 'active';
       case showSplash: return 'active';
       case background: return 'active';
       case audio.song: return 'active';
@@ -87,6 +89,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     updateTheme: (ownProps) => dispatch(updateTheme(ownProps)),
     updateAudio: (ownProps) => dispatch(updateAudio(ownProps)),
+    updateFight: (ownProps) => dispatch(updateFight(ownProps)),
     updateHeader: (ownProps) => dispatch(updateHeader(ownProps)),
     updateSplash: (ownProps) => dispatch(updateSplash(ownProps)),
     updateParallax: (ownProps) => dispatch(updateParallax(ownProps)),

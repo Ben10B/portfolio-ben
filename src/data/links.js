@@ -42,42 +42,42 @@ export const DRAWER_LINKS = [
     href: '#bgs',
     lvl2: [
       {
-        id: 'bg',
+        id: 'background',
         value: 'BG-1',
         label: 'Default'
       },
       {
-        id: 'bg',
+        id: 'background',
         value: 'BG-2',
         label: 'Leaves'
       },
       {
-        id: 'bg',
+        id: 'background',
         value: 'BG-3',
         label: 'Wood'
       },
       {
-        id: 'bg',
+        id: 'background',
         value: 'BG-4',
         label: 'SSJ/SSB Goku'
       },
       {
-        id: 'bg',
+        id: 'background',
         value: 'BG-5',
         label: 'UI Goku'
       },
       {
-        id: 'bg',
+        id: 'background',
         value: 'BG-6',
         label: 'Orihime'
       },
       {
-        id: 'bg',
+        id: 'background',
         value: 'BG-7',
         label: 'Yoruichi'
       },
       {
-        id: 'bg',
+        id: 'background',
         value: 'BG-8',
         label: 'Fullbring Ichigo'
       }
@@ -296,6 +296,34 @@ export const DRAWER_LINKS = [
             label: '2'
           }
         ]
+      }
+    ]
+  },
+  {
+    id: 'fightAnime',
+    label: 'Fight Animation',
+    icon: 'fist-raised',
+    href: '#fightAnime',
+    lvl2: [
+      {
+        id: 'fight',
+        value: 'DEFAULT-FIGHT',
+        label: 'Default'
+      },
+      {
+        id: 'fight',
+        value: 'IDLE-FIGHT',
+        label: 'Idle'
+      },
+      {
+        id: 'fight',
+        value: 'CORNER-FIGHT',
+        label: 'Corners'
+      },
+      {
+        id: 'fight',
+        value: 'TELEPORT-FIGHT',
+        label: 'Teleport'
       }
     ]
   },

@@ -23,17 +23,17 @@ class Home extends Component {
     });
   }
   render() {
-    const { landing, slideshow } = this.props.parallaxes;
+    const { parallaxes: { landing, slideshow }, fight } = this.props.settings;
     return (
       <div className="App">
-        <div className={`landing-parallaxx ${landing}`}>
+        <div className={`landing-parallaxx ${landing} ${fight}`}>
           <div className="txt-center fnt-white">
             <h1 className="res-fnt-size-6">BEN-JAM-IN BECKWITH</h1>
           </div>
         </div>
         <Header/>
 
-        <div data-aos="zoom-in" data-aos-duration="1500" className="fight-parallaxx column hght-90-vh vert-center">
+        <div data-aos="zoom-in" data-aos-duration="1500" className={`fight-parallaxx ${fight} column hght-90-vh vert-center`}>
           <div className="row fnt-white">
             <div className="column flex-3">
               <h4>Full Stack Web Developer</h4>
@@ -58,11 +58,11 @@ class Home extends Component {
           </div>
         </div>
         
-        <div className={`parallaxx ${slideshow} hght-90-vh`} style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
+        <div className={`parallaxx ${slideshow} ${fight} hght-90-vh`} style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
           <SlideShow data={mainData}/>
         </div>
         
-        <div data-aos="fade-right" data-aos-duration="1500" className="fight-parallaxx fnt-white row hght-90-vh skill-section">
+        <div data-aos="fade-right" data-aos-duration="1500" className={`fight-parallaxx ${fight} fnt-white row hght-90-vh skill-section`}>
           <ul className="skills blue">
             <li><h3>Web</h3></li>
             <li><p>HTML5</p></li>
@@ -85,7 +85,7 @@ class Home extends Component {
           </ul>
         </div>
 
-        <section id="me" data-aos="flip-right" data-aos-duration="1500" className="hght-90-vh row fight-parallaxx">
+        <section id="me" data-aos="flip-right" data-aos-duration="1500" className={`hght-90-vh row fight-parallaxx ${fight}`}>
           <div className="column fnt-white">
             <h3>BIO</h3>
             <p className="paragraph">
@@ -102,8 +102,7 @@ class Home extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    settings: state.settings,
-    parallaxes: state.settings.parallaxes
+    settings: state.settings
   }
 }
 export default connect(mapStateToProps, {})(Home);

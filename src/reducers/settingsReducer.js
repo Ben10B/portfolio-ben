@@ -16,6 +16,7 @@ const initialState = {
     buttonsize: 'BUTTON-1',
     buttonstyle: 'BTNSTYLE-1'
   },
+  fight: 'DEFAULT-FIGHT',
   loading: false
 };
 
@@ -26,8 +27,10 @@ const checkProperties = (initial, storage) => {
     if(index < b.length && A_KEY === b[index][0]) {
       const B_VALUE = b[index][1], B_VALUE_OBJ = (typeof B_VALUE === "object" && Object.keys(B_VALUE).length > 0) ? B_VALUE : null,
       B_VALUE_STRING = (typeof B_VALUE === "string") ? B_VALUE : null, B_VALUE_BOOLEAN = (typeof B_VALUE === "boolean") ? true : null;
+      
       if(B_VALUE_STRING) {
-        let LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY && x.lvl2.find(y => y.value === B_VALUE_STRING)) ? true : null;
+        let LVL1 = DRAWER_LINKS.find(x => x.lvl2 && x.lvl2.find(y => y.id === A_KEY));
+        let LVL2 = LVL1.lvl2.find(x => x.value === B_VALUE);
         result[A_KEY] = LVL2 ? B_VALUE : a[index][1];
       }
       else if(B_VALUE_BOOLEAN) {
@@ -115,6 +118,13 @@ const settingsReducer = (state = initialState, action) => {
       };
       localStorage.setItem('portfolioSettings', JSON.stringify(HEADER));
       return HEADER;
+    case 'UPDATE_FIGHT':
+      const FIGHT = {
+        ...state,
+        fight: action.payload
+      }
+      localStorage.setItem('portfolioSettings', JSON.stringify(FIGHT));
+      return FIGHT;
     default: return state;
   }
 }

@@ -42,6 +42,13 @@ export const updateSplash = (showSplash) => dispatch => {
   })
 }
 
+export const updateFight = (fight) => dispatch => {
+  dispatch({
+    type: 'UPDATE_FIGHT',
+    payload: fight
+  })
+}
+
 export const presetSettings = () => dispatch => {
   dispatch({
     type: 'PRESET_SETTINGS_STATE'
