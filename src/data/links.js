@@ -294,6 +294,11 @@ export const DRAWER_LINKS = [
             id: 'buttonstyle',
             value: 'BTNSTYLE-2',
             label: '2'
+          },
+          {
+            id: 'buttonstyle',
+            value: 'BTNSTYLE-3',
+            label: '3'
           }
         ]
       }
