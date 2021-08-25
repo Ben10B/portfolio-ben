@@ -317,13 +317,18 @@ export const DRAWER_LINKS = [
       },
       {
         id: 'fight',
+        value: 'TELEPORT-FIGHT',
+        label: 'Teleport'
+      },
+      {
+        id: 'fight',
         value: 'CORNER-FIGHT',
         label: 'Corners'
       },
       {
         id: 'fight',
-        value: 'TELEPORT-FIGHT',
-        label: 'Teleport'
+        value: 'BORDER-FIGHT',
+        label: 'Border'
       }
     ]
   },

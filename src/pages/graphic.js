@@ -1,10 +1,16 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import GraphicComponent from '../components/Graphic';
-const Graphic = () => {
+const Graphic = ({ fight }) => {
   return (
-    <div className="fight-parallaxx">
+    <div className={`fight-parallaxx ${fight}`}>
       <GraphicComponent/>
     </div>
   );
 }
-export default Graphic;
+const mapStateToProps = (state) => {
+  return {
+    fight: state.settings.fight
+  }
+}
+export default connect(mapStateToProps, {})(Graphic);
