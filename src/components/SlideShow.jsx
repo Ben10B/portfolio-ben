@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/slideshow.scss';
 import '../css/slideshow.css';
 import AOS from 'aos';
@@ -54,11 +55,9 @@ class SlideShow extends Component {
           <div className="cards-slider-wrapper"
             style={{transform: `translateX(-${project.index * (100/projects.length)}%)`}}
           >
-            {
-              projects.map(project => (
-                <Card key={project.index} project={project} select={this.select} currentIndex={this.state.project.index}/>
-                ))
-              }
+            {projects.map(project => (
+              <Card key={project.index} project={project} select={this.select} currentIndex={this.state.project.index}/>
+            ))}
           </div>
         </div>
       </div>
@@ -73,7 +72,7 @@ const Indicators = ({project, select, currentIndex}) => {
   )
 }
 const Card = ({project, select, currentIndex}) => {
-  const {index, image, video, title, description, tech} = project;
+  const {index, image, video, title, description, tech, type} = project;
   return (
     <div id={`card-${index}`} className="card" onClick={()=>select(index)}>
       
@@ -93,6 +92,7 @@ const Card = ({project, select, currentIndex}) => {
             ))
           }
         </ul>
+        <Link className="see-more cool-btn cool-btn-2" to={`/${type}/project/${title}`}>See More</Link>
       </div>
     </div>
   )

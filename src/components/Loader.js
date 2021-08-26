@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 library.add([faFan]);
 
-const Loader = () => {
-  return <div data-aos="zoom-in-right" data-aos-duration="300" className="loader" style={{ cursor: 'wait' }}>
+const Loader = ({ animation }) => {
+  let aos = animation ? animation : "zoom-in-right";
+  return <div data-aos={aos} data-aos-duration="300" className="loader" style={{ cursor: 'wait' }}>
     <label><FontAwesomeIcon icon="fan" className="fan"/>Loading...</label>
   </div>
 }
