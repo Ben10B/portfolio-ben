@@ -1,8 +1,11 @@
+$black: #000;
+$white: #fff;
+
 .DARK {
   .audio-player {
-    color: #fff;
-    background-color: #000 !important;
-    svg, div { color: #fff; }
+    color: $white;
+    background-color: $black !important;
+    svg, div { color: $white; }
   }
   .drawer {
     .accordion {
@@ -15,33 +18,33 @@
 }
 .LIGHT {
   .audio-player {
-    svg, div { color: #000; }
-    .rhap_progress-filled, .rhap_progress-indicator, .rhap_volume-indicator { background-color: #000;
+    svg, div { color: $black; }
+    .rhap_progress-filled, .rhap_progress-indicator, .rhap_volume-indicator { background-color: $black;
     }
   }
   .navigation {
-    background-color: #fff;
-    box-shadow: 0px 0px 10px #000;
+    background-color: $white;
+    box-shadow: 0px 0px 10px $black;
     &.BTNSTYLE-1 {
-      .navLink, .navLink:link, .navLink:visited { color: #000;
+      .navLink, .navLink:link, .navLink:visited { color: $black;
       }
-      .navLink:not(.red):not(.green):not(.blue):hover, .active { background-color: rgba(0, 0, 0, 0.315); box-shadow: 0 0 5px #000;
+      .navLink:not(.red):not(.green):not(.blue):hover, .active { background-color: rgba(0, 0, 0, 0.315); box-shadow: 0 0 5px $black;
       }
     }
     &.BTNSTYLE-2 {
-      .navLink:link, .navLink:visited { color: #000;
+      .navLink:link, .navLink:visited { color: $black;
       }
-      .navLink:hover, .navLink.active, .navLink.active-blue, .navLink.active-green, .navLink.active-red { color: #fff;
+      .navLink:hover, .navLink.active, .navLink.active-blue, .navLink.active-green, .navLink.active-red { color: $white;
       }
     }
     &.BTNSTYLE-3 {
       .navLink { 
-        color: #000;
+        color: $black;
         box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
       }
       .navLink:hover, .active { box-shadow: rgba(0, 0, 0, 0.7) 0px -50px 36px -28px inset;
       }
-      .navLink:hover, .active, .active-blue, .active-green, .active-red { color: #fff;
+      .navLink:hover, .active, .active-blue, .active-green, .active-red { color: $white;
       }
     }
   }
@@ -50,31 +53,31 @@
   #me div,
   #resume, .moveToBtn,
   #slideShowContainer .prev, #slideShowContainer .next,
-  .cards-slider-wrapper .card .title { color: #000 !important;
+  .cards-slider-wrapper .card .title { color: $black !important;
   }
-  .indicator { background-color: #000;
+  .indicator { background-color: $black;
   }
   #slideShowContainer .card { border-color: rgba(0, 0, 0, 0.226);
   }
   .drawer-btn {
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px $black;
     background-color: rgba(0, 0, 0, 0.315);
-    &:hover { background-color: #000;
+    &:hover { background-color: $black;
     }
-    & .edit { color: #fff; 
+    & .edit { color: $white; 
     }
   }
   .drawer {
     &.open { 
-      border-left: .5px solid #000;
+      border-left: .5px solid $black;
       .accordion {
-        .btn, .btn::before { background: #fff;
+        .btn, .btn::before { background: $white;
         }
-        .btn-2, .btn-2::before { color: #fff;
+        .btn-2, .btn-2::before { color: $white;
         }
-        .lvl2, .lvl3, .btn, .btn::before { color: #000; 
+        .lvl2, .lvl3, .btn, .btn::before { color: $black; 
         }
-        .lvl2::before, .lvl3::before, .btn-2, .btn-2::before { background: #000; 
+        .lvl2::before, .lvl3::before, .btn-2, .btn-2::before { background: $black; 
         }
         .lvl2:hover, .lvl3:hover { background-color: rgba(255, 255, 255, 0.2);
         }
@@ -86,5 +89,9 @@
         }
       }
     }
+  }
+  .project-page .body-content { 
+    .item-b, .item-c, .item-d { color: $black; }
+    .item-d h6 { border-color: $black; }
   }
 }

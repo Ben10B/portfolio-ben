@@ -49,6 +49,20 @@ export const updateFight = (fight) => dispatch => {
   })
 }
 
+export const updateLinks = (links) => dispatch => {
+  dispatch({
+    type: 'UPDATE_LINKS',
+    payload: links
+  })
+}
+
+export const updateProjectPage = (page) => dispatch => {
+  dispatch({
+    type: 'UPDATE_PROJECT_PAGE',
+    payload: page
+  })
+}
+
 export const presetSettings = () => dispatch => {
   dispatch({
     type: 'PRESET_SETTINGS_STATE'

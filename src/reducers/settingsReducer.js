@@ -17,7 +17,10 @@ const initialState = {
     buttonstyle: 'BTNSTYLE-1'
   },
   fight: 'DEFAULT-FIGHT',
-  loading: false
+  loading: false,
+  page: {
+    layout: ''
+  }
 };
 
 const checkProperties = (initial, storage) => {
@@ -53,19 +56,21 @@ const checkProperties = (initial, storage) => {
   }
   return result;
 }
-
+const saveToLocalStorage = (data) => {
+  localStorage.setItem('portfolioSettings', JSON.stringify(data));
+}
 const settingsReducer = (state = initialState, action) => {
   switch(action.type) {
     case 'PRESET_SETTINGS_STATE': 
-      localStorage.setItem('portfolioSettings', JSON.stringify(initialState));
+      saveToLocalStorage(initialState);
       return {
         ...state,
-        loading: false
+        loading: false,
       };
     case 'LOAD_SETTINGS_STATE': 
       let item = JSON.parse(localStorage.getItem('portfolioSettings'));
       item = checkProperties(initialState, item);
-      localStorage.setItem('portfolioSettings', JSON.stringify(item));
+      saveToLocalStorage(item);
       var body = document.querySelector('body'); body.className = item.background;
       return {
         ...item,
@@ -81,50 +86,62 @@ const settingsReducer = (state = initialState, action) => {
         ...state,
         theme: action.payload
       };
-      localStorage.setItem('portfolioSettings', JSON.stringify(THEME));
+      saveToLocalStorage(THEME);
       return THEME;
     case 'UPDATE_BACKGROUND':
       const BG = {
         ...state,
         background: action.payload
       };
-      localStorage.setItem('portfolioSettings', JSON.stringify(BG));
+      saveToLocalStorage(BG);
       return BG;
     case 'UPDATE_PARALLAX':
       const PARALLAX = {
         ...state,
         parallaxes: { ...state.parallaxes, ...action.payload }
       };
-      localStorage.setItem('portfolioSettings', JSON.stringify(PARALLAX));
+      saveToLocalStorage(PARALLAX);
       return PARALLAX;
     case 'UPDATE_AUDIO':
       const AUDIO = {
         ...state,
         audio: { ...state.audio, ...action.payload }
       };
-      localStorage.setItem('portfolioSettings', JSON.stringify(AUDIO));
+      saveToLocalStorage(AUDIO);
       return AUDIO;
     case 'UPDATE_SPLASH':
       const SPLASH = {
         ...state,
         showSplash: action.payload
       };
-      localStorage.setItem('portfolioSettings', JSON.stringify(SPLASH));
+      saveToLocalStorage(SPLASH);
       return SPLASH;
     case 'UPDATE_HEADER':
       const HEADER = {
         ...state,
         header: { ...state.header, ...action.payload }
       };
-      localStorage.setItem('portfolioSettings', JSON.stringify(HEADER));
+      saveToLocalStorage(HEADER);
       return HEADER;
     case 'UPDATE_FIGHT':
       const FIGHT = {
         ...state,
         fight: action.payload
       }
-      localStorage.setItem('portfolioSettings', JSON.stringify(FIGHT));
+      saveToLocalStorage(FIGHT);
       return FIGHT;
+    case 'UPDATE_LINKS': 
+      return {
+        ...state,
+        drawerLinks: action.payload
+      };
+    case 'UPDATE_PROJECT_PAGE':
+      const PROJECT_PAGE = {
+        ...state,
+        page: action.payload
+      }
+      saveToLocalStorage(PROJECT_PAGE);
+      return PROJECT_PAGE;
     default: return state;
   }
 }

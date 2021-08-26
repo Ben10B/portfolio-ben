@@ -9,7 +9,7 @@ const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updat
     switch(item.id) {
       case 'theme': updateTheme(item.value); break;
       case 'fight': updateFight(item.value); break;
-      case 'bg': updateBackground(item.value); break;
+      case 'background': updateBackground(item.value); break;
       case 'style': updateHeader({ style: item.value }); break;
       case 'buttonsize': updateHeader({ buttonsize: item.value }); break;
       case 'buttonstyle': updateHeader({ buttonstyle: item.value }); break;

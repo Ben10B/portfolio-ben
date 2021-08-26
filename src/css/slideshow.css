@@ -7,12 +7,11 @@
   cursor: pointer;
   padding: 5px;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 15px 10px -10px;
 }
 .next:hover, .prev:hover {
   background-color: rgba(255, 255, 255, 0.226);
-}
-.BG-8 .next:hover, .BG-8 .prev:hover {
-  background-color: rgba(0, 0, 0, 0.226);
 }
 #code {
   margin: 2% 0;

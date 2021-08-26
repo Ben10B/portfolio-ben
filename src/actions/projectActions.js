@@ -1,6 +1,6 @@
 import { webData, graphicData, mediaData } from '../data/data';
 
-export const updateProjectPage = (params) => dispatch => {
+export const updateProject = (params) => dispatch => {
   dispatch(setProjectLoading());
   let project = null;
   switch(params.type) {
