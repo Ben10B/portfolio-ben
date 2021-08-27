@@ -27,10 +27,9 @@
   grid-template-areas: 
   "item-b item-c item-d"
   "item-a item-a item-a";
-  /* column-gap: 2%; */
   row-gap: 4%;
 }
-.project-page .body-content img, .project-page .body-content .player-wrapper {
+.project-page .body-content img {
   max-width: 80vw;
 }
 
