@@ -30,7 +30,7 @@
 }
 .navigation .navLink:visited { color: #fff;
 }
-.navLink:hover, .active, .active-blue, .active-green, .active-red {
+.navLink:hover, .active, .active-blue, .active-green, .active-red, .active-orange {
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.315);
   cursor: pointer;
@@ -48,6 +48,14 @@
 .green:hover, .active-green { 
   background-color: rgba(0, 255, 0, 0.315);
   box-shadow: 0 0 3px #0f0;
+}
+.orange:hover, .active-orange {
+  background-color: rgba(255, 166, 0, 0.315);
+  box-shadow: 0 0 3px #ffa600;
+}
+.blurple:hover, .active-blurple {
+  background-color: #75779f;
+  box-shadow: 0 0 3px #75779f;
 }
 .navigation .active { transform: scale(1);
 }
@@ -97,7 +105,8 @@
 .BUTTON-2W .active, 
 .BUTTON-2W .active-blue, 
 .BUTTON-2W .active-green, 
-.BUTTON-2W .active-red { transform: scale(1);
+.BUTTON-2W .active-red,
+.BUTTON-2W .active-orange { transform: scale(1);
 }
 
 
@@ -109,7 +118,8 @@
 .BUTTON-3 .active, 
 .BUTTON-3 .active-blue, 
 .BUTTON-3 .active-green, 
-.BUTTON-3 .active-red { transform: scale(1);
+.BUTTON-3 .active-red,
+.BUTTON-3 .active-orange { transform: scale(1);
 }
 
 
@@ -125,7 +135,8 @@
 .BUTTON-3W .active, 
 .BUTTON-3W .active-blue, 
 .BUTTON-3W .active-green, 
-.BUTTON-3W .active-red { transform: scale(1);
+.BUTTON-3W .active-red,
+.BUTTON-3W .active-orange { transform: scale(1);
 }
 
 /* BUTTON STYLES */
@@ -139,14 +150,18 @@
 .BTNSTYLE-2 .green:hover, .BTNSTYLE-2 .active-green { background-color: #00b100;
 } 
 .BTNSTYLE-2 .red:hover, .BTNSTYLE-2 .active-red { background-color: #f00;
-} 
+}
+.BTNSTYLE-2 .orange:hover, .BTNSTYLE-2 .active-orange { background-color: #ffa600;
+}
 
 
 .BTNSTYLE-3 .navLink, .BTNSTYLE-3 .active { box-shadow: rgba(255, 255, 255, 0.35) 0px -50px 36px -28px inset;
 }
 .BTNSTYLE-3 .blue:hover, .BTNSTYLE-3 .active-blue { box-shadow: rgba(0, 0, 255, 0.35) 0px -50px 36px -28px inset;
-} 
+}
 .BTNSTYLE-3 .green:hover, .BTNSTYLE-3 .active-green { box-shadow: rgba(0, 255, 0, 0.35) 0px -50px 36px -28px inset;
-} 
+}
 .BTNSTYLE-3 .red:hover, .BTNSTYLE-3 .active-red { box-shadow: rgba(255, 0, 0, 0.35) 0px -50px 36px -28px inset;
-} 
+}
+.BTNSTYLE-3 .orange:hover, .BTNSTYLE-3 .active-orange { box-shadow: rgba(255, 166, 0, 0.35) 0px -50px 36px -28px inset;
+}

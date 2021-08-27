@@ -10,12 +10,14 @@ class Header extends Component {
     if(pathname.includes('web')) nav.style.boxShadow = '0 0 10px #00f';
     else if(pathname.includes('graphic')) nav.style.boxShadow = '0 0 10px #f00';
     else if(pathname.includes('media')) nav.style.boxShadow = '0 0 10px #0f0';
+    else if(pathname.includes('other')) nav.style.boxShadow = '0 0 10px #ffa600';
   }
   hover = (link) => {
     let nav = document.querySelector('#nav');
     if(link === 'web') nav.style.boxShadow = '0 0 10px #00f';
     else if(link === 'graphic') nav.style.boxShadow = '0 0 10px #f00';
     else if(link === 'media') nav.style.boxShadow = '0 0 10px #0f0';
+    else if(link === 'other') nav.style.boxShadow = '0 0 10px #ffa600';
     else nav.style = "";
   }
   exit = (link) => {
@@ -23,6 +25,7 @@ class Header extends Component {
     if(link.includes('web')) nav.style.boxShadow = '0 0 10px #00f';
     else if(link.includes('graphic')) nav.style.boxShadow = '0 0 10px #f00';
     else if(link.includes('media')) nav.style.boxShadow = '0 0 10px #0f0';
+    else if(link.includes('other')) nav.style.boxShadow = '0 0 10px #ffa600';
     else nav.style = "";
   }
   
@@ -45,8 +48,8 @@ class Header extends Component {
         <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('media')}>
           <Link className={`${(pathname.includes('media')) ? "active-green" : ''} navLink green`} to="/media">Media</Link>
         </li>
-        <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('/other')}>
-          <Link className={`${(pathname.includes('/other')) ? "active" : ''} navLink`} to="/other">Other</Link>
+        <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('other')}>
+          <Link className={`${(pathname.includes('other')) ? "active-orange" : ''} navLink orange`} to="/other">Other</Link>
         </li>
       </ul>
     );

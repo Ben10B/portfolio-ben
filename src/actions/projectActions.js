@@ -1,4 +1,4 @@
-import { webData, graphicData, mediaData } from '../data/data';
+import { webData, graphicData, mediaData, otherData } from '../data/data';
 
 export const updateProject = (params) => dispatch => {
   dispatch(setProjectLoading());
@@ -7,6 +7,7 @@ export const updateProject = (params) => dispatch => {
     case 'web': project = webData.find(x => x.title === params.title); break;
     case 'graphic': project = graphicData.find(x => x.title === params.title); break;
     case 'media': project = mediaData.find(x => x.title === params.title); break;
+    case 'other': project = otherData.find(x => x.title === params.title); break;
     default: break;
   }
   dispatch({

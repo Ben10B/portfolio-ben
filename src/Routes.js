@@ -5,6 +5,7 @@ import HomePage from './pages/home';
 import WebPage from './pages/web';
 import GraphicPage from './pages/graphic';
 import MediaPage from './pages/media';
+import OtherPage from './pages/other';
 import Project from './pages/project';
 
 const Routes = () => {
@@ -14,7 +15,7 @@ const Routes = () => {
       <Route exact path="/web" component={WebPage}/>
       <Route exact path="/graphic" component={GraphicPage}/>
       <Route exact path="/media" component={MediaPage}/>
-      <Route exact path="/other" component={HomePage}/>
+      <Route exact path="/other" component={OtherPage}/>
       <Route path="/:type/project/:title" component={Project}/>
     </Switch>
   )

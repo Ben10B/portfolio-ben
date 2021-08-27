@@ -28,13 +28,13 @@ $white: #fff;
     &.BTNSTYLE-1 {
       .navLink, .navLink:link, .navLink:visited { color: $black;
       }
-      .navLink:not(.red):not(.green):not(.blue):hover, .active { background-color: rgba(0, 0, 0, 0.315); box-shadow: 0 0 5px $black;
+      .navLink:not(.red):not(.green):not(.blue):not(.orange):hover, .active { background-color: rgba(0, 0, 0, 0.315); box-shadow: 0 0 5px $black;
       }
     }
     &.BTNSTYLE-2 {
       .navLink:link, .navLink:visited { color: $black;
       }
-      .navLink:hover, .navLink.active, .navLink.active-blue, .navLink.active-green, .navLink.active-red { color: $white;
+      .navLink:hover, .navLink.active, .navLink.active-blue, .navLink.active-green, .navLink.active-red, .navLink.active-orange { color: $white;
       }
     }
     &.BTNSTYLE-3 {
@@ -44,7 +44,7 @@ $white: #fff;
       }
       .navLink:hover, .active { box-shadow: rgba(0, 0, 0, 0.7) 0px -50px 36px -28px inset;
       }
-      .navLink:hover, .active, .active-blue, .active-green, .active-red { color: $white;
+      .navLink:hover, .active, .active-blue, .active-green, .active-red, .active-orange { color: $white;
       }
     }
   }

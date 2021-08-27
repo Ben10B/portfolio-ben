@@ -45,7 +45,13 @@ export const mainData = [
     tech: ['Shopify Liquid', 'JavaScript', 'Map.js']
   },
   {
-    index: 2, image: nad1, title: 'NewAge Diamonds', type: 'web',
+    index: 2, video: 'https://youtu.be/151YhyaIvNw', title: 'Scholar Athlete of the Week - 2014', type: 'other',
+    description: "I found the article the original video was linked to, but the article and video was removed (https://www.facebook.com/WMBBTV/posts/10152027673646658), for it's 6 years old!"
+    + " Luckily I've found my recording of it.", 
+    tech: ['Marching Band', 'Football', 'Track', '3.96 GPA']
+  },
+  {
+    index: 3, image: nad1, title: 'NewAge Diamonds', type: 'web',
     description: 'Migrated React website to Shopify platform and redesigned theme to include custom features for Ariix (now renamed as NewAge).'
     + ' As a result, traffic and sales increased.', 
     tech: ['Shopify Liquid', 'JavaScript', 'Express', 'Node']
@@ -53,6 +59,12 @@ export const mainData = [
   { index: 4, video: seven, title: `7 into 28`, type: 'media',
     description: 'Short Typography', tech: ['After Effects'] 
   },
+  {
+    index: 5, video: 'https://youtu.be/A1ays9EpjC4', title: 'GokuNarutovsSasukeIchigo Sprite Battle - Part One', type: 'other',
+    description: "This video was suppose to be a remake of an older version made in Windows Movie Maker, but I added on to it changing the plot, so it's different. I know there are minor errors in the video, so bear with it please."
+    + " I kinda wrapped the ending up so that I can make a fresh video with my new skills. Enjoy=)", 
+    tech: ['Macromedia Flash 8', 'Macromedia Fireworks 8']
+  }
 ];
 
 export const webData = [
@@ -152,3 +164,18 @@ export const mediaData = [
     description: 'YouTube Outro', tech: ['AFter Effects'] 
   },
 ];
+
+export const otherData = [
+  {
+    index: 0, video: 'https://youtu.be/151YhyaIvNw', title: 'Scholar Athlete of the Week - 2014', type: 'other',
+    description: "I found the article the original video was linked to, but the article and video was removed (https://www.facebook.com/WMBBTV/posts/10152027673646658), for it's 6 years old!"
+    + " Luckily I've found my recording of it.", 
+    tech: ['Marching Band', 'Football', 'Track', '3.96 GPA']
+  },
+  {
+    index: 1, video: 'https://youtu.be/A1ays9EpjC4', title: 'GokuNarutovsSasukeIchigo Sprite Battle - Part One', type: 'other',
+    description: "This video was suppose to be a remake of an older version made in Windows Movie Maker, but I added on to it changing the plot, so it's different. I know there are minor errors in the video, so bear with it please."
+    + " I kinda wrapped the ending up so that I can make a fresh video with my new skills. Enjoy=)", 
+    tech: ['Macromedia Flash 8', 'Macromedia Fireworks 8']
+  },
+]
