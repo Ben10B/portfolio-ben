@@ -33,25 +33,22 @@ const tjIntro = 'https://youtube.com/watch?v=7g-U5sHU4h0';
 
 export const mainData = [
   {
-    index: 0, image: hylyte, title: 'Hylyte', type: 'web',
+    index: 0, image: hub, title: 'Kolvanta Order Management System', type: 'web',
+    description: 'Created an order management system to keep track of purchased orders from processed to delivered;'
+    + " moving away from Google Sheets. Kept track of orders for Ariix, and one of Do Good Be Kind's promotions.", 
+    tech: ['MongoDB', 'Express', 'React', 'Node']
+  },
+  {
+    index: 1, image: hylyte, title: 'Hylyte', type: 'web',
     description: 'Created a Shopify site to display locations of water machines throughout the U.S. and reserve locations'
     + ' for companies to advertise their products. Working in collaboration with WaterStation.', 
     tech: ['Shopify Liquid', 'JavaScript', 'Map.js']
   },
   {
-    index: 1, image: nad1, title: 'NewAge Diamonds', type: 'web',
+    index: 2, image: nad1, title: 'NewAge Diamonds', type: 'web',
     description: 'Migrated React website to Shopify platform and redesigned theme to include custom features for Ariix (now renamed as NewAge).'
     + ' As a result, traffic and sales increased.', 
     tech: ['Shopify Liquid', 'JavaScript', 'Express', 'Node']
-  },
-  {
-    index: 2, image: hub, title: 'Kolvanta Order Management System', type: 'web',
-    description: 'Created an order management system to keep track of purchased orders from processed to delivered;'
-    + " moving away from Google Sheets. Kept track of orders for Ariix, and one of Do Good Be Kind's promotions.", 
-    tech: ['MongoDB', 'Express', 'React', 'Node']
-  },
-  { index: 3, video: news, title: `XYZ Breaking News`, type: 'media',
-    description: '', tech: ['Premiere Pro'] 
   },
   { index: 4, video: seven, title: `7 into 28`, type: 'media',
     description: 'Short Typography', tech: ['After Effects'] 
@@ -60,22 +57,22 @@ export const mainData = [
 
 export const webData = [
   {
-    index: 0, image: hylyte, title: 'Hylyte', type: 'web',
+    index: 0, image: hub, title: 'Kolvanta Order Management System', type: 'web', 
+    description: 'Created an order management system to keep track of purchased orders from processed to delivered;'
+    + ' moving away from Google Sheets. (This system also kept track of orders for Do Good Be Kind for one of their promotions.)', 
+    tech: ['MongoDB', 'Express', 'React', 'Node']
+  },
+  {
+    index: 1, image: hylyte, title: 'Hylyte', type: 'web',
     description: 'Created a Shopify site to display locations of water machines throughout the U.S. and reserve locations'
     + ' for companies to advertise their products. Working in collaboration with WaterStation.', 
     tech: ['Shopify Liquid', 'JavaScript', 'Map.js']
   },
   {
-    index: 1, image: nad1, title: 'NewAge Diamonds', type: 'web', 
+    index: 2, image: nad1, title: 'NewAge Diamonds', type: 'web', 
     description: 'Migrated React website to Shopify platform and redesigned theme to include custom features for Ariix (now renamed as NewAge).'
     + ' As a result, traffic and sales increased.', 
     tech: ['Shopify Liquid', 'JavaScript', 'Express', 'Node']
-  },
-  {
-    index: 2, image: hub, title: 'Kolvanta Order Management System', type: 'web', 
-    description: 'Created an order management system to keep track of purchased orders from processed to delivered;'
-    + ' moving away from Google Sheets. (This system also kept track of orders for Do Good Be Kind for one of their promotions.)', 
-    tech: ['MongoDB', 'Express', 'React', 'Node']
   },
   {
     index: 3, image: grindinProject, title: "Grindin' Goals!", type: 'web', 

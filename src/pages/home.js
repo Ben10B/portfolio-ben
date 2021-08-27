@@ -58,7 +58,7 @@ class Home extends Component {
           </div>
         </div>
         
-        <div className={`parallaxx ${slideshow} ${fight} hght-90-vh`} style={{boxShadow: '0 -20px 50px #ffffff21 inset', overflow: 'hidden'}}>
+        <div className={`parallaxx ${slideshow} ${fight} hght-80-vh`} style={{ overflow: 'hidden'}}>
           <SlideShow data={mainData}/>
         </div>
         

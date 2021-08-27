@@ -45,6 +45,9 @@ class Header extends Component {
         <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('media')}>
           <Link className={`${(pathname.includes('media')) ? "active-green" : ''} navLink green`} to="/media">Media</Link>
         </li>
+        <li onMouseLeave={()=>this.exit(pathname)} onMouseEnter={()=>this.hover('/other')}>
+          <Link className={`${(pathname.includes('/other')) ? "active" : ''} navLink`} to="/other">Other</Link>
+        </li>
       </ul>
     );
   }

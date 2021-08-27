@@ -14,6 +14,7 @@ const Routes = () => {
       <Route exact path="/web" component={WebPage}/>
       <Route exact path="/graphic" component={GraphicPage}/>
       <Route exact path="/media" component={MediaPage}/>
+      <Route exact path="/other" component={HomePage}/>
       <Route path="/:type/project/:title" component={Project}/>
     </Switch>
   )
