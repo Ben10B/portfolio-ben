@@ -42,13 +42,26 @@
 .next p:hover, .prev p:hover {
   transform: scale(1.2);
 }
-a.see-more {
+a.go-to {
   color: #000;
+  font-weight: bold;
   padding: 5px 10px;
 }
-.see-more.cool-btn-2::before {
+.go-to.cool-btn-2::before {
 	background-color: rgba(0, 0, 0, 0.1);
 }
-.see-more.cool-btn-2::after {
+.go-to.cool-btn-2::after {
 	border: 1px solid rgba(0,0,0,0.5);
+}
+.go-to.cool-btn-2.web::before { background-color: rgba(0, 0, 255, 0.1);
+}
+.go-to.cool-btn-2.web::after { background-color: rgba(0, 0, 255, 0.5);
+}
+.go-to.cool-btn-2.media::before { background-color: rgba(0, 255, 0, 0.1);
+} 
+.go-to.cool-btn-2.media::after { background-color: rgba(0, 255, 0, 0.5);
+}
+.go-to.cool-btn-2.other::before { background-color: rgba(255, 166, 0, 0.1);
+}
+.go-to.cool-btn-2.other::after { background-color: rgba(255, 166, 0, 0.5);
 }

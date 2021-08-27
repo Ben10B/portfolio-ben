@@ -92,7 +92,7 @@ const Card = ({project, select, currentIndex}) => {
             ))
           }
         </ul>
-        <Link className="see-more cool-btn cool-btn-2" to={`/${type}/project/${title}`}>Go To</Link>
+        <Link className={`go-to cool-btn cool-btn-2 ${type}`} to={`/${type}/project/${title}`}>Go To</Link>
       </div>
     </div>
   )
