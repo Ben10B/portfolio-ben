@@ -17,6 +17,10 @@ $white: #fff;
   }
 }
 .LIGHT {
+  .landing-parallaxx > div { background-color: rgba(0, 0, 0, 0.4);
+  }
+  .landing-parallaxx h1 { box-shadow: 0 0 50px #000;
+  }
   .audio-player {
     svg, div { color: $black; }
     .rhap_progress-filled, .rhap_progress-indicator, .rhap_volume-indicator { background-color: $black;

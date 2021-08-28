@@ -1,24 +1,73 @@
 .BG-1 {
-  background-image: url('../assets/footer_lodyas.png');
+  background-image: url('../assets/bgs/footer_lodyas.png');
+  background-repeat: repeat;
+  background-size: contain;
 }
 .BG-2 {
-  background-image: url('../assets/50-Beautiful-and-Minimalist-Presentation-Backgrounds-04.jpg');
+  background-image: url('../assets/bgs/webb.png');
+  background-repeat: repeat;
+  background-size: initial;
 }
 .BG-3 {
-  background-image: url('../assets/wood.jpg');
+  background-image: url('../assets/bgs/webb-dark.png');
+  background-repeat: repeat;
+  background-size: initial;
 }
 .BG-4 {
-  background-image: url('../assets/ssj-ssb-goku.png');
+  background-image: url('../assets/bgs/shattered.png');
+  background-repeat: repeat;
+  background-size: initial;
 }
 .BG-5 {
-  background-image: url('../assets/ui-goku.jpg');
+  background-image: url('../assets/bgs/stardust.png');
+  background-repeat: repeat;
+  background-size: initial;
 }
 .BG-6 {
-  background-image: url('../assets/orihime-kon.png');
+  background-image: url('../assets/bgs/congruent_pentagon.png');
+  background-repeat: repeat;
+  background-size: initial;
 }
 .BG-7 {
-  background-image: url('../assets/yoruichi.jpg');
+  background-image: url('../assets/bgs/funky-lines.png');
 }
 .BG-8 {
-  background-image: url('../assets/ichigo-fullbring-arc.jpg');
+  background-image: url('../assets/bgs/random_grey_variations.png');
+  background-repeat: repeat;
+  background-size: initial;
+}
+.BG-9 {
+  background-image: url('../assets/bgs/hexellence.png');
+  background-repeat: repeat;
+  background-size: initial;
+}
+.BG-10 {
+  background-image: url('../assets/bgs/hexabump.png');
+  background-repeat: repeat;
+  background-size: initial;
+}
+.BG-11 {
+  background-image: url('../assets/bgs/small_steps.png');
+  background-repeat: repeat;
+  background-size: initial;
+}
+.BG-12 {
+  background-image: url('../assets/bgs/wild_oliva.png');
+  background-repeat: repeat;
+  background-size: initial;
+}
+.BG-CHAR-1 {
+  background-image: url('../assets/bgs/ui-goku.jpg');
+}
+.BG-CHAR-2 {
+  background-image: url('../assets/bgs/kid-goku.jpg');
+}
+.BG-CHAR-3 {
+  background-image: url('../assets/bgs/orihime-kon.png');
+}
+.BG-CHAR-4 {
+  background-image: url('../assets/bgs/yoruichi.jpg');
+}
+.BG-CHAR-5 {
+  background-image: url('../assets/bgs/ichigo-fullbring-arc.jpg');
 }

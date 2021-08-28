@@ -44,41 +44,86 @@ export const DRAWER_LINKS = [
       {
         id: 'background',
         value: 'BG-1',
-        label: 'Default'
+        label: 'Prism'
       },
       {
         id: 'background',
         value: 'BG-2',
-        label: 'Leaves'
+        label: 'Light Webb'
       },
       {
         id: 'background',
         value: 'BG-3',
-        label: 'Wood'
+        label: 'Dark Webb'
       },
       {
         id: 'background',
         value: 'BG-4',
-        label: 'SSJ/SSB Goku'
+        label: 'Shattered'
       },
       {
         id: 'background',
         value: 'BG-5',
-        label: 'UI Goku'
+        label: 'Stardust'
       },
       {
         id: 'background',
         value: 'BG-6',
-        label: 'Orihime'
+        label: 'Congruent Pentagon'
       },
       {
         id: 'background',
         value: 'BG-7',
-        label: 'Yoruichi'
+        label: 'Funky Lines'
       },
       {
         id: 'background',
         value: 'BG-8',
+        label: 'Random Grey'
+      },
+      {
+        id: 'background',
+        value: 'BG-9',
+        label: 'Hexellence'
+      },
+      {
+        id: 'background',
+        value: 'BG-10',
+        label: 'Hexabump'
+      },
+      {
+        id: 'background',
+        value: 'BG-11',
+        label: 'Small Steps'
+      },
+      {
+        id: 'background',
+        value: 'BG-12',
+        label: 'Wild Oliva'
+      },
+      {
+        id: 'background',
+        value: 'BG-CHAR-1',
+        label: 'UI Goku'
+      },
+      {
+        id: 'background',
+        value: 'BG-CHAR-2',
+        label: 'Kid Goku'
+      },
+      {
+        id: 'background',
+        value: 'BG-CHAR-3',
+        label: 'Orihime'
+      },
+      {
+        id: 'background',
+        value: 'BG-CHAR-4',
+        label: 'Yoruichi'
+      },
+      {
+        id: 'background',
+        value: 'BG-CHAR-5',
         label: 'Fullbring Ichigo'
       }
     ]

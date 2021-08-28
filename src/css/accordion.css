@@ -80,6 +80,7 @@
 .ssmenu .lvl3.active {
   background-color: rgba(0, 0, 0, 0.4);
   padding-left: 40px;
+  text-transform: uppercase;
 }
 .smenu .lvl2::before,
 .ssmenu .lvl3::before {
