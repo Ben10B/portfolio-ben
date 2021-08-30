@@ -3,17 +3,16 @@ export const DRAWER_LINKS = [
     id: 'splashscreen',
     label: 'Splash Screen',
     icon: 'power-off',
-    href: '#splashscreen',
     lvl2: [
       {
         id: 'showSplash',
-        label: 'Show On Load',
-        value: true
+        value: true,
+        label: 'Show On Load'
       },
       {
         id: 'showSplash',
-        label: 'Enter On Load',
-        value: false
+        value: false,
+        label: 'Enter On Load'
       }
     ]
   },
@@ -21,17 +20,16 @@ export const DRAWER_LINKS = [
     id: 'themes',
     label: 'Select Theme',
     icon: 'adjust',
-    href: '#themes',
     lvl2: [
       {
         id: 'theme',
-        label: 'Dark',
-        value: 'DARK'
+        value: 'DARK',
+        label: 'Dark'
       },
       {
         id: 'theme',
-        label: 'Light',
-        value: 'LIGHT'
+        value: 'LIGHT',
+        label: 'Light'
       }
     ]
   },
@@ -39,7 +37,6 @@ export const DRAWER_LINKS = [
     id: 'bgs',
     label: 'Backgrounds',
     icon: 'image',
-    href: '#bgs',
     lvl2: [
       {
         id: 'background',
@@ -132,7 +129,6 @@ export const DRAWER_LINKS = [
     id: 'parallaxes',
     label: 'Parallax',
     icon: 'film',
-    href: '#parallaxes',
     lvl3: true,
     lvl2: [
       {
@@ -210,13 +206,12 @@ export const DRAWER_LINKS = [
     id: 'audio',
     label: 'Music',
     icon: 'music',
-    href: '#audio',
     lvl3: true,
     lvl2: [
       {
         id: 'songs',
-        label: 'Songs',
         value: 'songs',
+        label: 'Songs',
         lvl3: [
           {
             id: 'song',
@@ -232,8 +227,8 @@ export const DRAWER_LINKS = [
       },
       {
         id: 'controls',
-        label: 'Controls',
         value: 'controls',
+        label: 'Controls',
         lvl3: [
           {
             id: 'control',
@@ -253,13 +248,12 @@ export const DRAWER_LINKS = [
     id: 'header',
     label: 'Header',
     icon: 'bars',
-    href: '#header',
     lvl3: true,
     lvl2: [
       {
         id: 'styles',
-        label: 'Styles',
         value: 'styles',
+        label: 'Styles',
         lvl3: [
           {
             id: 'style',
@@ -295,8 +289,8 @@ export const DRAWER_LINKS = [
       },
       {
         id: 'buttonsizes',
-        label: 'Button Sizes',
         value: 'buttonsizes',
+        label: 'Button Sizes',
         lvl3: [
           {
             id: 'buttonsize',
@@ -327,8 +321,8 @@ export const DRAWER_LINKS = [
       },
       {
         id: 'buttonstyles',
-        label: 'Button Styles',
         value: 'buttonstyles',
+        label: 'Button Styles',
         lvl3: [
           {
             id: 'buttonstyle',
@@ -353,7 +347,6 @@ export const DRAWER_LINKS = [
     id: 'fightAnime',
     label: 'Fight Animation',
     icon: 'fist-raised',
-    href: '#fightAnime',
     lvl2: [
       {
         id: 'fight',
@@ -382,246 +375,4 @@ export const DRAWER_LINKS = [
       }
     ]
   },
-  {
-    id: 'close',
-    label: 'Collapse',
-    icon: 'times',
-    href: '#close'
-  },
 ];
-
-export const DRAWER_PROJECT_LINKS = [
-  {
-    id: 'splashscreen',
-    label: 'Splash Screen',
-    icon: 'power-off',
-    href: '#splashscreen',
-    lvl2: [
-      {
-        id: 'showSplash',
-        label: 'Show On Load',
-        value: true
-      },
-      {
-        id: 'showSplash',
-        label: 'Enter On Load',
-        value: false
-      }
-    ]
-  },
-  {
-    id: 'themes',
-    label: 'Select Theme',
-    icon: 'adjust',
-    href: '#themes',
-    lvl2: [
-      {
-        id: 'theme',
-        label: 'Dark',
-        value: 'DARK'
-      },
-      {
-        id: 'theme',
-        label: 'Light',
-        value: 'LIGHT'
-      }
-    ]
-  },
-  {
-    id: 'bgs',
-    label: 'Backgrounds',
-    icon: 'image',
-    href: '#bgs',
-    lvl2: [
-      {
-        id: 'background',
-        value: 'BG-1',
-        label: 'Default'
-      },
-      {
-        id: 'background',
-        value: 'BG-2',
-        label: 'Leaves'
-      },
-      {
-        id: 'background',
-        value: 'BG-3',
-        label: 'Wood'
-      },
-      {
-        id: 'background',
-        value: 'BG-4',
-        label: 'SSJ/SSB Goku'
-      },
-      {
-        id: 'background',
-        value: 'BG-5',
-        label: 'UI Goku'
-      },
-      {
-        id: 'background',
-        value: 'BG-6',
-        label: 'Orihime'
-      },
-      {
-        id: 'background',
-        value: 'BG-7',
-        label: 'Yoruichi'
-      },
-      {
-        id: 'background',
-        value: 'BG-8',
-        label: 'Fullbring Ichigo'
-      }
-    ]
-  },
-  {
-    id: 'audio',
-    label: 'Music',
-    icon: 'music',
-    href: '#audio',
-    lvl3: true,
-    lvl2: [
-      {
-        id: 'songs',
-        label: 'Songs',
-        value: 'songs',
-        lvl3: [
-          {
-            id: 'song',
-            label: "Forgive Her",
-            value: "Forgive Her"
-          },
-          {
-            id: 'song',
-            label: "Wolf's Milk",
-            value: "Wolfs Milk"
-          }
-        ]
-      },
-      {
-        id: 'controls',
-        label: 'Controls',
-        value: 'controls',
-        lvl3: [
-          {
-            id: 'control',
-            label: 'Show',
-            value: 'show'
-          },
-          {
-            id: 'control',
-            label: 'Hide',
-            value: 'hide'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'header',
-    label: 'Header',
-    icon: 'bars',
-    href: '#header',
-    lvl3: true,
-    lvl2: [
-      {
-        id: 'styles',
-        label: 'Styles',
-        value: 'styles',
-        lvl3: [
-          {
-            id: 'style',
-            value: 'HEADER-1',
-            label: 'Centered'
-          },
-          {
-            id: 'style',
-            value: 'HEADER-2',
-            label: 'Left Aligned'
-          },
-          {
-            id: 'style',
-            value: 'HEADER-3',
-            label: 'Right Aligned'
-          },
-          {
-            id: 'style',
-            value: 'HEADER-4',
-            label: 'Space Around'
-          },
-          {
-            id: 'style',
-            value: 'HEADER-5',
-            label: 'Space Between'
-          },
-          {
-            id: 'style',
-            value: 'HEADER-6',
-            label: 'Space Evenly'
-          }
-        ]
-      },
-      {
-        id: 'buttonsizes',
-        label: 'Button Sizes',
-        value: 'buttonsizes',
-        lvl3: [
-          {
-            id: 'buttonsize',
-            value: 'BUTTON-1',
-            label: 'Default'
-          },
-          {
-            id: 'buttonsize',
-            value: 'BUTTON-2',
-            label: 'Small'
-          },
-          {
-            id: 'buttonsize',
-            value: 'BUTTON-2W',
-            label: 'Small & Wide'
-          },
-          {
-            id: 'buttonsize',
-            value: 'BUTTON-3',
-            label: 'Big'
-          },
-          {
-            id: 'buttonsize',
-            value: 'BUTTON-3W',
-            label: 'Big & Wide'
-          }
-        ]
-      },
-      {
-        id: 'buttonstyles',
-        label: 'Button Styles',
-        value: 'buttonstyles',
-        lvl3: [
-          {
-            id: 'buttonstyle',
-            value: 'BTNSTYLE-1',
-            label: 'Default'
-          },
-          {
-            id: 'buttonstyle',
-            value: 'BTNSTYLE-2',
-            label: '2'
-          },
-          {
-            id: 'buttonstyle',
-            value: 'BTNSTYLE-3',
-            label: '3'
-          }
-        ]
-      }
-    ]
-  },
-  {
-    id: 'close',
-    label: 'Collapse',
-    icon: 'times',
-    href: '#close'
-  },
-]

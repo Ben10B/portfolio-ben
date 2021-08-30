@@ -1,17 +1,14 @@
 .accordion {
   width: 100%; height: 100%;
 }
-.accordion .menu {
-  overflow: hidden;
+.accordion .menu { overflow: hidden;
 }
 .accordion .item, .accordion .item-2 {
   overflow: hidden;
+  position: relative;
   padding: 0;
 }
-.accordion .item-2 {
-  position: relative;
-}
-.accordion .item-2 input {
+.accordion input[type=checkbox] {
   position: absolute;
   top: 0;
   opacity: 0;
@@ -98,10 +95,8 @@
 .ssmenu .lvl3:hover::before {
   opacity: 1;
 }
-.accordion .item:target .smenu {
-  max-height: 100em;
-}
-.accordion .item:target .item-2 input:checked ~ .ssmenu {
+.accordion .item input:checked ~ .smenu,
+.accordion .item-2 input:checked ~ .ssmenu {
   max-height: 100em;
 }
 @media (max-width: 400px) {

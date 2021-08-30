@@ -73,6 +73,7 @@ $white: #fff;
   }
   .drawer {
     &.open { 
+      background-color: rgba(0, 0, 0, 0.1);
       border-left: .5px solid $black;
       .accordion {
         .btn, .btn::before { background: $white;

@@ -44,10 +44,11 @@ const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updat
         <ul>
           {links.map(x => (
             <li key={x.id} className="item" id={x.id}>
-              <a href={`${x.href}`} className="btn">
+              <div className="btn">
                 <FontAwesomeIcon icon={x.icon}/>
                 <label>{x.label}</label>
-              </a>
+              </div>
+              <input type="checkbox"/>
               {x.lvl2 && (
                 <div className="smenu">
                   {!x.lvl3 ? 
