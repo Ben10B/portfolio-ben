@@ -77,11 +77,13 @@ class Home extends Component {
             <li><p>Adobe Illustrator CC</p></li>
             <li><p>Adobe Photoshop CC</p></li>
             <li><p>Adobe InDesign CC</p></li>
+            <li><p>Macromedia Fireworks</p></li>
           </ul>
           <ul className="skills green">
             <li><h3>Media</h3></li>
             <li><p>Adobe Premiere Pro CC</p></li>
             <li><p>Adobe After Effects CC</p></li>
+            <li><p>Macromedia Flash 8</p></li>
           </ul>
         </div>
 
