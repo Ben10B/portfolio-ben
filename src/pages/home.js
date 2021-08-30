@@ -38,6 +38,8 @@ class Home extends Component {
             <div className="column flex-3">
               <h4>Full Stack Web Developer</h4>
               <p>MERN Stack | JavaScript | Shopify Liquid | UI/UX | C#</p>
+              <p><FontAwesomeIcon icon="envelope"/> benjamin.beckwith@yahoo.com</p>
+              <p><FontAwesomeIcon icon="phone-alt"/> 850-348-1142</p>
               <span className="socialContainer">
                 <div className="socialIcon">
                   <div style={{backgroundImage: `url(${linkedIn})`}}></div>
@@ -94,6 +96,7 @@ class Home extends Component {
             I don't know about you, but I love to implement design into code; more specifically, web, graphic and media design. My strengths weigh heavier in web design and development since I can create an application with my art.
             In 2009, I was inspired to make sprite animations using Macromedia Flash and Microsoft Paint. Now I'm developing websites and games, and exploring more art and animation that entranced me back then. I just wanna create cool looking stuff!
             </p>
+            <p className="paragraph">I recommend eating your pizza with Creamy Garlic Parmesan sauce!</p>
           </div>
           <div style={{backgroundImage: `url(${me})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'}}/>
         </section>
