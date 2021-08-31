@@ -20,7 +20,8 @@ const initialState = {
   loading: false,
   page: {
     layout: ''
-  }
+  },
+  drawerBtn: ''
 };
 
 const checkProperties = (initial, storage) => {
@@ -142,6 +143,13 @@ const settingsReducer = (state = initialState, action) => {
       }
       saveToLocalStorage(PROJECT_PAGE);
       return PROJECT_PAGE;
+    case 'UPDATE_DRAWER_BUTTON':
+      const DRAWER_BTN = {
+        ...state,
+        drawerBtn: action.payload
+      }
+      saveToLocalStorage(DRAWER_BTN);
+      return DRAWER_BTN;
     default: return state;
   }
 }

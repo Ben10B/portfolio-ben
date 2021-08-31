@@ -63,6 +63,13 @@ export const updateProjectPage = (page) => dispatch => {
   })
 }
 
+export const updateDrawerBtn = (drawerBtn) => dispatch => {
+  dispatch({
+    type: 'UPDATE_DRAWER_BUTTON',
+    payload: drawerBtn
+  })
+}
+
 export const presetSettings = () => dispatch => {
   dispatch({
     type: 'PRESET_SETTINGS_STATE'

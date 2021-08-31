@@ -34,6 +34,33 @@ export const DRAWER_LINKS = [
     ]
   },
   {
+    id: 'drawerButton',
+    label: 'Drawer Button',
+    icon: 'edit',
+    lvl2: [
+      {
+        id: 'drawerBtn',
+        value: '',
+        label: 'Default'
+      },
+      {
+        id: 'drawerBtn',
+        value: 'TOP',
+        label: 'Stick to Top'
+      },
+      {
+        id: 'drawerBtn',
+        value: 'MIDDLE',
+        label: 'Stick to Middle'
+      },
+      {
+        id: 'drawerBtn',
+        value: 'BOTTOM',
+        label: 'Stick to Bottom'
+      },
+    ]
+  },
+  {
     id: 'bgs',
     label: 'Backgrounds',
     icon: 'image',
