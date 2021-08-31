@@ -8,6 +8,7 @@ import mazeProject from '../assets/AmazING.gif';
 import statsProject from '../assets/Neu Stats.png';
 import grindinProject from "../assets/Grindin 01.gif";
 //graphic
+import balabeFT from '../assets/Balabe Food Truck.jpg';
 import smith from '../assets/Demon Smith 2.jpg';
 import surreal2 from '../assets/Surreal Two.jpg';
 import surreal1 from '../assets/Surreal One.jpg';
@@ -47,17 +48,21 @@ export const mainData = [
     + ' for companies to advertise their products. Working in collaboration with WaterStation.', 
     tech: ['Shopify Liquid', 'JavaScript', 'Map.js']
   },
+  { 
+    index: 2, image: balabeFT, title: 'Balabe Food Truck', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'I produced a logo design for my friend, Ibrahim Fall, for his food truck.' 
+  },
   {
-    index: 2, video: scholarAthlete, title: 'Scholar Athlete of the Week - 2014', type: 'other',
+    index: 3, video: scholarAthlete, title: 'Scholar Athlete of the Week - 2014', type: 'other',
     description: "I found the article the original video was linked to, but the article and video was removed (https://www.facebook.com/WMBBTV/posts/10152027673646658), for it's 6 years old!"
     + " Luckily I've found my recording of it.", 
     tech: ['Marching Band', 'Football', 'Track', '3.96 GPA']
   },
-  { index: 3, video: seven, title: `7 into 28`, type: 'media',
+  { index: 4, video: seven, title: `7 into 28`, type: 'media',
     description: 'Short Typography', tech: ['After Effects'] 
   },
   {
-    index: 4, video: spriteBattle1, title: 'GokuNarutovsSasukeIchigo Sprite Battle - Part One', type: 'other',
+    index: 5, video: spriteBattle1, title: 'GokuNarutovsSasukeIchigo Sprite Battle - Part One', type: 'other',
     description: "This video was suppose to be a remake of an older version made in Windows Movie Maker, but I added on to it changing the plot, so it's different. I know there are minor errors in the video, so bear with it please."
     + " I kinda wrapped the ending up so that I can make a fresh video with my new skills. Enjoy=)", 
     tech: ['Macromedia Flash 8', 'Macromedia Fireworks 8']
@@ -113,14 +118,33 @@ export const webData = [
 ];
 
 export const graphicData = [
-  { index: 0, img: rightguard, proj: `Right Guard Parody`, text: 'yup', type: 'graphic' },
-  { index: 1, img: troots, proj: `Twisted Roots`, text: 'yup', type: 'graphic' },
-  { index: 2, img: smith, proj: `Demon Smith`, text: 'yup', type: 'graphic' },
-  { index: 3, img: surreal1, proj: `Surreal One`, text: 'yup', type: 'graphic' },
-  { index: 4, img: surreal2, proj: `Surreal Two`, text: 'yup', type: 'graphic' },
-  { index: 5, img: amigos, proj: `3 Amigos`, text: 'yup', type: 'graphic' },
-  { index: 6, img: offspring, proj: `The Offspring`, text: 'yup', type: 'graphic' },
-  { index: 7, img: track, proj: `Track Olympics`, text: 'yup', type: 'graphic' },
+  { index: 0, image: troots, title: 'Twisted Roots', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'I created a business card design for my friend, Ibrahim Fall, for his shop.' 
+  },
+  { index: 1, image: balabeFT, title: 'Balabe Food Truck', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'I produced a logo design for my friend, Ibrahim Fall, for his food truck.' 
+  },
+  { index: 2, image: rightguard, title: 'Night Guard', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'Parody of Night Guard Deodorant' 
+  },
+  { index: 3, image: smith, title: 'Demon Smith', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'yup' 
+  },
+  { index: 4, image: surreal1, title: 'Surreal One', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'yup' 
+  },
+  { index: 5, image: surreal2, title: 'Surreal Two', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'yup' 
+  },
+  { index: 6, image: amigos, title: '3 Amigos', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'yup' 
+  },
+  { index: 7, image: offspring, title: 'The Offspring', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'yup' 
+  },
+  { index: 8, image: track, title: 'Track Olympics', type: 'graphic', tech: ['Adobe Photoshop CC'], 
+    description: 'yup' 
+  },
 ];
 
 export const mediaData = [

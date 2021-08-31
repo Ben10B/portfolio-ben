@@ -76,11 +76,7 @@ const Card = ({project, select, currentIndex}) => {
   return (
     <div id={`card-${index}`} className="card" onClick={()=>select(index)}>
       
-      {image !== undefined ? (
-        <img src={image} alt={title}/>
-      ) : (
-        <VideoPlayer url={video}/>
-      )}
+      {image ? ( <img src={image} alt={title}/> ) : ( <VideoPlayer url={video}/> )}
       <h6 className="title">{title}</h6>
       <div className="details" style={{ display: currentIndex !== index ? 'none' : ''}}>
         <p className="desc">{description}</p>

@@ -61,6 +61,10 @@ a.go-to {
 } 
 .go-to.cool-btn-2.media::after { background-color: rgba(0, 255, 0, 0.5);
 }
+.go-to.cool-btn-2.graphic::before { background-color: rgba(255, 0, 0, 0.1);
+} 
+.go-to.cool-btn-2.graphic::after { background-color: rgba(255, 0, 0, 0.5);
+}
 .go-to.cool-btn-2.other::before { background-color: rgba(255, 166, 0, 0.1);
 }
 .go-to.cool-btn-2.other::after { background-color: rgba(255, 166, 0, 0.5);

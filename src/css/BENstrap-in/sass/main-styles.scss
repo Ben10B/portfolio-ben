@@ -58,11 +58,11 @@
 }
 //hght-: {number}
 @for $hght from 1 through 100{
-    .hght-#{$hght}{
-        height: $hght * 1%;
-    }
-    .hght-#{$hght}-vh{
-      height: $hght * 1vh;
+  .hght-#{$hght} {
+    height: $hght * 1%;
+  }
+  .hght-#{$hght}-vh {
+    height: $hght * 1vh;
   }
 }
 //fnt-size-: {number}
