@@ -2,11 +2,11 @@
 import hub from '../assets/HUB2.gif';
 import nad1 from '../assets/NAD1.gif';
 import hylyte from '../assets/Hylyte.gif';
-import pizzaProject from '../assets/Slice Pizzeria.png';
-import innovationProject from '../assets/InnovationLab.png';
-import mazeProject from '../assets/AmazING.png';
+import pizzaProject from '../assets/Slice Pizzeria.gif';
+import innovationProject from '../assets/NIC 2.gif';
+import mazeProject from '../assets/AmazING.gif';
 import statsProject from '../assets/Neu Stats.png';
-import grindinProject from "../assets/Grindin'.png";
+import grindinProject from "../assets/Grindin 01.gif";
 //graphic
 import smith from '../assets/Demon Smith 2.jpg';
 import surreal2 from '../assets/Surreal Two.jpg';
@@ -81,32 +81,32 @@ export const webData = [
     tech: ['Shopify Liquid', 'JavaScript', 'Map.js']
   },
   {
-    index: 2, image: nad1, title: 'NewAge Diamonds', type: 'web', 
-    description: 'Migrated React website to Shopify platform and redesigned theme to include custom features for Ariix (now renamed as NewAge).'
-    + ' As a result, traffic and sales increased.', 
-    tech: ['Shopify Liquid', 'JavaScript', 'Express', 'Node']
-  },
-  {
-    index: 3, image: grindinProject, title: "Grindin' Goals!", type: 'web', 
+    index: 2, image: grindinProject, title: "Grindin' Goals!", type: 'web', 
     description: 'A 10-wk individual project, for people to stay motivated as they complete their goals'
     + ' with a Role Playing Game element.',
     tech: ['MongoDB', 'Express', 'React', 'Node']
   },
   {
+    index: 3, image: nad1, title: 'NewAge Diamonds', type: 'web', 
+    description: 'Migrated React website to Shopify platform and redesigned theme to include custom features for Ariix (now renamed as NewAge).'
+    + ' As a result, traffic and sales increased.', 
+    tech: ['Shopify Liquid', 'JavaScript', 'Express', 'Node']
+  },
+  {
     index: 4, image: pizzaProject, title: 'Slice Pizzeria', type: 'web', 
     description: 'A team project to make a responsize pizza site following web and mobile wireframes.',
-    tech: ['JavaScript']
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
     index: 5, image: innovationProject, title: 'Neumont Innovation Center', type: 'web', 
     description: 'A team project for a Neumont Staff member. This site is to provide info and events for students'
     +' who want their ideas marketed. We only worked on the front end.',
-    tech: ['JavaScript']
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
     index: 6, image: mazeProject, title: 'AmazING', type: 'web', 
     description: 'A randomized maze that can be played by a bot or player. It looks AmazING upon completion!',
-    tech: ['JavaScript']
+    tech: ['HTML', 'CSS', 'JavaScript']
   },
   {
     index: 7, image: statsProject, title: 'Neumont Prospective Statistics', type: 'web', 
