@@ -110,7 +110,8 @@ $fight2: '../assets/Fight2.gif';
 $parallaxes: (
   "PX-1": '../assets/BG1.gif', "PX-1B": '../assets/BG1b.gif', "PX-2": '../assets/BG2.gif', "PX-3": '../assets/BG3.gif',
   "PX-4": '../assets/BG4.gif', "PX-5": '../assets/BG5.gif', "PX-6": '../assets/BG6.gif', "PX-7": '../assets/BG7.gif',
-  "PX-8": '../assets/BG8.gif', "PX-9": '../assets/BG9.gif', "PX-10": '../assets/BG10.gif'
+  "PX-8": '../assets/BG8.gif', "PX-9": '../assets/BG9.gif', "PX-10": '../assets/BG10.gif', "PX-11": '../assets/BG11.gif',
+  "PX-12": '../assets/BG12.gif'
 );
 @each $key, $url in $parallaxes {
   .#{$key} {
