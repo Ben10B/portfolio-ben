@@ -1,8 +1,6 @@
 $fight1: '../assets/Fight.gif';
 $fight2: '../assets/Fight2.gif';
-.DASH-CHOREO {
-  animation-duration: 1s;
-}
+
 
 .landing-parallaxx {
   background-attachment: fixed, fixed;
@@ -60,28 +58,9 @@ $fight2: '../assets/Fight2.gif';
   100% { background-position: top left, top; }
 }
 .TELEPORT-FIGHT {
-  /* background-position: center, top;
-  animation: teleport-center 2s 1, 
-  teleport-left 2s 2s 1, 
-  teleport-right 2s 4s 1,
-  teleport-top 2s 6s 1,
-  teleport-bottom 2s 8s 1; */
   animation: teleport-movement 4s infinite;
 }
-@keyframes teleport-left {
-  0%, 100% { background-position: left, top; }
-}
-@keyframes teleport-right {
-  0%, 100% { background-position: right, top; }
-}
-@keyframes teleport-top {
-  0%, 100% { background-position: top, top; }
-}
-@keyframes teleport-bottom {
-  0%, 100% { background-position: bottom, top; }
-}
-@keyframes teleport-center {
-  0%, 100% { background-position: center, top; }
+.DASH-CHOREO.TELEPORT-FIGHT { animation-duration: 1s;
 }
 .landing-parallaxx > div {
   background-image: url('../assets/clouds.png');
@@ -95,7 +74,7 @@ $fight2: '../assets/Fight2.gif';
   padding-top: 40px;
   flex-direction: column;
   justify-content: center;
-  animation: 50s para infinite linear 
+  animation: 50s para infinite linear;
 }
 @keyframes para {
   100% { background-position: -5000px bottom; }
@@ -111,7 +90,7 @@ $parallaxes: (
   "PX-1": '../assets/BG1.gif', "PX-1B": '../assets/BG1b.gif', "PX-2": '../assets/BG2.gif', "PX-3": '../assets/BG3.gif',
   "PX-4": '../assets/BG4.gif', "PX-5": '../assets/BG5.gif', "PX-6": '../assets/BG6.gif', "PX-7": '../assets/BG7.gif',
   "PX-8": '../assets/BG8.gif', "PX-9": '../assets/BG9.gif', "PX-10": '../assets/BG10.gif', "PX-11": '../assets/BG11.gif',
-  "PX-12": '../assets/BG12.gif'
+  "PX-12": '../assets/BG12.gif', "PX-11B": '../assets/BG11.gif', "PX-12B": '../assets/BG12.gif'
 );
 @each $key, $url in $parallaxes {
   .#{$key} {

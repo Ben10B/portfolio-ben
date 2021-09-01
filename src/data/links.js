@@ -232,6 +232,16 @@ export const DRAWER_LINKS = [
           },
           {
             id: 'slideshow',
+            value: 'PX-11B',
+            label: 'Mary Crouch'
+          },
+          {
+            id: 'slideshow',
+            value: 'PX-12B',
+            label: 'Mary Stand'
+          },
+          {
+            id: 'slideshow',
             value: 'PX-NONE-SLIDE',
             label: 'None'
           }
