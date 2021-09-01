@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import GraphicComponent from '../components/Graphic';
 const Graphic = ({ fight }) => {
   return (
-    <div className={`fight-parallaxx ${fight}`}>
+    <div className={`fight-parallaxx ${fight.choreo} ${fight.animation}`}>
       <GraphicComponent/>
     </div>
   );

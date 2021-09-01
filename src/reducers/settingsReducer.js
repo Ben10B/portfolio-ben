@@ -16,7 +16,10 @@ const initialState = {
     buttonsize: 'BUTTON-1',
     buttonstyle: 'BTNSTYLE-1'
   },
-  fight: 'DEFAULT-FIGHT',
+  fight: {
+    animation: 'DEFAULT-FIGHT',
+    choreo: 'DEFAULT-CHOREO'
+  },
   loading: false,
   page: {
     layout: ''
@@ -34,8 +37,11 @@ const checkProperties = (initial, storage) => {
       
       if(B_VALUE_STRING) {
         let LVL1 = DRAWER_LINKS.find(x => x.lvl2 && x.lvl2.find(y => y.id === A_KEY));
-        let LVL2 = LVL1.lvl2.find(x => x.value === B_VALUE);
-        result[A_KEY] = LVL2 ? B_VALUE : a[index][1];
+        if(!LVL1) result[A_KEY] = a[index][1];
+        else {
+          let LVL2 = LVL1.lvl2.find(x => x.value === B_VALUE);
+          result[A_KEY] = LVL2 ? B_VALUE : a[index][1];
+        }
       }
       else if(B_VALUE_BOOLEAN) {
         let LVL2 = DRAWER_LINKS.filter(x => x.id === A_KEY) ? true : null;
@@ -127,7 +133,7 @@ const settingsReducer = (state = initialState, action) => {
     case 'UPDATE_FIGHT':
       const FIGHT = {
         ...state,
-        fight: action.payload
+        fight: { ...state.fight, ...action.payload }
       }
       saveToLocalStorage(FIGHT);
       return FIGHT;

@@ -23,17 +23,17 @@ class Home extends Component {
     });
   }
   render() {
-    const { parallaxes: { landing, slideshow }, fight } = this.props.settings;
+    const { parallaxes: { landing, slideshow }, fight: { animation, choreo } } = this.props.settings;
     return (
       <div className="App">
-        <div className={`landing-parallaxx ${landing} ${fight}`}>
+        <div className={`landing-parallaxx ${landing} ${choreo} ${animation}`}>
           <div className="txt-center fnt-white">
             <h1 className="res-fnt-size-6">BEN-JAM-IN BECKWITH</h1>
           </div>
         </div>
         <Header/>
 
-        <div data-aos="zoom-in" data-aos-duration="1500" className={`fight-parallaxx ${fight} column hght-90-vh vert-center`}>
+        <div data-aos="zoom-in" data-aos-duration="1500" className={`fight-parallaxx ${choreo} ${animation} column hght-90-vh vert-center`}>
           <div className="row fnt-white">
             <div className="column flex-3">
               <h4>Full Stack Web Developer</h4>
@@ -60,11 +60,11 @@ class Home extends Component {
           </div>
         </div>
         
-        <div className={`parallaxx ${slideshow} ${fight} hght-90-vh`} style={{ overflow: 'hidden'}}>
+        <div className={`parallaxx ${slideshow} ${choreo} ${animation} hght-90-vh`} style={{ overflow: 'hidden'}}>
           <SlideShow data={mainData}/>
         </div>
         
-        <div data-aos="fade-right" data-aos-duration="1500" className={`fight-parallaxx ${fight} fnt-white row hght-90-vh skill-section`}>
+        <div data-aos="fade-right" data-aos-duration="1500" className={`fight-parallaxx ${choreo} ${animation} fnt-white row hght-90-vh skill-section`}>
           <ul className="skills blue">
             <li><h3>Web</h3></li>
             <li><p>HTML5</p></li>
@@ -89,7 +89,7 @@ class Home extends Component {
           </ul>
         </div>
 
-        <section id="me" data-aos="flip-right" data-aos-duration="1500" className={`hght-90-vh row fight-parallaxx ${fight}`}>
+        <section id="me" data-aos="flip-right" data-aos-duration="1500" className={`hght-90-vh row fight-parallaxx ${choreo} ${animation}`}>
           <div className="column fnt-white">
             <h3>BIO</h3>
             <p className="paragraph">

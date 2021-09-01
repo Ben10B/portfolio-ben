@@ -7,36 +7,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Accordion = ({ links, updateBackground, updateTheme, updateParallax, updateAudio, updateSplash, updateHeader, settings, updateFight, updateDrawerBtn }) => {
   const handleClick = (item) => {
     switch(item.id) {
-      case 'theme': updateTheme(item.value); break;
-      case 'fight': updateFight(item.value); break;
-      case 'drawerBtn': updateDrawerBtn(item.value); break;
+      case 'animation': updateFight({ animation: item.value }); break;
       case 'background': updateBackground(item.value); break;
-      case 'style': updateHeader({ style: item.value }); break;
       case 'buttonsize': updateHeader({ buttonsize: item.value }); break;
       case 'buttonstyle': updateHeader({ buttonstyle: item.value }); break;
-      case 'showSplash': updateSplash(item.value); break;
-      case 'song': updateAudio({ song: item.value }); break;
+      case 'choreo': updateFight({ choreo: item.value }); break;
       case 'control': updateAudio({ control: item.value }); break;
+      case 'drawerBtn': updateDrawerBtn(item.value); break;
       case 'landing': updateParallax({ landing: item.value }); break;
+      case 'showSplash': updateSplash(item.value); break;
       case 'slideshow': updateParallax({ slideshow: item.value }); break;
+      case 'song': updateAudio({ song: item.value }); break;
+      case 'style': updateHeader({ style: item.value }); break;
+      case 'theme': updateTheme(item.value); break;
       default: break;
     }
   }
   const handleActive = (item) => {
     const { audio, background, fight, header, parallaxes, showSplash, theme, drawerBtn } = settings;
     switch(item.value) {
-      case theme: return 'active';
-      case fight: return 'active';
-      case drawerBtn: return 'active';
-      case showSplash: return 'active';
-      case background: return 'active';
       case audio.song: return 'active';
       case audio.control: return 'active';
+      case background: return 'active';
+      case drawerBtn: return 'active';
+      case fight.animation: return 'active';
+      case fight.choreo: return 'active';
       case header.style: return 'active';
       case header.buttonsize: return 'active';
       case header.buttonstyle: return 'active';
       case parallaxes.landing: return 'active';
       case parallaxes.slideshow: return 'active';
+      case showSplash: return 'active';
+      case theme: return 'active';
       default: break;
     }
   }

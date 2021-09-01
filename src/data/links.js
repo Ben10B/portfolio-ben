@@ -175,7 +175,7 @@ export const DRAWER_LINKS = [
           },
           {
             id: 'landing',
-            value: 'NONE-L',
+            value: 'PX-NONE-LANDING',
             label: 'None'
           }
         ]
@@ -222,7 +222,7 @@ export const DRAWER_LINKS = [
           },
           {
             id: 'slideshow',
-            value: 'NONE-S',
+            value: 'PX-NONE-SLIDE',
             label: 'None'
           }
         ]
@@ -371,34 +371,59 @@ export const DRAWER_LINKS = [
     ]
   },
   {
-    id: 'fightAnime',
+    id: 'fight',
     label: 'Fight Animation',
     icon: 'fist-raised',
+    lvl3: true,
     lvl2: [
       {
-        id: 'fight',
-        value: 'DEFAULT-FIGHT',
-        label: 'Default'
+        id: 'choreography',
+        value: 'choreography',
+        label: 'Choreo',
+        lvl3: [
+          {
+            id: 'choreo',
+            value: 'DEFAULT-CHOREO',
+            label: 'Default'
+          },
+          {
+            id: 'choreo',
+            value: 'DASH-CHOREO',
+            label: 'Dash'
+          }
+        ]
       },
       {
-        id: 'fight',
-        value: 'IDLE-FIGHT',
-        label: 'Idle'
-      },
-      {
-        id: 'fight',
-        value: 'TELEPORT-FIGHT',
-        label: 'Teleport'
-      },
-      {
-        id: 'fight',
-        value: 'CORNER-FIGHT',
-        label: 'Corners'
-      },
-      {
-        id: 'fight',
-        value: 'BORDER-FIGHT',
-        label: 'Border'
+        id: 'anime',
+        value: 'anime',
+        label: 'Animation',
+        lvl3: [
+          {
+            id: 'animation',
+            value: 'DEFAULT-FIGHT',
+            label: 'Default'
+          },
+          {
+            id: 'animation',
+            value: 'IDLE-FIGHT',
+            label: 'Idle'
+          },
+          {
+            id: 'animation',
+            value: 'TELEPORT-FIGHT',
+            label: 'Teleport'
+          },
+          {
+            id: 'animation',
+            value: 'CORNER-FIGHT',
+            label: 'Corners'
+          },
+          {
+            id: 'animation',
+            value: 'BORDER-FIGHT',
+            label: 'Border'
+          }
+        ]
       }
     ]
   },

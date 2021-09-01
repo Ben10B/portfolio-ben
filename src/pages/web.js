@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import WebComponent from '../components/Web';
 const Web = ({ fight }) => {
   return (
-    <div className={`fight-parallaxx ${fight}`}>
+    <div className={`fight-parallaxx ${fight.choreo} ${fight.animation}`}>
       <WebComponent/>
     </div>
   );

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import MediaComponent from '../components/Media';
 const Media = ({ fight }) => {
   return (
-    <div className={`fight-parallaxx ${fight}`}>
+    <div className={`fight-parallaxx ${fight.choreo} ${fight.animation}`}>
       <MediaComponent/>
     </div>
   );

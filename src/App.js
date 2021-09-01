@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import './css/BENstrap-in/css/my.css';
 import './css/App.css';
 import './css/index.css';
-import './css/parallax.css';
+import './css/parallax.scss';
 import './css/backgrounds.css';
 import './css/themes.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
