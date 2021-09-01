@@ -7,6 +7,7 @@ import innovationProject from '../assets/NIC 2.gif';
 import mazeProject from '../assets/AmazING.gif';
 import statsProject from '../assets/Neu Stats.png';
 import grindinProject from "../assets/Grindin 01.gif";
+import yaID from '../assets/YA Identity.gif';
 //graphic
 import balabeFT from '../assets/Balabe Food Truck.jpg';
 import smith from '../assets/Demon Smith 2.jpg';
@@ -16,7 +17,6 @@ import amigos from '../assets/3 Amigos.jpg';
 import offspring from '../assets/The Offspring.jpg';
 import track from '../assets/Track Olympics.jpg';
 import troots from '../assets/Asset 2.png';
-// import balabe from '../assets/Asset 1.png';
 import rightguard from '../assets/Right Guard Parody.jpg';
 //media
 const seven = 'https://youtube.com/watch?v=966jrmteU14';
@@ -37,20 +37,20 @@ const spriteBattle1 = 'https://youtu.be/A1ays9EpjC4';
 
 export const mainData = [
   {
-    index: 0, image: hub, title: 'Kolvanta Order Management System', type: 'web',
+    index: 0, image: yaID, title: 'YA Identity LLC', type: 'other',
+    description: "I created an LLC to sell Print on Demand products. To spread the wealth, I gathered people for this project."
+    + " Go to yaidentity.com and check out the merch!", 
+    tech: ['Shopify Liquid', 'Javascript', 'CSS']
+  },
+  {
+    index: 1, image: hub, title: 'Kolvanta Order Management System', type: 'web',
     description: 'Created an order management system to keep track of purchased orders from processed to delivered;'
     + " moving away from Google Sheets. Kept track of orders for Ariix, and one of Do Good Be Kind's promotions.", 
     tech: ['MongoDB', 'Express', 'React', 'Node']
   },
-  {
-    index: 1, image: hylyte, title: 'Hylyte', type: 'web',
-    description: 'Created a Shopify site to display locations of water machines throughout the U.S. and reserve locations'
-    + ' for companies to advertise their products. Working in collaboration with WaterStation.', 
-    tech: ['Shopify Liquid', 'JavaScript', 'Map.js']
-  },
   { 
     index: 2, image: balabeFT, title: 'Balabe Food Truck', type: 'graphic', tech: ['Adobe Photoshop CC'], 
-    description: 'I produced a logo design for my friend, Ibrahim Fall, for his food truck.' 
+    description: "I produced a logo design for my friend's food truck." 
   },
   {
     index: 3, video: scholarAthlete, title: 'Scholar Athlete of the Week - 2014', type: 'other',
@@ -119,10 +119,10 @@ export const webData = [
 
 export const graphicData = [
   { index: 0, image: troots, title: 'Twisted Roots', type: 'graphic', tech: ['Adobe Photoshop CC'], 
-    description: 'I created a business card design for my friend, Ibrahim Fall, for his shop.' 
+    description: "I created a business card design for my friend's shop." 
   },
   { index: 1, image: balabeFT, title: 'Balabe Food Truck', type: 'graphic', tech: ['Adobe Photoshop CC'], 
-    description: 'I produced a logo design for my friend, Ibrahim Fall, for his food truck.' 
+    description: "I produced a logo design for my friend's food truck."  
   },
   { index: 2, image: rightguard, title: 'Night Guard', type: 'graphic', tech: ['Adobe Photoshop CC'], 
     description: 'Parody of Night Guard Deodorant' 
@@ -188,15 +188,21 @@ export const mediaData = [
 
 export const otherData = [
   {
-    index: 0, video: 'https://youtu.be/151YhyaIvNw', title: 'Scholar Athlete of the Week - 2014', type: 'other',
-    description: "I found the article the original video was linked to, but the article and video was removed (https://www.facebook.com/WMBBTV/posts/10152027673646658), for it's 6 years old!"
-    + " Luckily I've found my recording of it.", 
-    tech: ['Marching Band', 'Football', 'Track', '3.96 GPA']
+    index: 0, image: yaID, title: 'YA Identity LLC', type: 'other',
+    description: "I created an LLC to sell Print on Demand products. To spread the wealth, I gathered people for this project."
+    + " Go to yaidentity.com and check out the merch!", 
+    tech: ['Shopify Liquid', 'Javascript', 'CSS'], links: [{ direct: 'https://yaidentity.com' }]
   },
   {
-    index: 1, video: 'https://youtu.be/A1ays9EpjC4', title: 'GokuNarutovsSasukeIchigo Sprite Battle - Part One', type: 'other',
+    index: 1, video: scholarAthlete, title: 'Scholar Athlete of the Week - 2014', type: 'other',
+    description: "I found the article the original video was linked to, but the article and video was removed (https://www.facebook.com/WMBBTV/posts/10152027673646658), for it's 6 years old!"
+    + " Luckily I've found my recording of it.", 
+    tech: ['Marching Band', 'Football', 'Track', '3.96 GPA'], links: [{ yt: scholarAthlete }]
+  },
+  {
+    index: 2, video: spriteBattle1, title: 'GokuNarutovsSasukeIchigo Sprite Battle - Part One', type: 'other',
     description: "This video was suppose to be a remake of an older version made in Windows Movie Maker, but I added on to it changing the plot, so it's different. I know there are minor errors in the video, so bear with it please."
     + " I kinda wrapped the ending up so that I can make a fresh video with my new skills. Enjoy=)", 
-    tech: ['Macromedia Flash 8', 'Macromedia Fireworks 8']
+    tech: ['Macromedia Flash 8', 'Macromedia Fireworks 8'], links: [{ yt: spriteBattle1 }]
   },
 ]

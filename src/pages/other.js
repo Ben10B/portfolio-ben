@@ -14,7 +14,7 @@ const Other = ({ settings }) => {
         </div>
       </div>
       <Header />
-      <div className={`parallaxx ${slideshow} ${choreo} ${animation} hght-80-vh`} style={{ overflow: 'hidden' }}>
+      <div className={`parallaxx ${slideshow} ${choreo} ${animation} hght-100-vh`} style={{ overflow: 'hidden' }}>
         <SlideShow data={otherData} />
       </div>
     </div>
