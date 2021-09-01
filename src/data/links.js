@@ -40,7 +40,7 @@ export const DRAWER_LINKS = [
     lvl2: [
       {
         id: 'drawerBtn',
-        value: '',
+        value: 'DEFAULT',
         label: 'Default'
       },
       {

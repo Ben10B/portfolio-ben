@@ -24,7 +24,7 @@ const initialState = {
   page: {
     layout: ''
   },
-  drawerBtn: ''
+  drawerBtn: 'DEFAULT'
 };
 
 const checkProperties = (initial, storage) => {

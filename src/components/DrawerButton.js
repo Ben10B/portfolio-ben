@@ -25,7 +25,7 @@ const DrawerButton = ({ bodyRef, onClick, open, position }) => {
   }, [bodyRef, parentHeight, setScrollY])
 
   useLayoutEffect(() => {
-    if(position === '') window.addEventListener('scroll', onScroll);
+    if(position === 'DEFAULT') window.addEventListener('scroll', onScroll);
     else {
       window.removeEventListener('scroll', onScroll);
       if(position === 'TOP') setScrollY(5);
