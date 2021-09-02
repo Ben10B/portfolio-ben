@@ -7,7 +7,7 @@ import innovationProject from '../assets/NIC 2.gif';
 import mazeProject from '../assets/AmazING.gif';
 import statsProject from '../assets/Neu Stats.png';
 import grindinProject from "../assets/Grindin 01.gif";
-import yaID from '../assets/YA Identity.png';
+import yaID from '../assets/YA Identity.gif';
 //graphic
 import balabeFT from '../assets/Balabe Food Truck.jpg';
 import smith from '../assets/Demon Smith 2.jpg';
