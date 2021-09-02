@@ -106,3 +106,18 @@ $i: 0;
     }
   }
 }
+@media all and (max-height: 609px) {
+  
+  .cards-slider-wrapper {
+    .card {
+      display: flex;
+      flex-direction: column;
+      img {
+        width: auto;
+        height: auto;
+        max-height: 240px;
+        align-self: center;
+      }
+    }
+  }
+}
