@@ -89,7 +89,7 @@ class Home extends Component {
           </ul>
         </div>
 
-        <section id="me" data-aos="flip-right" data-aos-duration="1500" className={`hght-90-vh row fight-parallaxx ${choreo} ${animation}`}>
+        <div id="me" data-aos="flip-right" data-aos-duration="1500" className={`hght-90-vh row fight-parallaxx ${choreo} ${animation}`}>
           <div className="column fnt-white">
             <h3>BIO</h3>
             <p className="paragraph">
@@ -99,7 +99,7 @@ class Home extends Component {
             <p className="paragraph">I recommend eating your pizza with Creamy Garlic Parmesan sauce!</p>
           </div>
           <div style={{backgroundImage: `url(${me})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', backgroundPosition: 'center'}}/>
-        </section>
+        </div>
       </div>
     );
   }

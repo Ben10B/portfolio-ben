@@ -84,7 +84,7 @@ $white: #fff;
         }
         .lvl2::before, .lvl3::before, .btn-2, .btn-2::before { background: $black; 
         }
-        .lvl2:hover, .lvl3:hover { background-color: rgba(255, 255, 255, 0.2);
+        .lvl2:hover, .lvl3:hover { background-color: rgba(255, 255, 255, 0.3);
         }
         .lvl2.active, .lvl3.active { background-color: rgba(255, 255, 255, 0.4);
         }

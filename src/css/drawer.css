@@ -60,9 +60,19 @@
   width: 200px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px);
   transition: right 0.2s;
+}
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .drawer {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
+@supports (not (-webkit-backdrop-filter: none)) and (not (backdrop-filter: none)) {
+  .drawer {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: saturate(180%) blur(10px);
+  }
 }
 .drawer.open {
   right: 0;
