@@ -8,9 +8,9 @@ import { updateAudio } from '../actions/settingsActions';
 
 const AudioPlayer2 = ({ settings, updateAudio }) => {
   return (
-    <div className={`audio-player-wrapper ${settings.audio.control}`}>
+    <div className={`audio-player-wrapper ${settings.audio.controls}`}>
       <div className="audio-player-content">
-        <div className="close" onClick={() => updateAudio({ control: 'hide' })}>
+        <div className="close" onClick={() => updateAudio({ controls: 'hide' })}>
           <FontAwesomeIcon icon={'times'}/>
         </div>
         <AudioPlayer

@@ -8,7 +8,7 @@ const initialState = {
   },
   audio: {
     song: 'Wolfs Milk',
-    control: 'hide'
+    controls: 'hide'
   },
   showSplash: true,
   header: {

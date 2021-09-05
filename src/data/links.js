@@ -283,20 +283,8 @@ export const DRAWER_LINKS = [
       },
       {
         id: 'controls',
-        value: 'controls',
         label: 'Controls',
-        lvl3: [
-          {
-            id: 'control',
-            value: 'show',
-            label: 'Show'
-          },
-          {
-            id: 'control',
-            value: 'hide',
-            label: 'Hide'
-          }
-        ]
+        value: 'show'
       }
     ]
   },
