@@ -162,6 +162,7 @@ const settingsReducer = (state = initialState, action) => {
         ...state, 
         secretUnlock: { ...state.secretUnlock, ...action.payload }
       };
+      saveToLocalStorage(SECRET);
       return SECRET;
     default: return state;
   }

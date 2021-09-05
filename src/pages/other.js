@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { otherData } from '../data/data';
+import { GIFS } from '../data/gifs';
 import Header from '../components/Header';
 import SlideShow from '../components/SlideShow';
+import GridShow from '../components/GridShow';
 
 const Other = ({ settings }) => {
   const { parallaxes: { landing, slideshow }, fight: { animation, choreo } } = settings;
@@ -16,6 +18,10 @@ const Other = ({ settings }) => {
       <Header />
       <div className={`parallaxx ${slideshow} ${choreo} ${animation} hght-100-vh`} style={{ overflow: 'hidden' }}>
         <SlideShow data={otherData} />
+      </div>
+      <div className={`fight-parallaxx ${choreo} ${animation}`}>
+        <h1 className="margn-bottom-5 fnt-white">GIFS Available</h1>
+        <GridShow data={GIFS}/>
       </div>
     </div>
   )
