@@ -99,4 +99,12 @@ $white: #fff;
     .item-b, .item-c, .item-d { color: $black; }
     .item-d h6 { border-color: $black; }
   }
+  .secret .input-card { 
+    background-color: $white; 
+    color: $black;
+    input {
+      color: $white;
+      background-color: $black;
+    }
+  }
 }

@@ -464,14 +464,12 @@ export const DRAWER_LINKS = [
       {
         id: 'modal',
         value: 'visible',
-        label: 'Show',
-        parent: 'secretUnlock'
+        label: 'Show'
       },
       {
         id: 'modal',
         value: 'invisible',
-        label: 'Hide',
-        parent: 'secretUnlock'
+        label: 'Hide'
       }
     ]
   }

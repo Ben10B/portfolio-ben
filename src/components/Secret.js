@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { connect } from 'react-redux';
 import { unlockSecret } from '../actions/settingsActions';
 import '../css/secret.css';
@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Secret = ({ secretUnlock, unlockSecret }) => {
   const [icon, setIcon] = useState('lock');
   const [error, setError] = useState('');
-  const handleKeyUp = (e) => {
+  const handleKeyUp = useCallback((e) => {
     if(e.code === 'Enter') {
       let result = unlockSecret({ unlock: e.target.value });
       if(result === 'error') {
@@ -15,7 +15,7 @@ const Secret = ({ secretUnlock, unlockSecret }) => {
         setTimeout(() => setError(''), 800);
       }
     }
-  }
+  }, [unlockSecret, setError]);
 
   useEffect(() => {
     if(secretUnlock.unlock) setIcon('lock-open');
@@ -25,6 +25,9 @@ const Secret = ({ secretUnlock, unlockSecret }) => {
   return (
     <div className={`secret ${secretUnlock.modal}`}>
       <article className="input-card">
+        <span className="close" onClick={() => unlockSecret({ modal: 'invisible' })}>
+          <FontAwesomeIcon icon={'times'}/>
+        </span>
         <header>
           <label>HINT: A woman's greatest physical ASSet.</label>
         </header>
