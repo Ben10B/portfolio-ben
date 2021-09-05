@@ -460,17 +460,6 @@ export const DRAWER_LINKS = [
     id: 'secretUnlock',
     label: 'Unlock',
     icon: 'lock',
-    lvl2: [
-      {
-        id: 'modal',
-        value: 'visible',
-        label: 'Show'
-      },
-      {
-        id: 'modal',
-        value: 'invisible',
-        label: 'Hide'
-      }
-    ]
+    value: 'show'
   }
 ];

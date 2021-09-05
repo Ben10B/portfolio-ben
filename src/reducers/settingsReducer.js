@@ -24,7 +24,7 @@ const initialState = {
   drawerBtn: 'DEFAULT',
   secretUnlock: {
     unlock: false,
-    modal: 'invisible'
+    modal: 'hide'
   }
 };
 

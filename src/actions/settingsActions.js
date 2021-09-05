@@ -79,7 +79,6 @@ export const unlockSecret = (secretUnlock) => dispatch => {
   }
   else if(secretUnlock.unlock) {
     const SECRET = ['ass', 'butt', 'booty', 'cake', 'yams'];
-    console.log(SECRET.find(x => x === secretUnlock.unlock.toLowerCase()))
     if(SECRET.find(x => x === secretUnlock.unlock.toLowerCase())) {
       dispatch({
         type: 'UNLOCK_SECRET',

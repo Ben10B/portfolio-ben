@@ -25,11 +25,11 @@ const Secret = ({ secretUnlock, unlockSecret }) => {
   return (
     <div className={`secret ${secretUnlock.modal}`}>
       <article className="input-card">
-        <span className="close" onClick={() => unlockSecret({ modal: 'invisible' })}>
+        <span className="close" onClick={() => unlockSecret({ modal: 'hide' })}>
           <FontAwesomeIcon icon={'times'}/>
         </span>
         <header>
-          <label>HINT: A woman's greatest physical ASSet.</label>
+          <label>HINT: A woman's greatest physical asset.</label>
         </header>
         <input type="text" onKeyUp={handleKeyUp}/>
         <FontAwesomeIcon className={`${icon} ${error}`} icon={icon}/>
