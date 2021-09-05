@@ -26,6 +26,7 @@ $white: #fff;
     .rhap_progress-filled, .rhap_progress-indicator, .rhap_volume-indicator { background-color: $black;
     }
   }
+  .audio-player-wrapper .close { color: $white; }
   .navigation {
     background-color: $white;
     box-shadow: 0px 0px 10px $black;

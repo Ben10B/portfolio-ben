@@ -1,0 +1,19 @@
+.audio-player-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.audio-player {
+  width: 50% !important;
+}
+.audio-player-content .close {
+  transition: color .5s;
+}
+.audio-player-content .close:hover {
+  color: #f00;
+  cursor: pointer;
+}
