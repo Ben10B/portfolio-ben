@@ -458,7 +458,7 @@ export const DRAWER_LINKS = [
   },
   {
     id: 'secretUnlock',
-    label: 'Unlock Secrets',
+    label: 'Unlock',
     icon: 'lock',
     lvl2: [
       {
