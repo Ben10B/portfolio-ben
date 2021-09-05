@@ -81,6 +81,10 @@
   padding-left: 40px;
   text-transform: uppercase;
 }
+.smenu .lvl2.secret,
+.ssmenu .lvl3.secret {
+  display: none;
+}
 .smenu .lvl2::before,
 .ssmenu .lvl3::before {
   content: "";

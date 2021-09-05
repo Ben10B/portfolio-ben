@@ -21,10 +21,11 @@ const initialState = {
     choreo: 'DEFAULT-CHOREO'
   },
   loading: false,
-  page: {
-    layout: ''
-  },
-  drawerBtn: 'DEFAULT'
+  drawerBtn: 'DEFAULT',
+  secretUnlock: {
+    unlock: false,
+    modal: 'invisible'
+  }
 };
 
 const checkProperties = (initial, storage) => {
@@ -156,6 +157,13 @@ const settingsReducer = (state = initialState, action) => {
       }
       saveToLocalStorage(DRAWER_BTN);
       return DRAWER_BTN;
+    case 'UNLOCK_SECRET':
+      const SECRET = { 
+        ...state, 
+        secretUnlock: { ...state.secretUnlock, ...action.payload }
+      };
+      saveToLocalStorage(SECRET);
+      return SECRET;
     default: return state;
   }
 }

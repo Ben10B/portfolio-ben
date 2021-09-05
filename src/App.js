@@ -11,17 +11,18 @@ import './css/themes.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faAngleDoubleDown, faFileDownload, faCode, faUser, faBrush, 
   faPalette, faFilm, faImage, faImages, faTimes, faEdit, faAdjust, faMusic, faFan, 
-  faPowerOff, faFistRaised, faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+  faPowerOff, faFistRaised, faPhoneAlt, faEnvelope, faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons';
 import Routes from './Routes';
 import DrawerButton from './components/DrawerButton';
 import Drawer from './components/Drawer';
 import AudioPlayer from './components/AudioPlayer2';
+import Secret from './components/Secret';
 import { DRAWER_LINKS } from './data/links';
 
 AOS.init();
 library.add([faBars, faAngleDoubleDown, faFileDownload, faCode, faUser, faBrush, 
   faPalette, faFilm, faImage, faImages, faTimes, faEdit, faAdjust, faMusic, faFan, 
-  faPowerOff, faFistRaised, faPhoneAlt, faEnvelope]);
+  faPowerOff, faFistRaised, faPhoneAlt, faEnvelope, faLock, faLockOpen]);
 
 function App({ settings }) {
   const bodyRef = useRef(null);
@@ -32,6 +33,7 @@ function App({ settings }) {
       <DrawerButton bodyRef={bodyRef} open={showDrawer} onClick={open}/>
       <Drawer open={showDrawer} links={DRAWER_LINKS}/>
       <AudioPlayer/>
+      <Secret/>
       <Routes/>
     </div>
   );

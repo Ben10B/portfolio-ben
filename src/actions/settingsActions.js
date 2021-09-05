@@ -70,6 +70,31 @@ export const updateDrawerBtn = (drawerBtn) => dispatch => {
   })
 }
 
+export const unlockSecret = (secretUnlock) => dispatch => {
+  if(secretUnlock.modal) {
+    dispatch({
+      type: 'UNLOCK_SECRET',
+      payload: secretUnlock
+    })
+  }
+  else if(secretUnlock.unlock) {
+    const SECRET = ['ass', 'butt', 'booty', 'cake', 'yams'];
+    console.log(SECRET.find(x => x === secretUnlock.unlock.toLowerCase()))
+    if(SECRET.find(x => x === secretUnlock.unlock.toLowerCase())) {
+      dispatch({
+        type: 'UNLOCK_SECRET',
+        payload: { unlock: true }
+      })
+    } else {
+      dispatch({
+        type: 'UNLOCK_SECRET',
+        payload: { unlock: false }
+      })
+      return 'error';
+    }
+  }
+}
+
 export const presetSettings = () => dispatch => {
   dispatch({
     type: 'PRESET_SETTINGS_STATE'

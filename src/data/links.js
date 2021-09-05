@@ -128,27 +128,32 @@ export const DRAWER_LINKS = [
       {
         id: 'background',
         value: 'BG-CHAR-1',
-        label: 'UI Goku'
+        label: 'UI Goku',
+        secret: true
       },
       {
         id: 'background',
         value: 'BG-CHAR-2',
-        label: 'Kid Goku'
+        label: 'Kid Goku',
+        secret: true
       },
       {
         id: 'background',
         value: 'BG-CHAR-3',
-        label: 'Orihime'
+        label: 'Orihime',
+        secret: true
       },
       {
         id: 'background',
         value: 'BG-CHAR-4',
-        label: 'Yoruichi'
+        label: 'Yoruichi',
+        secret: true
       },
       {
         id: 'background',
         value: 'BG-CHAR-5',
-        label: 'Fullbring Ichigo'
+        label: 'Fullbring Ichigo',
+        secret: true
       }
     ]
   },
@@ -176,12 +181,14 @@ export const DRAWER_LINKS = [
           {
             id: 'landing',
             value: 'PX-11',
-            label: 'Mary Crouch'
+            label: 'Mary Crouch',
+            secret: true
           },
           {
             id: 'landing',
             value: 'PX-12',
-            label: 'Mary Stand'
+            label: 'Mary Stand',
+            secret: true
           },
           {
             id: 'landing',
@@ -233,12 +240,14 @@ export const DRAWER_LINKS = [
           {
             id: 'slideshow',
             value: 'PX-11B',
-            label: 'Mary Crouch'
+            label: 'Mary Crouch',
+            secret: true
           },
           {
             id: 'slideshow',
             value: 'PX-12B',
-            label: 'Mary Stand'
+            label: 'Mary Stand',
+            secret: true
           },
           {
             id: 'slideshow',
@@ -262,13 +271,13 @@ export const DRAWER_LINKS = [
         lvl3: [
           {
             id: 'song',
-            label: "Forgive Her",
-            value: "Forgive Her"
+            value: "Forgive Her",
+            label: "Forgive Her"
           },
           {
             id: 'song',
-            label: "Wolf's Milk",
-            value: "Wolfs Milk"
+            value: "Wolfs Milk",
+            label: "Wolf's Milk"
           }
         ]
       },
@@ -279,13 +288,13 @@ export const DRAWER_LINKS = [
         lvl3: [
           {
             id: 'control',
-            label: 'Show',
-            value: 'show'
+            value: 'show',
+            label: 'Show'
           },
           {
             id: 'control',
-            label: 'Hide',
-            value: 'hide'
+            value: 'hide',
+            label: 'Hide'
           }
         ]
       }
@@ -447,4 +456,23 @@ export const DRAWER_LINKS = [
       }
     ]
   },
+  {
+    id: 'secretUnlock',
+    label: 'Unlock Secrets',
+    icon: 'lock',
+    lvl2: [
+      {
+        id: 'modal',
+        value: 'visible',
+        label: 'Show',
+        parent: 'secretUnlock'
+      },
+      {
+        id: 'modal',
+        value: 'invisible',
+        label: 'Hide',
+        parent: 'secretUnlock'
+      }
+    ]
+  }
 ];
