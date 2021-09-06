@@ -11,7 +11,7 @@ import './css/themes.scss';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars, faAngleDoubleDown, faFileDownload, faCode, faUser, faBrush, 
   faPalette, faFilm, faImage, faImages, faTimes, faEdit, faAdjust, faMusic, faFan, 
-  faPowerOff, faFistRaised, faPhoneAlt, faEnvelope, faLock, faLockOpen } from '@fortawesome/free-solid-svg-icons';
+  faPowerOff, faFistRaised, faPhoneAlt, faEnvelope, faLock, faLockOpen, faKey } from '@fortawesome/free-solid-svg-icons';
 import Routes from './Routes';
 import DrawerButton from './components/DrawerButton';
 import Drawer from './components/Drawer';
@@ -22,7 +22,7 @@ import { DRAWER_LINKS } from './data/links';
 AOS.init();
 library.add([faBars, faAngleDoubleDown, faFileDownload, faCode, faUser, faBrush, 
   faPalette, faFilm, faImage, faImages, faTimes, faEdit, faAdjust, faMusic, faFan, 
-  faPowerOff, faFistRaised, faPhoneAlt, faEnvelope, faLock, faLockOpen]);
+  faPowerOff, faFistRaised, faPhoneAlt, faEnvelope, faLock, faLockOpen, faKey]);
 
 function App({ settings }) {
   const bodyRef = useRef(null);

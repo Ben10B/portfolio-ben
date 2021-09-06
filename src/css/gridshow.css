@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(100px, auto);
-  /* column-gap: 10px; */
-  row-gap: 10px;
+  column-gap: 1em;
+  row-gap: 1em;
+  padding: 1em;
   overflow: hidden;
 }
 
@@ -13,11 +14,11 @@
 
 .gif {
   height: 100%;
-  width: 100%;
+  width: auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
 }
 .gif:hover {
-  transform: scale(1.3);
+  cursor: pointer;
+  background-size: 70%;
 }

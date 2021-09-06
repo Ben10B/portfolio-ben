@@ -1,5 +1,5 @@
-$fight1: '../assets/Fight.gif';
-$fight2: '../assets/Fight2.gif';
+$fight1: '../assets/gifs/Fight.gif';
+$fight2: '../assets/gifs/Fight2.gif';
 
 
 .landing-parallaxx {
@@ -87,10 +87,11 @@ $fight2: '../assets/Fight2.gif';
 
 
 $parallaxes: (
-  "PX-1": '../assets/BG1.gif', "PX-1B": '../assets/BG1b.gif', "PX-2": '../assets/BG2.gif', "PX-3": '../assets/BG3.gif',
-  "PX-4": '../assets/BG4.gif', "PX-5": '../assets/BG5.gif', "PX-6": '../assets/BG6.gif', "PX-7": '../assets/BG7.gif',
-  "PX-8": '../assets/BG8.gif', "PX-9": '../assets/BG9.gif', "PX-10": '../assets/BG10.gif', "PX-11": '../assets/BG11.gif',
-  "PX-12": '../assets/BG12.gif', "PX-11B": '../assets/BG11.gif', "PX-12B": '../assets/BG12.gif'
+  "PX-1": '../assets/gifs/PX1.gif', "PX-1B": '../assets/gifs/PX1b.gif', "PX-2": '../assets/gifs/PX2.gif', "PX-3": '../assets/gifs/PX3.gif',
+  "PX-4": '../assets/gifs/PX4.gif', "PX-5": '../assets/gifs/PX5.gif', "PX-6": '../assets/gifs/PX6.gif', "PX-7": '../assets/gifs/PX7.gif',
+  "PX-8": '../assets/gifs/PX8.gif', "PX-9": '../assets/gifs/PX9.gif', "PX-10": '../assets/gifs/PX10.gif', 
+  "PX-11": '../assets/gifs/Mary1.gif', "PX-12": '../assets/gifs/Mary2.gif', "PX-11B": '../assets/gifs/Mary1.gif', "PX-12B": '../assets/gifs/Mary2.gif', 
+  "PX-13": '../assets/gifs/Goku_v_Jiren1.gif', "PX-14": '../assets/gifs/Goku_v_Jiren2.gif',
 );
 @each $key, $url in $parallaxes {
   .#{$key} {

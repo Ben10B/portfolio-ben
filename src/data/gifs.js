@@ -1,43 +1,79 @@
 export const GIFS = [
   {
-    url: require('../assets/BG1.gif').default
+    url: require('../assets/gifs/PX1.gif').default
   },
   {
-    url: require('../assets/BG1b.gif').default
+    url: require('../assets/gifs/PX1b.gif').default
   },
   {
-    url: require('../assets/BG2.gif').default
+    url: require('../assets/gifs/PX2.gif').default
   },
   {
-    url: require('../assets/BG3.gif').default
+    url: require('../assets/gifs/PX3.gif').default
   },
   {
-    url: require('../assets/BG4.gif').default
+    url: require('../assets/gifs/PX4.gif').default
   },
   {
-    url: require('../assets/BG5.gif').default
+    url: require('../assets/gifs/PX5.gif').default
   },
   {
-    url: require('../assets/BG6.gif').default
+    url: require('../assets/gifs/PX6.gif').default
   },
   {
-    url: require('../assets/BG7.gif').default
+    url: require('../assets/gifs/PX7.gif').default
   },
   {
-    url: require('../assets/BG8.gif').default
+    url: require('../assets/gifs/PX8.gif').default
   },
   {
-    url: require('../assets/BG9.gif').default
+    url: require('../assets/gifs/PX9.gif').default
   },
   {
-    url: require('../assets/BG10.gif').default
+    url: require('../assets/gifs/PX10.gif').default
   },
   {
-    url: require('../assets/BG11.gif').default,
+    url: require('../assets/gifs/Mary1.gif').default,
     secret: true
   },
   {
-    url: require('../assets/BG12.gif').default,
+    url: require('../assets/gifs/Mary2.gif').default,
+    secret: true
+  },
+  {
+    url: require('../assets/gifs/Goku_v_Jiren1.gif').default,
+    secret: true
+  },
+  {
+    url: require('../assets/gifs/Goku_v_Jiren2.gif').default,
+    secret: true
+  },
+  {
+    url: require('../assets/gifs/Broly_v_Gogeta.gif').default,
+    secret: true
+  },
+  {
+    url: require('../assets/gifs/Arrow.gif').default,
+    secret: true
+  },
+  {
+    url: require('../assets/gifs/Tamaki.gif').default,
+    secret: true
+  },
+  {
+    url: require('../assets/gifs/Caulifla1.gif').default,
+    secret: true
+  },
+  {
+    url: require('../assets/gifs/Caulifla2.gif').default,
+    secret: true
+  },
+  {
+    url: require('../assets/gifs/Kefla.gif').default,
+    secret: true
+  },
+  {
+    url: require('../assets/gifs/Kefla_v_Goku.gif').default,
     secret: true
   },
 ]

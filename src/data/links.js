@@ -192,6 +192,18 @@ export const DRAWER_LINKS = [
           },
           {
             id: 'landing',
+            value: 'PX-13',
+            label: 'Goku v Jiren 1',
+            secret: true
+          },
+          {
+            id: 'landing',
+            value: 'PX-14',
+            label: 'Goku v Jiren 2',
+            secret: true
+          },
+          {
+            id: 'landing',
             value: 'PX-NONE-LANDING',
             label: 'None'
           }
@@ -447,7 +459,7 @@ export const DRAWER_LINKS = [
   {
     id: 'secretUnlock',
     label: 'Unlock',
-    icon: 'lock',
+    icon: 'key',
     value: 'show'
   }
 ];
