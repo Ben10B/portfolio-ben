@@ -19,7 +19,7 @@ const Other = ({ settings }) => {
       <div className={`parallaxx ${slideshow} ${choreo} ${animation} hght-100-vh`} style={{ overflow: 'hidden' }}>
         <SlideShow data={otherData} />
       </div>
-      <div className={`fight-parallaxx ${choreo} ${animation}`}>
+      <div>
         <h1 className="margn-bottom-5 fnt-white">GIFS Available</h1>
         <GridShow data={GIFS}/>
       </div>

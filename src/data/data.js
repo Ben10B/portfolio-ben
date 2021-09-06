@@ -8,6 +8,7 @@ import mazeProject from '../assets/AmazING.gif';
 import statsProject from '../assets/Neu Stats.png';
 import grindinProject from "../assets/Grindin 01.gif";
 import yaID from '../assets/YA Identity.gif';
+import PSJ from '../assets/gifs/PSJ.gif';
 //graphic
 import balabeFT from '../assets/Balabe Food Truck.jpg';
 import smith from '../assets/Demon Smith 2.jpg';
@@ -200,7 +201,12 @@ export const otherData = [
     tech: ['Marching Band', 'Football', 'Track', '3.96 GPA'], links: [{ yt: scholarAthlete }]
   },
   {
-    index: 2, video: spriteBattle1, title: 'GokuNarutovsSasukeIchigo Sprite Battle - Part One', type: 'other',
+    index: 2, image: PSJ, title: 'Football Highlights', type: 'other',
+    description: 'High School Football clips from 2012 & 2013.',
+    tech: ['Football'], links: [{ direct: 'https://www.hudl.com/video/3/1021208/5721ad4690eead5d909db32b' }]
+  },
+  {
+    index: 3, video: spriteBattle1, title: 'GokuNarutovsSasukeIchigo Sprite Battle - Part One', type: 'other',
     description: "This video was suppose to be a remake of an older version made in Windows Movie Maker, but I added on to it changing the plot, so it's different. I know there are minor errors in the video, so bear with it please."
     + " I kinda wrapped the ending up so that I can make a fresh video with my new skills. Enjoy=)", 
     tech: ['Macromedia Flash 8', 'Macromedia Fireworks 8'], links: [{ yt: spriteBattle1 }]

@@ -180,6 +180,16 @@ export const DRAWER_LINKS = [
           },
           {
             id: 'landing',
+            value: 'PX-13',
+            label: 'Goku v Jiren 1'
+          },
+          {
+            id: 'landing',
+            value: 'PX-14',
+            label: 'Goku v Jiren 2'
+          },
+          {
+            id: 'landing',
             value: 'PX-11',
             label: 'Mary Crouch',
             secret: true
@@ -188,18 +198,6 @@ export const DRAWER_LINKS = [
             id: 'landing',
             value: 'PX-12',
             label: 'Mary Stand',
-            secret: true
-          },
-          {
-            id: 'landing',
-            value: 'PX-13',
-            label: 'Goku v Jiren 1',
-            secret: true
-          },
-          {
-            id: 'landing',
-            value: 'PX-14',
-            label: 'Goku v Jiren 2',
             secret: true
           },
           {
