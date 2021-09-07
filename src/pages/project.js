@@ -23,6 +23,7 @@ class Project extends Component {
           <h6 className="item-b">{project && project.title}</h6>
           <div className="item-c">{project && project.description}</div>
           <div className="item-d"><h6>SKILLS:</h6> <div className="row">{project && project.tech.map(x => <p key={x}>{x}</p>)}</div></div>
+          <div className="item-e"></div>
         </div>
       </div>
     )
