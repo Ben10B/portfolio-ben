@@ -24,9 +24,16 @@ yarn-debug.log*
 yarn-error.log*
 src/assets/NIC.gif
 # src/assets/gifs
+src/assets/gifs/Caulifla1.gif
 src/assets/gifs/Caulifla2.gif
 src/assets/gifs/Hanebado1.gif
 src/assets/gifs/Hanebado2.gif
 src/assets/gifs/Hanebado3.gif
 src/assets/gifs/Oresuki.gif
 src/assets/gifs/Keijo.gif
+src/assets/gifs/Kefla.gif
+src/assets/gifs/Kefla_v_Goku.gif
+src/assets/gifs/Nomad1.gif
+src/assets/gifs/Nomad2.gif
+src/assets/gifs/Vanitas1.gif
+src/assets/gifs/GrandBlue.gif
