@@ -24,3 +24,9 @@ yarn-debug.log*
 yarn-error.log*
 src/assets/NIC.gif
 # src/assets/gifs
+src/assets/gifs/Caulifla2.gif
+src/assets/gifs/Hanebado1.gif
+src/assets/gifs/Hanebado2.gif
+src/assets/gifs/Hanebado3.gif
+src/assets/gifs/Oresuki.gif
+src/assets/gifs/Keijo.gif

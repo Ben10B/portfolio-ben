@@ -60,18 +60,18 @@ export const GIFS = [
   {
     url: require('../assets/gifs/Caulifla1.gif').default
   },
-  {
-    url: require('../assets/gifs/Caulifla2.gif').default
-  },
+  // {
+  //   url: require('../assets/gifs/Caulifla2.gif').default
+  // },
   {
     url: require('../assets/gifs/Kefla.gif').default
   },
   {
     url: require('../assets/gifs/Kefla_v_Goku.gif').default
   },
-  {
-    url: require('../assets/gifs/Nomad1.gif').default
-  },
+  // {
+  //   url: require('../assets/gifs/Nomad1.gif').default
+  // },
   {
     url: require('../assets/gifs/Nomad2.gif').default
   },
@@ -86,26 +86,26 @@ export const GIFS = [
     url: require('../assets/gifs/GrandBlue.gif').default,
     secret: true
   },
-  {
-    url: require('../assets/gifs/Hanebado1.gif').default
-  },
-  {
-    url: require('../assets/gifs/Hanebado2.gif').default
-  },
-  {
-    url: require('../assets/gifs/Hanebado3.gif').default
-  },
+  // {
+  //   url: require('../assets/gifs/Hanebado1.gif').default
+  // },
+  // {
+  //   url: require('../assets/gifs/Hanebado2.gif').default
+  // },
+  // {
+  //   url: require('../assets/gifs/Hanebado3.gif').default
+  // },
   {
     url: require('../assets/gifs/Harukana.gif').default,
     secret: true
   },
-  {
-    url: require('../assets/gifs/Oresuki.gif').default
-  },
+  // {
+  //   url: require('../assets/gifs/Oresuki.gif').default
+  // },
   {
     url: require('../assets/gifs/PSJ.gif').default
   },
-  {
-    url: require('../assets/gifs/Keijo.gif').default
-  },
+  // {
+  //   url: require('../assets/gifs/Keijo.gif').default
+  // },
 ]
