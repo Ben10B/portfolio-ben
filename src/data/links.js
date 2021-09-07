@@ -185,11 +185,6 @@ export const DRAWER_LINKS = [
           },
           {
             id: 'landing',
-            value: 'PX-14',
-            label: 'Goku v Jiren 2'
-          },
-          {
-            id: 'landing',
             value: 'PX-11',
             label: 'Mary Crouch',
             secret: true

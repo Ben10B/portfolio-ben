@@ -91,7 +91,7 @@ $parallaxes: (
   "PX-4": '../assets/gifs/PX4.gif', "PX-5": '../assets/gifs/PX5.gif', "PX-6": '../assets/gifs/PX6.gif', "PX-7": '../assets/gifs/PX7.gif',
   "PX-8": '../assets/gifs/PX8.gif', "PX-9": '../assets/gifs/PX9.gif', "PX-10": '../assets/gifs/PX10.gif', 
   "PX-11": '../assets/gifs/Mary1.gif', "PX-12": '../assets/gifs/Mary2.gif', "PX-11B": '../assets/gifs/Mary1.gif', "PX-12B": '../assets/gifs/Mary2.gif', 
-  "PX-13": '../assets/gifs/Goku_v_Jiren1.gif', "PX-14": '../assets/gifs/Goku_v_Jiren2.gif',
+  "PX-13": '../assets/gifs/Goku_v_Jiren1.gif', 
 );
 @each $key, $url in $parallaxes {
   .#{$key} {

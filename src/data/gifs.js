@@ -43,20 +43,20 @@ export const GIFS = [
   {
     url: require('../assets/gifs/Goku_v_Jiren1.gif').default
   },
-  {
-    url: require('../assets/gifs/Goku_v_Jiren2.gif').default
-  },
-  {
-    url: require('../assets/gifs/Broly_v_Gogeta.gif').default
-  },
+  // {
+  //   url: require('../assets/gifs/Goku_v_Jiren2.gif').default
+  // },
+  // {
+  //   url: require('../assets/gifs/Broly_v_Gogeta.gif').default
+  // },
   {
     url: require('../assets/gifs/Arrow.gif').default,
     secret: true
   },
-  {
-    url: require('../assets/gifs/Tamaki.gif').default,
-    secret: true
-  },
+  // {
+  //   url: require('../assets/gifs/Tamaki.gif').default,
+  //   secret: true
+  // },
   // {
   //   url: require('../assets/gifs/Caulifla1.gif').default
   // },
