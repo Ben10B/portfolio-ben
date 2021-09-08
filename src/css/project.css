@@ -1,18 +1,3 @@
-.img{
-  min-width: 50px;
-  min-height: 100px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; 
-  box-shadow: 0 0 5px #fff;
-}
-.r{ box-shadow: 0 0 5px #f00;
-}
-.blu{ box-shadow: 0 0 5px #00f;
-}
-.g{ box-shadow: 0 0 5px #0f0;
-}
-
 .project-page {
   padding: 0 0 4% 0;
   margin: 0;
@@ -26,7 +11,7 @@
   grid-template-rows: auto auto auto;
   grid-template-areas: 
   "item-b item-c item-d"
-  "item-e item-e item-e"
+  ". item-e ."
   "item-a item-a item-a";
   row-gap: 4%;
 }
@@ -44,22 +29,25 @@
   grid-area: item-c; 
   text-align: center;
   line-height: 1.3em;
+  margin: 0 2%;
 }
 .item-d { grid-area: item-d; }
-.item-e { grid-area: item-e; }
+.item-e { 
+  padding: 0 !important;
+  grid-area: item-e; 
+  justify-content: center;
+}
 .item-d h6 { 
   margin: auto;
   width: calc(100% - 100px);
   padding-bottom: 4px;
   border-bottom: 1px solid #fff;
 }
-.item-d .row {
-  flex-wrap: wrap;
+.item-d .row { flex-wrap: wrap;
 }
-
-.item-b, .item-c, .item-d {
+.item-b, .item-c, .item-d, .item-e {
   padding: 8px;
   color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-  /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+  background-color: #000;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px -50px 36px -28px inset;
 }
