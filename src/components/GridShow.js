@@ -9,13 +9,17 @@ const GridShow = ({ data, secretUnlock }) => {
     else return '';
   }
   const viewMedia = (e) => {
-    BigPicture({ el: e.target, imgSrc: e.target.getAttribute('imgsrc') })
+    BigPicture({ el: e.target, imgSrc: e.target.getAttribute('imgsrc') });
+  }
+  const source = (src) => {
+    if(src.url) return src.url;
+    else if(src.aws) return src.aws;
   }
   return (
     <div className={`grid`}>
       {data.map((x, index) => (
         <div key={index} className={`cell ${handleSecret(x)}`}>
-          <div className="gif" style={{ backgroundImage: `url(${x.url})`}} imgSrc={x.url} onClick={viewMedia}></div>
+          <div className="gif" style={{ backgroundImage: `url(${source(x)})`}} imgsrc={source(x)} onClick={viewMedia}></div>
         </div>
       ))}
     </div>

@@ -33,6 +33,9 @@ export const GIFS = [
     url: require('../assets/gifs/PX10.gif').default
   },
   {
+    url: require('../assets/gifs/PSJ.gif').default
+  },
+  {
     url: require('../assets/gifs/Mary1.gif').default,
     secret: true
   },
@@ -43,69 +46,66 @@ export const GIFS = [
   {
     url: require('../assets/gifs/Goku_v_Jiren1.gif').default
   },
-  // {
-  //   url: require('../assets/gifs/Goku_v_Jiren2.gif').default
-  // },
-  // {
-  //   url: require('../assets/gifs/Broly_v_Gogeta.gif').default
-  // },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Goku_v_Jiren2.gif'
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Broly_v_Gogeta.gif'
+  },
   {
     url: require('../assets/gifs/Arrow.gif').default,
     secret: true
   },
-  // {
-  //   url: require('../assets/gifs/Tamaki.gif').default,
-  //   secret: true
-  // },
-  // {
-  //   url: require('../assets/gifs/Caulifla1.gif').default
-  // },
-  // {
-  //   url: require('../assets/gifs/Caulifla2.gif').default
-  // },
-  // {
-  //   url: require('../assets/gifs/Kefla.gif').default
-  // },
-  // {
-  //   url: require('../assets/gifs/Kefla_v_Goku.gif').default
-  // },
-  // {
-  //   url: require('../assets/gifs/Nomad1.gif').default
-  // },
-  // {
-  //   url: require('../assets/gifs/Nomad2.gif').default
-  // },
-  // {
-  //   url: require('../assets/gifs/Vanitas1.gif').default,
-  //   secret: true
-  // },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Tamaki.gif',
+    secret: true
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Caulifla1.gif'
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Caulifla2.gif'
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Kefla.gif'
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Kefla_v_Goku.gif'
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Nomad1.gif'
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Nomad2.gif'
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Vanitas1.gif',
+    secret: true
+  },
   {
     url: require('../assets/gifs/Vanitas2.gif').default
   },
-  // {
-  //   url: require('../assets/gifs/GrandBlue.gif').default,
-  //   secret: true
-  // },
-  // {
-  //   url: require('../assets/gifs/Hanebado1.gif').default
-  // },
-  // {
-  //   url: require('../assets/gifs/Hanebado2.gif').default
-  // },
-  // {
-  //   url: require('../assets/gifs/Hanebado3.gif').default
-  // },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/GrandBlue.gif',
+    secret: true
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Hanebado1.gif'
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Hanebado2.gif'
+  },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Hanebado3.gif'
+  },
   {
     url: require('../assets/gifs/Harukana.gif').default,
     secret: true
   },
-  // {
-  //   url: require('../assets/gifs/Oresuki.gif').default
-  // },
   {
-    url: require('../assets/gifs/PSJ.gif').default
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Oresuki.gif'
   },
-  // {
-  //   url: require('../assets/gifs/Keijo.gif').default
-  // },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Keijo.gif'
+  },
 ]
