@@ -108,4 +108,7 @@ export const GIFS = [
   {
     aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Keijo.gif'
   },
+  {
+    aws: 'https://jammin-gifs.s3.us-east-2.amazonaws.com/Jujutsu1.gif'
+  },
 ]
